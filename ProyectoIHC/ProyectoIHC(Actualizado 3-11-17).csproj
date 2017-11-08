@@ -1,0 +1,1852 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="12.0" DefaultTargets="Build" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <Import Project="..\packages\Microsoft.CodeDom.Providers.DotNetCompilerPlatform.1.0.0\build\Microsoft.CodeDom.Providers.DotNetCompilerPlatform.props" Condition="Exists('..\packages\Microsoft.CodeDom.Providers.DotNetCompilerPlatform.1.0.0\build\Microsoft.CodeDom.Providers.DotNetCompilerPlatform.props')" />
+  <Import Project="..\packages\Microsoft.Net.Compilers.1.0.0\build\Microsoft.Net.Compilers.props" Condition="Exists('..\packages\Microsoft.Net.Compilers.1.0.0\build\Microsoft.Net.Compilers.props')" />
+  <Import Project="$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props" Condition="Exists('$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props')" />
+  <PropertyGroup>
+    <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
+    <Platform Condition=" '$(Platform)' == '' ">AnyCPU</Platform>
+    <ProductVersion>
+    </ProductVersion>
+    <SchemaVersion>2.0</SchemaVersion>
+    <ProjectGuid>{8EE0C297-9E66-4C8D-8F51-86352F8E9F1D}</ProjectGuid>
+    <ProjectTypeGuids>{349c5851-65df-11da-9384-00065b846f21};{fae04ec0-301f-11d3-bf4b-00c04f79efbc}</ProjectTypeGuids>
+    <OutputType>Library</OutputType>
+    <AppDesignerFolder>Properties</AppDesignerFolder>
+    <RootNamespace>ProyectoIHC</RootNamespace>
+    <AssemblyName>ProyectoIHC</AssemblyName>
+    <TargetFrameworkVersion>v4.5.2</TargetFrameworkVersion>
+    <UseIISExpress>true</UseIISExpress>
+    <IISExpressSSLPort />
+    <IISExpressAnonymousAuthentication />
+    <IISExpressWindowsAuthentication />
+    <IISExpressUseClassicPipelineMode />
+    <UseGlobalApplicationHostFile />
+    <NuGetPackageImportStamp>
+    </NuGetPackageImportStamp>
+    <Use64BitIISExpress />
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|AnyCPU' ">
+    <DebugSymbols>true</DebugSymbols>
+    <DebugType>full</DebugType>
+    <Optimize>false</Optimize>
+    <OutputPath>bin\</OutputPath>
+    <DefineConstants>DEBUG;TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Release|AnyCPU' ">
+    <DebugType>pdbonly</DebugType>
+    <Optimize>true</Optimize>
+    <OutputPath>bin\</OutputPath>
+    <DefineConstants>TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <ItemGroup>
+    <Reference Include="Microsoft.AI.Agent.Intercept, Version=2.0.6.0, Culture=neutral, PublicKeyToken=31bf3856ad364e35, processorArchitecture=MSIL">
+      <HintPath>..\packages\Microsoft.ApplicationInsights.Agent.Intercept.2.0.6\lib\net45\Microsoft.AI.Agent.Intercept.dll</HintPath>
+      <Private>True</Private>
+    </Reference>
+    <Reference Include="Microsoft.AI.DependencyCollector, Version=2.2.0.0, Culture=neutral, PublicKeyToken=31bf3856ad364e35, processorArchitecture=MSIL">
+      <HintPath>..\packages\Microsoft.ApplicationInsights.DependencyCollector.2.2.0\lib\net45\Microsoft.AI.DependencyCollector.dll</HintPath>
+      <Private>True</Private>
+    </Reference>
+    <Reference Include="Microsoft.AI.PerfCounterCollector, Version=2.2.0.0, Culture=neutral, PublicKeyToken=31bf3856ad364e35, processorArchitecture=MSIL">
+      <HintPath>..\packages\Microsoft.ApplicationInsights.PerfCounterCollector.2.2.0\lib\net45\Microsoft.AI.PerfCounterCollector.dll</HintPath>
+      <Private>True</Private>
+    </Reference>
+    <Reference Include="Microsoft.AI.ServerTelemetryChannel, Version=2.2.0.0, Culture=neutral, PublicKeyToken=31bf3856ad364e35, processorArchitecture=MSIL">
+      <HintPath>..\packages\Microsoft.ApplicationInsights.WindowsServer.TelemetryChannel.2.2.0\lib\net45\Microsoft.AI.ServerTelemetryChannel.dll</HintPath>
+      <Private>True</Private>
+    </Reference>
+    <Reference Include="Microsoft.AI.Web, Version=2.2.0.0, Culture=neutral, PublicKeyToken=31bf3856ad364e35, processorArchitecture=MSIL">
+      <HintPath>..\packages\Microsoft.ApplicationInsights.Web.2.2.0\lib\net45\Microsoft.AI.Web.dll</HintPath>
+      <Private>True</Private>
+    </Reference>
+    <Reference Include="Microsoft.AI.WindowsServer, Version=2.2.0.0, Culture=neutral, PublicKeyToken=31bf3856ad364e35, processorArchitecture=MSIL">
+      <HintPath>..\packages\Microsoft.ApplicationInsights.WindowsServer.2.2.0\lib\net45\Microsoft.AI.WindowsServer.dll</HintPath>
+      <Private>True</Private>
+    </Reference>
+    <Reference Include="Microsoft.ApplicationInsights, Version=2.2.0.0, Culture=neutral, PublicKeyToken=31bf3856ad364e35, processorArchitecture=MSIL">
+      <HintPath>..\packages\Microsoft.ApplicationInsights.2.2.0\lib\net45\Microsoft.ApplicationInsights.dll</HintPath>
+      <Private>True</Private>
+    </Reference>
+    <Reference Include="Microsoft.CodeDom.Providers.DotNetCompilerPlatform, Version=1.0.0.0, Culture=neutral, PublicKeyToken=31bf3856ad364e35, processorArchitecture=MSIL">
+      <HintPath>..\packages\Microsoft.CodeDom.Providers.DotNetCompilerPlatform.1.0.0\lib\net45\Microsoft.CodeDom.Providers.DotNetCompilerPlatform.dll</HintPath>
+      <Private>True</Private>
+    </Reference>
+    <Reference Include="Microsoft.CSharp" />
+    <Reference Include="System.Web.DynamicData" />
+    <Reference Include="System.Web.Entity" />
+    <Reference Include="System.Web.ApplicationServices" />
+    <Reference Include="System.ComponentModel.DataAnnotations" />
+    <Reference Include="System" />
+    <Reference Include="System.Data" />
+    <Reference Include="System.Core" />
+    <Reference Include="System.Data.DataSetExtensions" />
+    <Reference Include="System.Web.Extensions" />
+    <Reference Include="System.Xml.Linq" />
+    <Reference Include="System.Drawing" />
+    <Reference Include="System.Web" />
+    <Reference Include="System.Xml" />
+    <Reference Include="System.Configuration" />
+    <Reference Include="System.Web.Services" />
+    <Reference Include="System.EnterpriseServices" />
+  </ItemGroup>
+  <ItemGroup>
+    <Content Include="2.aspx" />
+    <Content Include="Content\bootstrap-theme.css" />
+    <Content Include="Content\bootstrap-theme.min.css" />
+    <Content Include="Content\bootstrap.css" />
+    <Content Include="Content\bootstrap.min.css" />
+    <Content Include="css\carrito.css" />
+    <Content Include="css\coolCheckboxes.css" />
+    <Content Include="css\nice-select.css" />
+    <Content Include="Encuesta.aspx" />
+    <Content Include="Carrito.aspx" />
+    <Content Include="consturccion_niñas.aspx" />
+    <Content Include="Heroinas_Niñas.aspx" />
+    <Content Include="Ima\bebes\Aprendizaje\Camaleón Fisher Price.jpg" />
+    <Content Include="Ima\bebes\Aprendizaje\Camaleón Fisher Price.txt" />
+    <Content Include="Ima\bebes\Aprendizaje\Coder Fisher Price.jpg" />
+    <Content Include="Ima\bebes\Aprendizaje\Coder Fisher Price.txt" />
+    <Content Include="Ima\bebes\Aprendizaje\Dino Pelotas Divertidas Fisher Price.jpg" />
+    <Content Include="Ima\bebes\Aprendizaje\Dino Pelotas Divertidas Fisher Price.txt" />
+    <Content Include="Ima\bebes\Aprendizaje\Juguete didáctico Rana Kids II Pop&amp;Giggle pond pal.jpg" />
+    <Content Include="Ima\bebes\Aprendizaje\Juguete didáctico Rana Kids II Pop&amp;Giggle pond pal.txt" />
+    <Content Include="Ima\bebes\Aprendizaje\Monstruo Come Discos Fisher Price.jpg" />
+    <Content Include="Ima\bebes\Aprendizaje\Monstruo Come Discos Fisher Price.txt" />
+    <Content Include="Ima\bebes\Aprendizaje\Monstruo Pelotas Saltarinas Fisher- Price.jpg" />
+    <Content Include="Ima\bebes\Aprendizaje\Monstruo Pelotas Saltarinas Fisher- Price.txt" />
+    <Content Include="Ima\bebes\Aprendizaje\Panel de Aprendizaje Fisher Price Ríe y Aprende.jpg" />
+    <Content Include="Ima\bebes\Aprendizaje\Panel de Aprendizaje Fisher Price Ríe y Aprende.txt" />
+    <Content Include="Ima\bebes\Aprendizaje\Ranas Saltarinas Kids II Bright Start.jpg" />
+    <Content Include="Ima\bebes\Aprendizaje\Ranas Saltarinas Kids II Bright Start.txt" />
+    <Content Include="Ima\bebes\Aprendizaje\Set Señor Cara de Papa Combinaciones.jpg" />
+    <Content Include="Ima\bebes\Aprendizaje\Set Señor Cara de Papa Combinaciones.txt" />
+    <Content Include="Ima\bebes\Aprendizaje\Set Señor Cara de Papa Playskool Papas Aventureras.jpg" />
+    <Content Include="Ima\bebes\Aprendizaje\Set Señor Cara de Papa Playskool Papas Aventureras.txt" />
+    <Content Include="Ima\bebes\Aprendizaje\Spinner Fisher-Price Think &amp; Learn.jpg" />
+    <Content Include="Ima\bebes\Aprendizaje\Spinner Fisher-Price Think &amp; Learn.txt" />
+    <Content Include="Ima\bebes\Aprendizaje\Teléfono Banana Kids II Brigth Start.jpg" />
+    <Content Include="Ima\bebes\Aprendizaje\Teléfono Banana Kids II Brigth Start.txt" />
+    <Content Include="Ima\bebes\bebes_Tapetes\Gimnasio Fisher Price auto convertible 3 en 1.jpg" />
+    <Content Include="Ima\bebes\bebes_Tapetes\Gimnasio Fisher Price auto convertible 3 en 1.txt" />
+    <Content Include="Ima\bebes\bebes_Tapetes\Gimnasio Fisher Price espejito musical.jpg" />
+    <Content Include="Ima\bebes\bebes_Tapetes\Gimnasio Fisher Price espejito musical.txt" />
+    <Content Include="Ima\bebes\bebes_Tapetes\Gimnasio Tiny Love City Safari sintético multicolor.jpg" />
+    <Content Include="Ima\bebes\bebes_Tapetes\Gimnasio Tiny Love City Safari sintético multicolor.txt" />
+    <Content Include="Ima\bebes\bebes_Tapetes\Gimnasio Tiny Love Debajo del mar.jpg" />
+    <Content Include="Ima\bebes\bebes_Tapetes\Gimnasio Tiny Love Debajo del mar.txt" />
+    <Content Include="Ima\bebes\bebes_Tapetes\Gimnasio Tiny Love Here I Grow unisex.jpg" />
+    <Content Include="Ima\bebes\bebes_Tapetes\Gimnasio Tiny Love Here I Grow unisex.txt" />
+    <Content Include="Ima\bebes\bebes_Tapetes\Gimnasio Tiny Love mis amigos musicales.jpg" />
+    <Content Include="Ima\bebes\bebes_Tapetes\Gimnasio Tiny Love mis amigos musicales.txt" />
+    <Content Include="Ima\bebes\bebes_Tapetes\Mon Caramel Tapete Didáctico.jpg" />
+    <Content Include="Ima\bebes\bebes_Tapetes\Mon Caramel Tapete Didáctico.txt" />
+    <Content Include="Ima\bebes\bebes_Tapetes\Tapete Armable Goplas Disney Cars 3.jpg" />
+    <Content Include="Ima\bebes\bebes_Tapetes\Tapete Armable Goplas Disney Cars 3.txt" />
+    <Content Include="Ima\bebes\bebes_Tapetes\Tapete Armable Goplas Paw Patrol.jpg" />
+    <Content Include="Ima\bebes\bebes_Tapetes\Tapete Armable Goplas Paw Patrol.txt" />
+    <Content Include="Ima\bebes\bebes_Tapetes\Tapete de actividades Tiny Love unisex.jpg" />
+    <Content Include="Ima\bebes\bebes_Tapetes\Tapete de actividades Tiny Love unisex.txt" />
+    <Content Include="Ima\bebes\Recien nacidos\Centro de entretenimiento Infanti Web verde.jpg" />
+    <Content Include="Ima\bebes\Recien nacidos\Centro de entretenimiento Infanti Web verde.txt" />
+    <Content Include="Ima\bebes\Recien nacidos\Colgante para carriola Ski Hop 0m+.jpg" />
+    <Content Include="Ima\bebes\Recien nacidos\Colgante para carriola Ski Hop 0m+.txt" />
+    <Content Include="Ima\bebes\Recien nacidos\Juguete didáctico Mon Caramel.jpg" />
+    <Content Include="Ima\bebes\Recien nacidos\Juguete didáctico Mon Caramel.txt" />
+    <Content Include="Ima\bebes\Recien nacidos\Juguete didáctico Skip Hop Follow-Bee 5 m+.jpg" />
+    <Content Include="Ima\bebes\Recien nacidos\Juguete didáctico Skip Hop Follow-Bee 5 m+.txt" />
+    <Content Include="Ima\bebes\Recien nacidos\Juguete didáctico Tiny Love unisex.jpg" />
+    <Content Include="Ima\bebes\Recien nacidos\Juguete didáctico Tiny Love unisex.txt" />
+    <Content Include="Ima\bebes\Recien nacidos\Mordedera Fisher Price Jirafa de la Selva.jpg" />
+    <Content Include="Ima\bebes\Recien nacidos\Mordedera Fisher Price Jirafa de la Selva.txt" />
+    <Content Include="Ima\bebes\Recien nacidos\Señor Cara de Papa Star Wars BB-8.jpg" />
+    <Content Include="Ima\bebes\Recien nacidos\Señor Cara de Papa Star Wars BB-8.txt" />
+    <Content Include="Ima\bebes\Recien nacidos\Titeres Mon Caramel unisex.jpg" />
+    <Content Include="Ima\bebes\Recien nacidos\Titeres Mon Caramel unisex.txt" />
+    <Content Include="Ima\deli.png" />
+    <Content Include="Ima\Niñas bellas\construccion\Ana Frozen - Lego.jpg" />
+    <Content Include="Ima\Niñas bellas\construccion\Ana Frozen - Lego.txt" />
+    <Content Include="Ima\Niñas bellas\construccion\Batichica Bat Jet - Lego.jpg" />
+    <Content Include="Ima\Niñas bellas\construccion\Batichica Bat Jet - Lego.txt" />
+    <Content Include="Ima\Niñas bellas\construccion\Bloques de Construcción - Casa de Masha.jpg" />
+    <Content Include="Ima\Niñas bellas\construccion\Bloques de Construcción - Casa de Masha.txt" />
+    <Content Include="Ima\Niñas bellas\construccion\Bloques Masha.jpg" />
+    <Content Include="Ima\Niñas bellas\construccion\Bloques Masha.txt" />
+    <Content Include="Ima\Niñas bellas\construccion\Carro Nave - Lashina.jpg" />
+    <Content Include="Ima\Niñas bellas\construccion\Carro Nave - Lashina.txt" />
+    <Content Include="Ima\Niñas bellas\construccion\Castillo Encantado Bella - Lego.jpg" />
+    <Content Include="Ima\Niñas bellas\construccion\Castillo Encantado Bella - Lego.txt" />
+    <Content Include="Ima\Niñas bellas\construccion\Cofre con Oso - Set de Contrucción.jpg" />
+    <Content Include="Ima\Niñas bellas\construccion\Cofre con Oso - Set de Contrucción.txt" />
+    <Content Include="Ima\Niñas bellas\construccion\Comic Cafe - Lego.jpg" />
+    <Content Include="Ima\Niñas bellas\construccion\Comic Cafe - Lego.txt" />
+    <Content Include="Ima\Niñas bellas\construccion\Crear y jugar.jpg" />
+    <Content Include="Ima\Niñas bellas\construccion\Crear y jugar.txt" />
+    <Content Include="Ima\Niñas bellas\construccion\First Builders Grande Rosa Niña.jpg" />
+    <Content Include="Ima\Niñas bellas\construccion\First Builders Grande Rosa Niña.txt" />
+    <Content Include="Ima\Niñas bellas\construccion\Helicoptero Bumble Bee - Lego.jpg" />
+    <Content Include="Ima\Niñas bellas\construccion\Helicoptero Bumble Bee - Lego.txt" />
+    <Content Include="Ima\Niñas bellas\construccion\Jardin de Masha - Set Construcción.jpg" />
+    <Content Include="Ima\Niñas bellas\construccion\Jardin de Masha - Set Construcción.txt" />
+    <Content Include="Ima\Niñas bellas\construccion\Juego de Construccion para niños Hello Kitty.jpg" />
+    <Content Include="Ima\Niñas bellas\construccion\Juego de construcción para niños Hello Kitty.txt" />
+    <Content Include="Ima\Niñas bellas\construccion\La Caravana de Dora.jpg" />
+    <Content Include="Ima\Niñas bellas\construccion\La Caravana de Dora.txt" />
+    <Content Include="Ima\Niñas bellas\construccion\Lego - Ariel y el Hechizo Mágico.jpg" />
+    <Content Include="Ima\Niñas bellas\construccion\Lego - Ariel y el Hechizo Mágico.txt" />
+    <Content Include="Ima\Niñas bellas\construccion\Lego - Búnker Secreto de Batgirl.jpg" />
+    <Content Include="Ima\Niñas bellas\construccion\Lego - Búnker Secreto de Batgirl.txt" />
+    <Content Include="Ima\Niñas bellas\construccion\Lego - Castillo Frozen.jpg" />
+    <Content Include="Ima\Niñas bellas\construccion\Lego - Castillo Frozen.txt" />
+    <Content Include="Ima\Niñas bellas\construccion\Lego - Fábrica de Kryptonita de Lena Luthor.jpg" />
+    <Content Include="Ima\Niñas bellas\construccion\Lego - Fábrica de Kryptonita de Lena Luthor.txt" />
+    <Content Include="Ima\Niñas bellas\construccion\Lego - Noche Encantada de Cenicienta.jpg" />
+    <Content Include="Ima\Niñas bellas\construccion\Lego - Noche Encantada de Cenicienta.txt" />
+    <Content Include="Ima\Niñas bellas\construccion\Lego - Palacio Oscuro de Eclipso.jpg" />
+    <Content Include="Ima\Niñas bellas\construccion\Lego - Palacio Oscuro de Eclipso.txt" />
+    <Content Include="Ima\Niñas bellas\construccion\Maleta Princesas.jpg" />
+    <Content Include="Ima\Niñas bellas\construccion\Maleta Princesas.txt" />
+    <Content Include="Ima\Niñas bellas\construccion\Masha y El Oso - Set de Construccón.jpg" />
+    <Content Include="Ima\Niñas bellas\construccion\Masha y El Oso - Set de Construccón.txt" />
+    <Content Include="Ima\Niñas bellas\construccion\Moana Kayak - Lego.jpg" />
+    <Content Include="Ima\Niñas bellas\construccion\Moana Kayak - Lego.txt" />
+    <Content Include="Ima\Niñas bellas\construccion\Super Hero Girls - Escuela Lego.jpg" />
+    <Content Include="Ima\Niñas bellas\construccion\Super Hero Girls - Escuela Lego.txt" />
+    <Content Include="Ima\Niñas bellas\construccion\Wonder Woman - Lego.jpg" />
+    <Content Include="Ima\Niñas bellas\construccion\Wonder Woman - Lego.txt" />
+    <Content Include="Ima\Niñas bellas\Heroinas\Accesorios Super Girl.jpg" />
+    <Content Include="Ima\Niñas bellas\Heroinas\Accesorios Super Girl.txt" />
+    <Content Include="Ima\Niñas bellas\Heroinas\Amigas Barbie Escuadron Secreto.jpg" />
+    <Content Include="Ima\Niñas bellas\Heroinas\Amigas Barbie Escuadron Secreto.txt" />
+    <Content Include="Ima\Niñas bellas\Heroinas\Barbie Agente Secreto.jpg" />
+    <Content Include="Ima\Niñas bellas\Heroinas\Barbie Agente Secreto.txt" />
+    <Content Include="Ima\Niñas bellas\Heroinas\Batgirl - Batilanzador.jpg" />
+    <Content Include="Ima\Niñas bellas\Heroinas\Batgirl - Batilanzador.txt" />
+    <Content Include="Ima\Niñas bellas\Heroinas\Batichica.jpg" />
+    <Content Include="Ima\Niñas bellas\Heroinas\Batichica.txt" />
+    <Content Include="Ima\Niñas bellas\Heroinas\batichida.jpg" />
+    <Content Include="Ima\Niñas bellas\Heroinas\Chicas Superpoderosas Bellota - Muñeca Grande.jpg" />
+    <Content Include="Ima\Niñas bellas\Heroinas\Chicas Superpoderosas Bellota - Muñeca Grande.txt" />
+    <Content Include="Ima\Niñas bellas\Heroinas\Chicas Superpoderosas Bombon- Muñeca Grande.jpg" />
+    <Content Include="Ima\Niñas bellas\Heroinas\Chicas Superpoderosas Bombon- Muñeca Grande.txt" />
+    <Content Include="Ima\Niñas bellas\Heroinas\Chicas Superpoderosas Burbuja - Muñeca Grande.jpg" />
+    <Content Include="Ima\Niñas bellas\Heroinas\Chicas Superpoderosas Burbuja - Muñeca Grande.txt" />
+    <Content Include="Ima\Niñas bellas\Heroinas\DC Super Hero Girls - Super Bus de Lujo.jpg" />
+    <Content Include="Ima\Niñas bellas\Heroinas\DC Super Hero Girls - Super Bus de Lujo.txt" />
+    <Content Include="Ima\Niñas bellas\Heroinas\DC Super Hero Girls-supergirl.jpg" />
+    <Content Include="Ima\Niñas bellas\Heroinas\DC Super Hero Girls-supergirl.txt" />
+    <Content Include="Ima\Niñas bellas\Heroinas\Escudo Wonder Woman.jpg" />
+    <Content Include="Ima\Niñas bellas\Heroinas\Escudo Wonder Woman.txt" />
+    <Content Include="Ima\Niñas bellas\Heroinas\Figura LadyBug + Accesorios.jpg" />
+    <Content Include="Ima\Niñas bellas\Heroinas\Figura LadyBug + Accesorios.txt" />
+    <Content Include="Ima\Niñas bellas\Heroinas\Ladybug y Tikki en su Motoneta.jpg" />
+    <Content Include="Ima\Niñas bellas\Heroinas\Ladybug y Tikki en su Motoneta.txt" />
+    <Content Include="Ima\Niñas bellas\Heroinas\maravillachida.jpg" />
+    <Content Include="Ima\Niñas bellas\Heroinas\Mujer maravilla.jpg" />
+    <Content Include="Ima\Niñas bellas\Heroinas\Mujer maravilla.txt" />
+    <Content Include="Ima\Niñas bellas\Heroinas\Muñeca Lady Bug.jpg" />
+    <Content Include="Ima\Niñas bellas\Heroinas\Muñeca Lady Bug.txt" />
+    <Content Include="Ima\Niñas bellas\Heroinas\Resortera - Super Hero Girls.jpg" />
+    <Content Include="Ima\Niñas bellas\Heroinas\Resortera - Super Hero Girls.txt" />
+    <Content Include="Ima\Niñas bellas\Heroinas\Super Here Girls - Heroe de Acción.jpg" />
+    <Content Include="Ima\Niñas bellas\Heroinas\Super Here Girls - Heroe de Acción.txt" />
+    <Content Include="Ima\Niñas bellas\Heroinas\Super Hero Girls - Jet Mattel.jpg" />
+    <Content Include="Ima\Niñas bellas\Heroinas\Super Hero Girls - Jet Mattel.txt" />
+    <Content Include="Ima\Niñas bellas\Heroinas\Super Hero Girls - Voladora.jpg" />
+    <Content Include="Ima\Niñas bellas\Heroinas\Super Hero Girls - Voladora.txt" />
+    <Content Include="Ima\Niñas bellas\Heroinas\Super Hero Girls High School.jpg" />
+    <Content Include="Ima\Niñas bellas\Heroinas\Super Hero Girls High School.txt" />
+    <Content Include="Ima\Niñas bellas\Heroinas\Supergirl.jpg" />
+    <Content Include="Ima\Niñas bellas\Heroinas\Supergirl.txt" />
+    <Content Include="Ima\Niñas bellas\Heroinas\Walkie Talkies - Super Hero Girls.jpg" />
+    <Content Include="Ima\Niñas bellas\Heroinas\Walkie Talkies - Super Hero Girls.txt" />
+    <Content Include="Ima\Niñas bellas\Heroinas\Wonder Woman - Jet Invisible.jpg" />
+    <Content Include="Ima\Niñas bellas\Heroinas\Wonder Woman - Jet Invisible.txt" />
+    <Content Include="Ima\Niñas bellas\Heroinas\Wonder Woman - Muñeca.jpg" />
+    <Content Include="Ima\Niñas bellas\Heroinas\Wonder Woman - Muñeca.txt" />
+    <Content Include="Ima\Niñas bellas\manuealidades\4 Pack Repuesto Doh Vinci.jpg" />
+    <Content Include="Ima\Niñas bellas\manuealidades\4 Pack Repuesto Doh Vinci.txt" />
+    <Content Include="Ima\Niñas bellas\manuealidades\Barbie Gira y Diseña.jpg" />
+    <Content Include="Ima\Niñas bellas\manuealidades\Barbie Gira y Diseña.txt" />
+    <Content Include="Ima\Niñas bellas\manuealidades\Cool Maker - Sew Cool.jpg" />
+    <Content Include="Ima\Niñas bellas\manuealidades\Cool Maker - Sew Cool.txt" />
+    <Content Include="Ima\Niñas bellas\manuealidades\Crea y Diseña tu Colcha - Sew Cool.jpg" />
+    <Content Include="Ima\Niñas bellas\manuealidades\Crea y Diseña tu Colcha - Sew Cool.txt" />
+    <Content Include="Ima\Niñas bellas\manuealidades\Diseño de Modas - Sew Cool.jpg" />
+    <Content Include="Ima\Niñas bellas\manuealidades\Diseño de Modas - Sew Cool.txt" />
+    <Content Include="Ima\Niñas bellas\manuealidades\Doh Vinci - Kit de decoraciones creativas.jpg" />
+    <Content Include="Ima\Niñas bellas\manuealidades\Doh Vinci - Kit de decoraciones creativas.txt" />
+    <Content Include="Ima\Niñas bellas\manuealidades\Doh Vinci - Mega Estudio de Arte.jpg" />
+    <Content Include="Ima\Niñas bellas\manuealidades\Doh Vinci - Mega Estudio de Arte.txt" />
+    <Content Include="Ima\Niñas bellas\manuealidades\Doh Vinci - Trolls Wall Art.jpg" />
+    <Content Include="Ima\Niñas bellas\manuealidades\Doh Vinci - Trolls Wall Art.txt" />
+    <Content Include="Ima\Niñas bellas\manuealidades\Doh Vinci Decoración 3D.jpg" />
+    <Content Include="Ima\Niñas bellas\manuealidades\Doh Vinci Decoración 3D.txt" />
+    <Content Include="Ima\Niñas bellas\manuealidades\Doh Vinci Fotos con Estilo.jpg" />
+    <Content Include="Ima\Niñas bellas\manuealidades\Doh Vinci Fotos con Estilo.txt" />
+    <Content Include="Ima\Niñas bellas\manuealidades\Doh Vinci Joyero Secreto.jpg" />
+    <Content Include="Ima\Niñas bellas\manuealidades\Doh Vinci Joyero Secreto.txt" />
+    <Content Include="Ima\Niñas bellas\manuealidades\Doh Vinci Kit Diseño de Lujo.jpg" />
+    <Content Include="Ima\Niñas bellas\manuealidades\Doh Vinci Kit Diseño de Lujo.txt" />
+    <Content Include="Ima\Niñas bellas\manuealidades\Doh Vinci Styler - Starter Kit.jpg" />
+    <Content Include="Ima\Niñas bellas\manuealidades\Doh Vinci Styler - Starter Kit.txt" />
+    <Content Include="Ima\Niñas bellas\manuealidades\Fabrica de Malteadas y Paletas Deliciosas.jpg" />
+    <Content Include="Ima\Niñas bellas\manuealidades\Fabrica de Malteadas y Paletas Deliciosas.txt" />
+    <Content Include="Ima\Niñas bellas\manuealidades\Frame Frenzy Kit - Doh Vinci.jpg" />
+    <Content Include="Ima\Niñas bellas\manuealidades\Frame Frenzy Kit - Doh Vinci.txt" />
+    <Content Include="Ima\Niñas bellas\manuealidades\Gel a Peel - Set de Incio.jpg" />
+    <Content Include="Ima\Niñas bellas\manuealidades\Gel a Peel - Set de Incio.txt" />
+    <Content Include="Ima\Niñas bellas\manuealidades\Kit Telas Jumbo - Sew Cool.jpg" />
+    <Content Include="Ima\Niñas bellas\manuealidades\Kit Telas Jumbo - Sew Cool.txt" />
+    <Content Include="Ima\Niñas bellas\manuealidades\Letrero para Puerta-Doh Vinci.jpg" />
+    <Content Include="Ima\Niñas bellas\manuealidades\Letrero para Puerta-Doh Vinci.txt" />
+    <Content Include="Ima\Niñas bellas\manuealidades\Maquina de Coser - Mi Alegría.jpg" />
+    <Content Include="Ima\Niñas bellas\manuealidades\Maquina de Coser - Mi Alegría.txt" />
+    <Content Include="Ima\Niñas bellas\manuealidades\Maquina de Coser Sew Cool.jpg" />
+    <Content Include="Ima\Niñas bellas\manuealidades\Maquina de Coser Sew Cool.txt" />
+    <Content Include="Ima\Niñas bellas\manuealidades\Poppit Hacer Creacion , Paq Inicial.jpg" />
+    <Content Include="Ima\Niñas bellas\manuealidades\Poppit Hacer Creacion , Paq Inicial.txt" />
+    <Content Include="Ima\Niñas bellas\manuealidades\Poppit Paq. De Masa Moldeable Arcilla.jpg" />
+    <Content Include="Ima\Niñas bellas\manuealidades\Poppit Paq. De Masa Moldeable Arcilla.txt" />
+    <Content Include="Ima\Niñas bellas\manuealidades\Poppit Paq. De Recarga Masa Moldeable.jpg" />
+    <Content Include="Ima\Niñas bellas\manuealidades\Poppit Paq. De Recarga Masa Moldeable.txt" />
+    <Content Include="Ima\Niñas bellas\manuealidades\Repuestos Sew Cool.jpg" />
+    <Content Include="Ima\Niñas bellas\manuealidades\Repuestos Sew Cool.txt" />
+    <Content Include="Ima\Niñas bellas\manuealidades\Set Doh Vinci 70+.jpg" />
+    <Content Include="Ima\Niñas bellas\manuealidades\Set Doh Vinci 70+.txt" />
+    <Content Include="Ima\Niños2\Autopistas\2 Super Truck con Accesorios.jpg" />
+    <Content Include="Ima\Niños2\Autopistas\2 Super Truck con Accesorios.txt" />
+    <Content Include="Ima\Niños2\Autopistas\4R Parking 2 Plantas Restaurante.jpg" />
+    <Content Include="Ima\Niños2\Autopistas\4R Parking 2 Plantas Restaurante.txt" />
+    <Content Include="Ima\Niños2\Autopistas\Blaze Pista Estadio Monster Dome.jpg" />
+    <Content Include="Ima\Niños2\Autopistas\Blaze Pista Estadio Monster Dome.txt" />
+    <Content Include="Ima\Niños2\Autopistas\Cars Movie Pistas Historia Varios Modelos.jpg" />
+    <Content Include="Ima\Niños2\Autopistas\Cars Movie Pistas Historia Varios Modelos.txt" />
+    <Content Include="Ima\Niños2\Autopistas\Garage de la copa pistón Cars.jpg" />
+    <Content Include="Ima\Niños2\Autopistas\Garage de la copa pistón Cars.txt" />
+    <Content Include="Ima\Niños2\Autopistas\Go Nintendo Mario Kart 8 %28Mario+Luigi%29 4,9 M.jpg" />
+    <Content Include="Ima\Niños2\Autopistas\Go Nintendo Mario Kart 8 %28Mario+Luigi%29 4,9 M.txt" />
+    <Content Include="Ima\Niños2\Autopistas\Hot Wheels Carrera Súper Explosiva.jpg" />
+    <Content Include="Ima\Niños2\Autopistas\Hot Wheels Carrera Súper Explosiva.txt" />
+    <Content Include="Ima\Niños2\Autopistas\Hot Wheels Circuito de Carreras I.A..jpg" />
+    <Content Include="Ima\Niños2\Autopistas\Hot Wheels Circuito de Carreras I.A..txt" />
+    <Content Include="Ima\Niños2\Autopistas\Hot Wheels City Pista Tiburón Devorador.jpg" />
+    <Content Include="Ima\Niños2\Autopistas\Hot Wheels City Pista Tiburón Devorador.txt" />
+    <Content Include="Ima\Niños2\Autopistas\Hot Wheels Pista Acrobática Loop and Jump.jpg" />
+    <Content Include="Ima\Niños2\Autopistas\Hot Wheels Pista Acrobática Loop and Jump.txt" />
+    <Content Include="Ima\Niños2\Autopistas\Hot Wheels Pista Doble Looping.jpg" />
+    <Content Include="Ima\Niños2\Autopistas\Hot Wheels Pista Doble Looping.txt" />
+    <Content Include="Ima\Niños2\Autopistas\Hot Wheels Pista Multiacrobática.jpg" />
+    <Content Include="Ima\Niños2\Autopistas\Hot Wheels Pista Multiacrobática.txt" />
+    <Content Include="Ima\Niños2\Autopistas\Hot Wheels Pista Sierra Veloz.jpg" />
+    <Content Include="Ima\Niños2\Autopistas\Hot Wheels Pista Sierra Veloz.txt" />
+    <Content Include="Ima\Niños2\Autopistas\Hot Wheels Pista Supercore.jpg" />
+    <Content Include="Ima\Niños2\Autopistas\Hot Wheels Pista Supercore.txt" />
+    <Content Include="Ima\Niños2\Autopistas\Mattel Duelo de T-Rex Hot Wheels.jpg" />
+    <Content Include="Ima\Niños2\Autopistas\Mattel Duelo de T-Rex Hot Wheels.txt" />
+    <Content Include="Ima\Niños2\Autopistas\Mega Garage Hot Wheels.jpg" />
+    <Content Include="Ima\Niños2\Autopistas\Mega Garage Hot Wheels.txt" />
+    <Content Include="Ima\Niños2\Autopistas\Pista Hot Wheels DC Comics Baticueva.jpg" />
+    <Content Include="Ima\Niños2\Autopistas\Pista Hot Wheels DC Comics Baticueva.txt" />
+    <Content Include="Ima\Niños2\Autopistas\Pista Hot Wheels Dragón Explosivo.jpg" />
+    <Content Include="Ima\Niños2\Autopistas\Pista Hot Wheels Dragón Explosivo.txt" />
+    <Content Include="Ima\Niños2\Autopistas\Pista Hot Wheels Interactiva.jpg" />
+    <Content Include="Ima\Niños2\Autopistas\Pista Hot Wheels Interactiva.txt" />
+    <Content Include="Ima\Niños2\Autopistas\Pista Hot Wheels Megarrobot Destructor.jpg" />
+    <Content Include="Ima\Niños2\Autopistas\Pista Hot Wheels Megarrobot Destructor.txt" />
+    <Content Include="Ima\Niños2\Autopistas\Pista Thomas &amp; Friends Aventura Industria.txt" />
+    <Content Include="Ima\Niños2\Autopistas\Pista Thomas &amp; Friends Aventura Industrial.jpg" />
+    <Content Include="Ima\Niños2\Autopistas\Rayo McQueen Cars.jpg" />
+    <Content Include="Ima\Niños2\Autopistas\Rayo McQueen Cars.txt" />
+    <Content Include="Ima\Niños2\Autopistas\Spin Bikes super Looping Set %282 Motos+3 Loopings+4 Rectas+Rampa+Tarjeta%29.jpg" />
+    <Content Include="Ima\Niños2\Autopistas\Spin Bikes super Looping Set %282 Motos+3 Loopings+4 Rectas+Rampa+Tarjeta%29.txt" />
+    <Content Include="Ima\Niños2\Autopistas\Thomas &amp; Friends Circuito de la Selva.jpg" />
+    <Content Include="Ima\Niños2\Autopistas\Thomas &amp; Friends Circuito de la Selva.txt" />
+    <Content Include="Ima\Niños2\Autopistas\Tut Tut Bólidos Estación de Bomberos + Chema el Bombero.jpg" />
+    <Content Include="Ima\Niños2\Autopistas\Tut Tut Bólidos Estación de Bomberos + Chema el Bombero.txt" />
+    <Content Include="Ima\Niños2\Construccion\Bloques Magnéticos 130 Piezas.jpg" />
+    <Content Include="Ima\Niños2\Construccion\Bloques Magnéticos 130 Piezas.txt" />
+    <Content Include="Ima\Niños2\Construccion\Construye tu Camión Excavadora.jpg" />
+    <Content Include="Ima\Niños2\Construccion\Construye tu Camión Excavadora.txt" />
+    <Content Include="Ima\Niños2\Construccion\Construye tu Todoterreno.jpg" />
+    <Content Include="Ima\Niños2\Construccion\Construye tu Todoterreno.txt" />
+    <Content Include="Ima\Niños2\Construccion\Juguettos Construcción Policía Marítima.jpg" />
+    <Content Include="Ima\Niños2\Construccion\Juguettos Construcción Policía Marítima.txt" />
+    <Content Include="Ima\Niños2\Construccion\LEGO Arquitecture Fontana de Trevi 21020.jpg" />
+    <Content Include="Ima\Niños2\Construccion\LEGO Arquitecture Fontana de Trevi 21020.txt" />
+    <Content Include="Ima\Niños2\Construccion\LEGO Classic Caja de Ladrillos Creativos Mediana 10696.jpg" />
+    <Content Include="Ima\Niños2\Construccion\LEGO Classic Caja de Ladrillos Creativos Mediana 10696.txt" />
+    <Content Include="Ima\Niños2\Construccion\LEGO Comics Batman Persecución en Moto por Gothan City 76053.jpg" />
+    <Content Include="Ima\Niños2\Construccion\LEGO Comics Batman Persecución en Moto por Gothan City 76053.txt" />
+    <Content Include="Ima\Niños2\Construccion\LEGO Crator Bar de la Esquina 31050.jpg" />
+    <Content Include="Ima\Niños2\Construccion\LEGO Crator Bar de la Esquina 31050.txt" />
+    <Content Include="Ima\Niños2\Construccion\LEGO Duplo Town Jungla 10804.jpg" />
+    <Content Include="Ima\Niños2\Construccion\LEGO Duplo Town Jungla 10804.txt" />
+    <Content Include="Ima\Niños2\Construccion\LEGO Juniors Camión de la Basura 10680.jpg" />
+    <Content Include="Ima\Niños2\Construccion\LEGO Juniors Camión de la Basura 10680.txt" />
+    <Content Include="Ima\Niños2\Construccion\LEGO Juniors La Guarida de Spiderman 10687.jpg" />
+    <Content Include="Ima\Niños2\Construccion\LEGO Juniors La Guarida de Spiderman 10687.txt" />
+    <Content Include="Ima\Niños2\Construccion\LEGO Marvel Confidential Capitain America Movie 1 76050.jpg" />
+    <Content Include="Ima\Niños2\Construccion\LEGO Marvel Confidential Capitain America Movie 1 76050.txt" />
+    <Content Include="Ima\Niños2\Construccion\LEGO Marvel Los Vengadores Vs Hydra 76030.jpg" />
+    <Content Include="Ima\Niños2\Construccion\LEGO Marvel Los Vengadores Vs Hydra 76030.txt" />
+    <Content Include="Ima\Niños2\Construccion\LEGO Minecraft el Fuerte del Desierto 21121.jpg" />
+    <Content Include="Ima\Niños2\Construccion\LEGO Minecraft el Fuerte del Desierto 21121.txt" />
+    <Content Include="Ima\Niños2\Construccion\LEGO Minecraft La Primera Noche 21115.jpg" />
+    <Content Include="Ima\Niños2\Construccion\LEGO Minecraft La Primera Noche 21115.txt" />
+    <Content Include="Ima\Niños2\Construccion\LEGO Nexo Knights Confidential BB 2016 PT 1 70310.jpg" />
+    <Content Include="Ima\Niños2\Construccion\LEGO Nexo Knights Confidential BB 2016 PT 1 70310.txt" />
+    <Content Include="Ima\Niños2\Construccion\LEGO Nexo Knights El Vehículo Malvado de Jestro.jpg" />
+    <Content Include="Ima\Niños2\Construccion\LEGO Nexo Knights El Vehículo Malvado de Jestro.txt" />
+    <Content Include="Ima\Niños2\Construccion\LEGO Ninjago Dragón de Cole 70599.jpg" />
+    <Content Include="Ima\Niños2\Construccion\LEGO Ninjago Dragón de Cole 70599.txt" />
+    <Content Include="Ima\Niños2\Construccion\LEGO Ninjago Ronin R.E.X. 70735.jpg" />
+    <Content Include="Ima\Niños2\Construccion\LEGO Ninjago Ronin R.E.X. 70735.txt" />
+    <Content Include="Ima\Niños2\Construccion\LEGO Star Wars 4 %28 PELICULA 2015%29 75102.jpg" />
+    <Content Include="Ima\Niños2\Construccion\LEGO Star Wars 4 %28 PELICULA 2015%29 75102.txt" />
+    <Content Include="Ima\Niños2\Construccion\LEGO Star Wars Death Star 10188.jpg" />
+    <Content Include="Ima\Niños2\Construccion\LEGO Star Wars Death Star 10188.txt" />
+    <Content Include="Ima\Niños2\Construccion\LEGO Star Wars Microfighter Confidential Microfighter The Gost 75127.jpg" />
+    <Content Include="Ima\Niños2\Construccion\LEGO Star Wars Microfighter Confidential Microfighter The Gost 75127.txt" />
+    <Content Include="Ima\Niños2\Construccion\Mega Bloks Minions Huída en el Coche.jpg" />
+    <Content Include="Ima\Niños2\Construccion\Mega Bloks Minions Huída en el Coche.txt" />
+    <Content Include="Ima\Niños2\Construccion\Mega Bolsa de Construcción.jpg" />
+    <Content Include="Ima\Niños2\Construccion\Mega Bolsa de Construcción.txt" />
+    <Content Include="Ima\Niños2\fig. accion\Avengers Falcon Figura Electrónica.jpg" />
+    <Content Include="Ima\Niños2\fig. accion\Avengers Falcon Figura Electrónica.txt" />
+    <Content Include="Ima\Niños2\fig. accion\Batman Figura Grande.jpg" />
+    <Content Include="Ima\Niños2\fig. accion\Batman Figura Grande.txt" />
+    <Content Include="Ima\Niños2\fig. accion\Batman V Superman Figura Superhéroe.jpg" />
+    <Content Include="Ima\Niños2\fig. accion\Batman V Superman Figura Superhéroe.txt" />
+    <Content Include="Ima\Niños2\fig. accion\Dinofroz Figura Varios Modelos.jpg" />
+    <Content Include="Ima\Niños2\fig. accion\Dinofroz Figura Varios Modelos.txt" />
+    <Content Include="Ima\Niños2\fig. accion\Fig. Colección Capitan America.jpg" />
+    <Content Include="Ima\Niños2\fig. accion\Fig. Colección Capitan America.txt" />
+    <Content Include="Ima\Niños2\fig. accion\Fig. Dr. Octopus + Accesorios..jpg" />
+    <Content Include="Ima\Niños2\fig. accion\Fig. Dr. Octopus + Accesorios..txt" />
+    <Content Include="Ima\Niños2\fig. accion\Fig. War Machine Electronico..jpg" />
+    <Content Include="Ima\Niños2\fig. accion\Fig. War Machine Electronico..txt" />
+    <Content Include="Ima\Niños2\fig. accion\Figura Electrónica Hasbro Star Wars Elite Praetorian Guard.jpg" />
+    <Content Include="Ima\Niños2\fig. accion\Figura Electrónica Hasbro Star Wars Elite Praetorian Guard.txt" />
+    <Content Include="Ima\Niños2\fig. accion\Iron Man - Fig. Colección 12.jpg" />
+    <Content Include="Ima\Niños2\fig. accion\Iron Man - Fig. Colección 12.txt" />
+    <Content Include="Ima\Niños2\fig. accion\Juguettos T-Rex Transformable.jpg" />
+    <Content Include="Ima\Niños2\fig. accion\Juguettos T-Rex Transformable.txt" />
+    <Content Include="Ima\Niños2\fig. accion\Marvel Avengers Surtido.jpg" />
+    <Content Include="Ima\Niños2\fig. accion\Marvel Avengers Surtido.txt" />
+    <Content Include="Ima\Niños2\fig. accion\Max Steel - Mega Explosión.jpg" />
+    <Content Include="Ima\Niños2\fig. accion\Max Steel - Mega Explosión.txt" />
+    <Content Include="Ima\Niños2\fig. accion\Power Rangers Megazord SúperMegaforce.jpg" />
+    <Content Include="Ima\Niños2\fig. accion\Power Rangers Megazord SúperMegaforce.txt" />
+    <Content Include="Ima\Niños2\fig. accion\Power Rangers Ranger Armadura Dx Súper Megaforce.jpg" />
+    <Content Include="Ima\Niños2\fig. accion\Power Rangers Ranger Armadura Dx Súper Megaforce.txt" />
+    <Content Include="Ima\Niños2\fig. accion\Spider-Man Figuras Titan.jpg" />
+    <Content Include="Ima\Niños2\fig. accion\Spider-Man Figuras Titan.txt" />
+    <Content Include="Ima\Niños2\fig. accion\Spiderman - Legends Series.jpg" />
+    <Content Include="Ima\Niños2\fig. accion\Spiderman - Legends Series.txt" />
+    <Content Include="Ima\Niños2\fig. accion\The Avengers Titan Hero Figuras.jpg" />
+    <Content Include="Ima\Niños2\fig. accion\The Avengers Titan Hero Figuras.txt" />
+    <Content Include="Ima\Niños2\fig. accion\The Avengers Titan Hero Hulk.jpg" />
+    <Content Include="Ima\Niños2\fig. accion\The Avengers Titan Hero Hulk.txt" />
+    <Content Include="Ima\Niños2\fig. accion\Tortugas Ninja Figuras Mutations Tortuga a Tortuga Ninja.jpg" />
+    <Content Include="Ima\Niños2\fig. accion\Tortugas Ninja Figuras Mutations Tortuga a Tortuga Ninja.txt" />
+    <Content Include="Ima\Niños2\fig. accion\Transformers Miinicon-deployers.jpg" />
+    <Content Include="Ima\Niños2\fig. accion\Transformers Miinicon-deployers.txt" />
+    <Content Include="Ima\Niños2\fig. accion\Transformers Mini Cons.jpg" />
+    <Content Include="Ima\Niños2\fig. accion\Transformers Mini Cons.txt" />
+    <Content Include="Ima\Niños2\fig. accion\Twin Cast and Autobot Blaster Transformers Titans Return Leader Class Doomshot and Megatron Transformers Titans Return Voyager.jpg" />
+    <Content Include="Ima\Niños2\fig. accion\Twin Cast and Autobot Blaster Transformers Titans Return Leader Class Doomshot and Megatron Transformers Titans Return Voyager.txt" />
+    <Content Include="Ima\Niños2\fig. accion\Wolverine Marvel X-Men Legends Series 6 Pulg.jpg" />
+    <Content Include="Ima\Niños2\fig. accion\Wolverine Marvel X-Men Legends Series 6 Pulg.txt" />
+    <Content Include="Ima\Niños2\fig. accion\WWE Figura Double Attack.jpg" />
+    <Content Include="Ima\Niños2\fig. accion\WWE Figura Double Attack.txt" />
+    <Content Include="Ima\Niños2\fig. accion\X MEN Legends.jpg" />
+    <Content Include="Ima\Niños2\fig. accion\X MEN Legends.txt" />
+    <Content Include="Ima\Niños2\Lanzadores\Ballesta Nerf Zombie Strike.jpg" />
+    <Content Include="Ima\Niños2\Lanzadores\Ballesta Nerf Zombie Strike.txt" />
+    <Content Include="Ima\Niños2\Lanzadores\Dardos Nerf Rival Refill 25.jpg" />
+    <Content Include="Ima\Niños2\Lanzadores\Dardos Nerf Rival Refill 25.txt" />
+    <Content Include="Ima\Niños2\Lanzadores\Hasbro Nerf Zombie Strike Brainsaw.jpg" />
+    <Content Include="Ima\Niños2\Lanzadores\Hasbro Nerf Zombie Strike Brainsaw.txt" />
+    <Content Include="Ima\Niños2\Lanzadores\Lanza Dardos Batman.jpg" />
+    <Content Include="Ima\Niños2\Lanzadores\Lanza Dardos Batman.txt" />
+    <Content Include="Ima\Niños2\Lanzadores\Lanza Dardos Boom Co Spinsanity 3x.jpg" />
+    <Content Include="Ima\Niños2\Lanzadores\Lanza Dardos Boom Co Spinsanity 3x.txt" />
+    <Content Include="Ima\Niños2\Lanzadores\Lanzadardos Boomco Slambow.jpg" />
+    <Content Include="Ima\Niños2\Lanzadores\Lanzadardos Boomco Slambow.txt" />
+    <Content Include="Ima\Niños2\Lanzadores\Lanzadardos Covenant Carbine Boom Co Halo.jpg" />
+    <Content Include="Ima\Niños2\Lanzadores\Lanzadardos Covenant Carbine Boom Co Halo.txt" />
+    <Content Include="Ima\Niños2\Lanzadores\Lanzadardos Nerf Raptorstrike.jpg" />
+    <Content Include="Ima\Niños2\Lanzadores\Lanzadardos Nerf Raptorstrike.txt" />
+    <Content Include="Ima\Niños2\Lanzadores\Lanzadardos Predator Zuru X-Shot Bug Attack.jpg" />
+    <Content Include="Ima\Niños2\Lanzadores\Lanzadardos Predator Zuru X-Shot Bug Attack.txt" />
+    <Content Include="Ima\Niños2\Lanzadores\Lanzadardos Rapid Fire Zuru X-Shot Bug Attack.jpg" />
+    <Content Include="Ima\Niños2\Lanzadores\Lanzadardos Rapid Fire Zuru X-Shot Bug Attack.txt" />
+    <Content Include="Ima\Niños2\Lanzadores\Lanzador Boomco Flip Bow.jpg" />
+    <Content Include="Ima\Niños2\Lanzadores\Lanzador Boomco Flip Bow.txt" />
+    <Content Include="Ima\Niños2\Lanzadores\Lanzador Hasbro Nerf Mega Twinshock.jpg" />
+    <Content Include="Ima\Niños2\Lanzadores\Lanzador Hasbro Nerf Mega Twinshock.txt" />
+    <Content Include="Ima\Niños2\Lanzadores\Lanzador Motofury Nerf Nitro.jpg" />
+    <Content Include="Ima\Niños2\Lanzadores\Lanzador Motofury Nerf Nitro.txt" />
+    <Content Include="Ima\Niños2\Lanzadores\Lanzador Multi-Shot Flashfury Chaos Nerf Nitro.jpg" />
+    <Content Include="Ima\Niños2\Lanzadores\Lanzador Multi-Shot Flashfury Chaos Nerf Nitro.txt" />
+    <Content Include="Ima\Niños2\Lanzadores\Lanzador Nerf Alphahawk Elite.jpg" />
+    <Content Include="Ima\Niños2\Lanzadores\Lanzador Nerf Alphahawk Elite.txt" />
+    <Content Include="Ima\Niños2\Lanzadores\Lanzador Nerf Bowstrike.jpg" />
+    <Content Include="Ima\Niños2\Lanzadores\Lanzador Nerf Bowstrike.txt" />
+    <Content Include="Ima\Niños2\Lanzadores\Lanzador Nerf Disruptor Elite.jpg" />
+    <Content Include="Ima\Niños2\Lanzadores\Lanzador Nerf Disruptor Elite.txt" />
+    <Content Include="Ima\Niños2\Lanzadores\Lanzador Nerf Doublebreach Mega.jpg" />
+    <Content Include="Ima\Niños2\Lanzadores\Lanzador Nerf Doublebreach Mega.txt" />
+    <Content Include="Ima\Niños2\Lanzadores\Lanzador Nerf Doublestrike Zombie.jpg" />
+    <Content Include="Ima\Niños2\Lanzadores\Lanzador Nerf Doublestrike Zombie.txt" />
+    <Content Include="Ima\Niños2\Lanzadores\Lanzador Nerf Elite Triad EX3.jpg" />
+    <Content Include="Ima\Niños2\Lanzadores\Lanzador Nerf Elite Triad EX3.txt" />
+    <Content Include="Ima\Niños2\Lanzadores\Lanzador Nerf Falconfire Elite.jpg" />
+    <Content Include="Ima\Niños2\Lanzadores\Lanzador Nerf Falconfire Elite.txt" />
+    <Content Include="Ima\Niños2\Lanzadores\Lanzador Nerf Negotiator Doomlands.jpg" />
+    <Content Include="Ima\Niños2\Lanzadores\Lanzador Nerf Negotiator Doomlands.txt" />
+    <Content Include="Ima\Niños2\Lanzadores\Lanzador Nerf Zombie Strike Crosscut.jpg" />
+    <Content Include="Ima\Niños2\Lanzadores\Lanzador Nerf Zombie Strike Crosscut.txt" />
+    <Content Include="Ima\Niños2\Lanzadores\Set de lanzador Duelfury Demolition Nerf Nitro.jpg" />
+    <Content Include="Ima\Niños2\Lanzadores\Set de lanzador Duelfury Demolition Nerf Nitro.txt" />
+    <Content Include="Ima\Niños2\Lanzadores\Set Hasbro Nerf Nitro Delux.jpg" />
+    <Content Include="Ima\Niños2\Lanzadores\Set Hasbro Nerf Nitro Delux.txt" />
+    <Content Include="Ima\Niños2\Vehiculos\4R Camión Portacoches con Luz y Sonido.jpg" />
+    <Content Include="Ima\Niños2\Vehiculos\4R Camión Portacoches con Luz y Sonido.txt" />
+    <Content Include="Ima\Niños2\Vehiculos\4R Coche con Caravana.jpg" />
+    <Content Include="Ima\Niños2\Vehiculos\4R Coche con Caravana.txt" />
+    <Content Include="Ima\Niños2\Vehiculos\4R Radio Control Toyota FJ Cruiser  Vraios Modelos.jpg" />
+    <Content Include="Ima\Niños2\Vehiculos\4R Radio Control Toyota FJ Cruiser 118 Vraios Modelos.txt" />
+    <Content Include="Ima\Niños2\Vehiculos\4R Vehículo Urbano Camión de Basuras RL.txt" />
+    <Content Include="Ima\Niños2\Vehiculos\4R Vehículo Urbano Camión de Basuras.jpg" />
+    <Content Include="Ima\Niños2\Vehiculos\GO!!! Mario Kart Wii Wild Wing + Mario.jpg" />
+    <Content Include="Ima\Niños2\Vehiculos\GO!!! Mario Kart Wii Wild Wing + Mario.txt" />
+    <Content Include="Ima\Niños2\Vehiculos\Hot Wheels Pack 10 Vehículos Varios ModeloS.jpg" />
+    <Content Include="Ima\Niños2\Vehiculos\Hot Wheels Pack 10 Vehículos Varios ModeloS.txt" />
+    <Content Include="Ima\Niños2\Vehiculos\Moto Repsol 6V.jpg" />
+    <Content Include="Ima\Niños2\Vehiculos\Moto Repsol 6V.txt" />
+    <Content Include="Ima\Niños2\Vehiculos\Nenittos Mi Súper Camión Portacoches.jpg" />
+    <Content Include="Ima\Niños2\Vehiculos\Nenittos Mi Súper Camión Portacoches.txt" />
+    <Content Include="Ima\Niños2\Vehiculos\Patrulla Policial Especial Rescate.jpg" />
+    <Content Include="Ima\Niños2\Vehiculos\Patrulla Policial Especial Rescate.txt" />
+    <Content Include="Ima\Niños2\Vehiculos\Radio Control Ferrari Varios Colores.jpg" />
+    <Content Include="Ima\Niños2\Vehiculos\Radio Control Ferrari Varios Colores.txt" />
+    <Content Include="Ima\Niños2\Vehiculos\Radio Control Mario Kart 7.jpg" />
+    <Content Include="Ima\Niños2\Vehiculos\Radio Control Mario Kart 7.txt" />
+    <Content Include="Ima\Niños2\Vehiculos\Scalextric C2 Rally X-Treme.jpg" />
+    <Content Include="Ima\Niños2\Vehiculos\Scalextric C2 Rally X-Treme.txt" />
+    <Content Include="includes\encabezado.inc" />
+    <Content Include="includes\generalHeader.inc" />
+    <Content Include="includes\sidebar.inc" />
+    <Content Include="js\carrito.js" />
+    <Content Include="js\jquery-3.2.1.js" />
+    <Content Include="Manualidades_Niñas.aspx" />
+    <Content Include="mascotas_niñas.aspx" />
+    <Content Include="Niñas_vehiculos.aspx" />
+    <Content Include="css\estilosCompilados.css" />
+    <Content Include="css\radioButton.css" />
+    <Content Include="Imagenes\dreamtopia.png" />
+    <Content Include="Imagenes\hasbro-frente.png" />
+    <Content Include="Imagenes\jijojo.png" />
+    <Content Include="images\Niñas bellas\carritos\bati.jpg" />
+    <Content Include="images\Niñas bellas\carritos\bati.txt" />
+    <Content Include="images\Niñas bellas\carritos\bici.jpg" />
+    <Content Include="images\Niñas bellas\carritos\bici.txt" />
+    <Content Include="images\Niñas bellas\carritos\buu.jpg" />
+    <Content Include="images\Niñas bellas\carritos\buu.txt" />
+    <Content Include="images\Niñas bellas\carritos\caballo.jpg" />
+    <Content Include="images\Niñas bellas\carritos\caballo.txt" />
+    <Content Include="images\Niñas bellas\carritos\chida.jpg" />
+    <Content Include="images\Niñas bellas\carritos\chida.txt" />
+    <Content Include="images\Niñas bellas\carritos\gobierno.jpg" />
+    <Content Include="images\Niñas bellas\carritos\gobierno.txt" />
+    <Content Include="images\Niñas bellas\carritos\hi.jpg" />
+    <Content Include="images\Niñas bellas\carritos\hi.txt" />
+    <Content Include="images\Niñas bellas\carritos\jet.jpg" />
+    <Content Include="images\Niñas bellas\carritos\jet.txt" />
+    <Content Include="images\Niñas bellas\carritos\lancha.jpg" />
+    <Content Include="images\Niñas bellas\carritos\lancha.txt" />
+    <Content Include="images\Niñas bellas\carritos\me0.jpg" />
+    <Content Include="images\Niñas bellas\carritos\me0.txt" />
+    <Content Include="images\Niñas bellas\carritos\mi.jpg" />
+    <Content Include="images\Niñas bellas\carritos\mi.txt" />
+    <Content Include="images\Niñas bellas\carritos\mot.jpg" />
+    <Content Include="images\Niñas bellas\carritos\mot.txt" />
+    <Content Include="images\Niñas bellas\carritos\nado.jpg" />
+    <Content Include="images\Niñas bellas\carritos\nado.txt" />
+    <Content Include="images\Niñas bellas\carritos\no.jpg" />
+    <Content Include="images\Niñas bellas\carritos\no.txt" />
+    <Content Include="images\Niñas bellas\carritos\ora.jpg" />
+    <Content Include="images\Niñas bellas\carritos\ora.txt" />
+    <Content Include="images\Niñas bellas\carritos\otro.jpg" />
+    <Content Include="images\Niñas bellas\carritos\otro.txt" />
+    <Content Include="images\Niñas bellas\carritos\peque.jpg" />
+    <Content Include="images\Niñas bellas\carritos\peque.txt" />
+    <Content Include="images\Niñas bellas\carritos\perro.jpg" />
+    <Content Include="images\Niñas bellas\carritos\perro.txt" />
+    <Content Include="images\Niñas bellas\carritos\polly.jpg" />
+    <Content Include="images\Niñas bellas\carritos\polly.txt" />
+    <Content Include="images\Niñas bellas\carritos\pow.jpg" />
+    <Content Include="images\Niñas bellas\carritos\pow.txt" />
+    <Content Include="images\Niñas bellas\carritos\rosa.jpg" />
+    <Content Include="images\Niñas bellas\carritos\rosa.txt" />
+    <Content Include="images\Niñas bellas\carritos\vuela.jpg" />
+    <Content Include="images\Niñas bellas\carritos\vuela.txt" />
+    <Content Include="images\Niñas bellas\carritos\woo.jpg" />
+    <Content Include="images\Niñas bellas\carritos\woo.txt" />
+    <Content Include="images\Niñas bellas\carritos\wui.jpg" />
+    <Content Include="images\Niñas bellas\carritos\wui.txt" />
+    <Content Include="images\Niñas bellas\carritos\yes.jpg" />
+    <Content Include="images\Niñas bellas\carritos\yes.txt" />
+    <Content Include="images\Niñas bellas\construccion\22.jpg" />
+    <Content Include="images\Niñas bellas\construccion\22.txt" />
+    <Content Include="images\Niñas bellas\construccion\23.jpg" />
+    <Content Include="images\Niñas bellas\construccion\23.txt" />
+    <Content Include="images\Niñas bellas\construccion\24.jpg" />
+    <Content Include="images\Niñas bellas\construccion\24.txt" />
+    <Content Include="images\Niñas bellas\construccion\25.jpg" />
+    <Content Include="images\Niñas bellas\construccion\25.txt" />
+    <Content Include="images\Niñas bellas\construccion\a.jpg" />
+    <Content Include="images\Niñas bellas\construccion\a.txt" />
+    <Content Include="images\Niñas bellas\construccion\b.jpg" />
+    <Content Include="images\Niñas bellas\construccion\b.txt" />
+    <Content Include="images\Niñas bellas\construccion\c.jpg" />
+    <Content Include="images\Niñas bellas\construccion\c.txt" />
+    <Content Include="images\Niñas bellas\construccion\crea y juega.jpg" />
+    <Content Include="images\Niñas bellas\construccion\d.jpg" />
+    <Content Include="images\Niñas bellas\construccion\d.txt" />
+    <Content Include="images\Niñas bellas\construccion\e.jpg" />
+    <Content Include="images\Niñas bellas\construccion\e.txt" />
+    <Content Include="images\Niñas bellas\construccion\f.jpg" />
+    <Content Include="images\Niñas bellas\construccion\f.txt" />
+    <Content Include="images\Niñas bellas\construccion\First Builders Grande Rosa Niña.txt" />
+    <Content Include="images\Niñas bellas\construccion\g.jpg" />
+    <Content Include="images\Niñas bellas\construccion\g.txt" />
+    <Content Include="images\Niñas bellas\construccion\h.jpg" />
+    <Content Include="images\Niñas bellas\construccion\h.txt" />
+    <Content Include="images\Niñas bellas\construccion\i.jpg" />
+    <Content Include="images\Niñas bellas\construccion\i.txt" />
+    <Content Include="images\Niñas bellas\construccion\j.jpg" />
+    <Content Include="images\Niñas bellas\construccion\j.txt" />
+    <Content Include="images\Niñas bellas\construccion\Juega y Crea.txt" />
+    <Content Include="images\Niñas bellas\construccion\Juego de construcción para niños Hello Kitty.txt" />
+    <Content Include="images\Niñas bellas\construccion\k.jpg" />
+    <Content Include="images\Niñas bellas\construccion\k.txt" />
+    <Content Include="images\Niñas bellas\construccion\kitty.jpg" />
+    <Content Include="images\Niñas bellas\construccion\l.jpg" />
+    <Content Include="images\Niñas bellas\construccion\l.txt" />
+    <Content Include="images\Niñas bellas\construccion\La Caravana de Dora.txt" />
+    <Content Include="images\Niñas bellas\construccion\LaCaravanadeDora.jpg" />
+    <Content Include="images\Niñas bellas\construccion\m.jpg" />
+    <Content Include="images\Niñas bellas\construccion\m.txt" />
+    <Content Include="images\Niñas bellas\construccion\megabloks-7549-juega-crea-diversion-ninas-p-PMEG7549.5.jpg" />
+    <Content Include="images\Niñas bellas\construccion\n.jpg" />
+    <Content Include="images\Niñas bellas\construccion\n.txt" />
+    <Content Include="images\Niñas bellas\construccion\o.jpg" />
+    <Content Include="images\Niñas bellas\construccion\o.txt" />
+    <Content Include="images\Niñas bellas\construccion\p.jpg" />
+    <Content Include="images\Niñas bellas\construccion\p.txt" />
+    <Content Include="images\Niñas bellas\construccion\q.jpg" />
+    <Content Include="images\Niñas bellas\construccion\q.txt" />
+    <Content Include="images\Niñas bellas\Heroinas\barbie espia.jpg" />
+    <Content Include="images\Niñas bellas\Heroinas\barbie espia.txt" />
+    <Content Include="images\Niñas bellas\Heroinas\bati.jpg" />
+    <Content Include="images\Niñas bellas\Heroinas\bati.txt" />
+    <Content Include="images\Niñas bellas\Heroinas\batichicachida.jpg" />
+    <Content Include="images\Niñas bellas\Heroinas\batichicachida.txt" />
+    <Content Include="images\Niñas bellas\Heroinas\batichida.jpg" />
+    <Content Include="images\Niñas bellas\Heroinas\bellota.jpg" />
+    <Content Include="images\Niñas bellas\Heroinas\bombom.jpg" />
+    <Content Include="images\Niñas bellas\Heroinas\burbuja.jpg" />
+    <Content Include="images\Niñas bellas\Heroinas\camioneta.jpg" />
+    <Content Include="images\Niñas bellas\Heroinas\camioneta.txt" />
+    <Content Include="images\Niñas bellas\Heroinas\cosa_rara.jpg" />
+    <Content Include="images\Niñas bellas\Heroinas\cosa_rara.txt" />
+    <Content Include="images\Niñas bellas\Heroinas\escudo.jpg" />
+    <Content Include="images\Niñas bellas\Heroinas\escudo.txt" />
+    <Content Include="images\Niñas bellas\Heroinas\escuela.jpg" />
+    <Content Include="images\Niñas bellas\Heroinas\escuela.txt" />
+    <Content Include="images\Niñas bellas\Heroinas\este es para batichica chida_supergirlchida y maravilla chida_tres en uno_aproveche.txt" />
+    <Content Include="images\Niñas bellas\Heroinas\este texto es de bombom burbuja y bellota.txt" />
+    <Content Include="images\Niñas bellas\Heroinas\jet.jpg" />
+    <Content Include="images\Niñas bellas\Heroinas\jet.txt" />
+    <Content Include="images\Niñas bellas\Heroinas\lady.jpg" />
+    <Content Include="images\Niñas bellas\Heroinas\lady.txt" />
+    <Content Include="images\Niñas bellas\Heroinas\maravilla.jpg" />
+    <Content Include="images\Niñas bellas\Heroinas\maravilla.txt" />
+    <Content Include="images\Niñas bellas\Heroinas\maravillachida.jpg" />
+    <Content Include="images\Niñas bellas\Heroinas\moto.jpg" />
+    <Content Include="images\Niñas bellas\Heroinas\moto.txt" />
+    <Content Include="images\Niñas bellas\Heroinas\motobarbie.jpg" />
+    <Content Include="images\Niñas bellas\Heroinas\motobarbie.txt" />
+    <Content Include="images\Niñas bellas\Heroinas\muñeca chida.jpg" />
+    <Content Include="images\Niñas bellas\Heroinas\muñeca chida.txt" />
+    <Content Include="images\Niñas bellas\Heroinas\muñeca.jpg" />
+    <Content Include="images\Niñas bellas\Heroinas\muñeca.txt" />
+    <Content Include="images\Niñas bellas\Heroinas\otra wonder.txt" />
+    <Content Include="images\Niñas bellas\Heroinas\otra_wonder.jpg" />
+    <Content Include="images\Niñas bellas\Heroinas\puño.jpg" />
+    <Content Include="images\Niñas bellas\Heroinas\puño.txt" />
+    <Content Include="images\Niñas bellas\Heroinas\supergirl.jpg" />
+    <Content Include="images\Niñas bellas\Heroinas\Supergirl.txt" />
+    <Content Include="images\Niñas bellas\Heroinas\supergirlchida.jpg" />
+    <Content Include="images\Niñas bellas\Heroinas\vuela.jpg" />
+    <Content Include="images\Niñas bellas\Heroinas\vuela.txt" />
+    <Content Include="images\Niñas bellas\Heroinas\wea que vuela.jpg" />
+    <Content Include="images\Niñas bellas\Heroinas\wea que vuela.txt" />
+    <Content Include="images\Niñas bellas\Heroinas\wonder.jpg" />
+    <Content Include="images\Niñas bellas\Heroinas\wonder.txt" />
+    <Content Include="images\Niñas bellas\manuealidades\24.jpg" />
+    <Content Include="images\Niñas bellas\manuealidades\24.txt" />
+    <Content Include="images\Niñas bellas\manuealidades\3d,jpg.jpg" />
+    <Content Include="images\Niñas bellas\manuealidades\3d.txt" />
+    <Content Include="images\Niñas bellas\manuealidades\4.jpg" />
+    <Content Include="images\Niñas bellas\manuealidades\4.txt" />
+    <Content Include="images\Niñas bellas\manuealidades\70.jpg" />
+    <Content Include="images\Niñas bellas\manuealidades\70.txt" />
+    <Content Include="images\Niñas bellas\manuealidades\a.jpg" />
+    <Content Include="images\Niñas bellas\manuealidades\a.txt" />
+    <Content Include="images\Niñas bellas\manuealidades\azul.jpg" />
+    <Content Include="images\Niñas bellas\manuealidades\azul.txt" />
+    <Content Include="images\Niñas bellas\manuealidades\cancer.jpg" />
+    <Content Include="images\Niñas bellas\manuealidades\cancer.txt" />
+    <Content Include="images\Niñas bellas\manuealidades\chido.jpg" />
+    <Content Include="images\Niñas bellas\manuealidades\chido.txt" />
+    <Content Include="images\Niñas bellas\manuealidades\cofre.jpg" />
+    <Content Include="images\Niñas bellas\manuealidades\cofre.txt" />
+    <Content Include="images\Niñas bellas\manuealidades\color.jpg" />
+    <Content Include="images\Niñas bellas\manuealidades\color.txt" />
+    <Content Include="images\Niñas bellas\manuealidades\cosa.jpg" />
+    <Content Include="images\Niñas bellas\manuealidades\cosa.txt" />
+    <Content Include="images\Niñas bellas\manuealidades\coser.jpg" />
+    <Content Include="images\Niñas bellas\manuealidades\coser.txt" />
+    <Content Include="images\Niñas bellas\manuealidades\diseñp.jpg" />
+    <Content Include="images\Niñas bellas\manuealidades\diseñp.txt" />
+    <Content Include="images\Niñas bellas\manuealidades\malteadas.jpg" />
+    <Content Include="images\Niñas bellas\manuealidades\malteadas.txt" />
+    <Content Include="images\Niñas bellas\manuealidades\mas.jpg" />
+    <Content Include="images\Niñas bellas\manuealidades\mas.txt" />
+    <Content Include="images\Niñas bellas\manuealidades\monos.jpg" />
+    <Content Include="images\Niñas bellas\manuealidades\monos.txt" />
+    <Content Include="images\Niñas bellas\manuealidades\muy.jpg" />
+    <Content Include="images\Niñas bellas\manuealidades\muy.txt" />
+    <Content Include="images\Niñas bellas\manuealidades\p.jpg" />
+    <Content Include="images\Niñas bellas\manuealidades\p.txt" />
+    <Content Include="images\Niñas bellas\manuealidades\raro.jpg" />
+    <Content Include="images\Niñas bellas\manuealidades\raro.txt" />
+    <Content Include="images\Niñas bellas\manuealidades\repuesto.jpg" />
+    <Content Include="images\Niñas bellas\manuealidades\respuesto.txt" />
+    <Content Include="images\Niñas bellas\manuealidades\sew.jpg" />
+    <Content Include="images\Niñas bellas\manuealidades\sew.txt" />
+    <Content Include="images\Niñas bellas\manuealidades\tela.jpg" />
+    <Content Include="images\Niñas bellas\manuealidades\tela.txt" />
+    <Content Include="images\Niñas bellas\manuealidades\troll.jpg" />
+    <Content Include="images\Niñas bellas\manuealidades\troll.txt" />
+    <Content Include="images\Niñas bellas\manuealidades\uy.jpg" />
+    <Content Include="images\Niñas bellas\manuealidades\uy.txt" />
+    <Content Include="images\Niñas bellas\manuealidades\wea.jpg" />
+    <Content Include="images\Niñas bellas\manuealidades\wea.txt" />
+    <Content Include="images\Niñas bellas\Mascotas\Borreguito FurReal.jpg" />
+    <Content Include="images\Niñas bellas\Mascotas\Borreguito FurReal.txt" />
+    <Content Include="images\Niñas bellas\Mascotas\Cachorritos Zuppies.jpg" />
+    <Content Include="images\Niñas bellas\Mascotas\Cachorritos Zuppies.txt" />
+    <Content Include="images\Niñas bellas\Mascotas\Cheese Sandwich My Little Pony.jpg" />
+    <Content Include="images\Niñas bellas\Mascotas\Cheese Sandwich My Little Pony.txt" />
+    <Content Include="images\Niñas bellas\Mascotas\Duo Peluche Littlest Pet Shop.jpg" />
+    <Content Include="images\Niñas bellas\Mascotas\Duo Peluche Littlest Pet Shop.txt" />
+    <Content Include="images\Niñas bellas\Mascotas\El Tigre Jugueton Rayler.jpg" />
+    <Content Include="images\Niñas bellas\Mascotas\El Tigre Jugueton Rayler.txt" />
+    <Content Include="images\Niñas bellas\Mascotas\Gato Botitas FurReal.jpg" />
+    <Content Include="images\Niñas bellas\Mascotas\Gato Botitas FurReal.txt" />
+    <Content Include="images\Niñas bellas\Mascotas\Mascota Parlanchina Little Live Pets.jpg" />
+    <Content Include="images\Niñas bellas\Mascotas\Mascota Parlanchina Little Live Pets.txt" />
+    <Content Include="images\Niñas bellas\Mascotas\Mi Dragón Amigo FurReal.jpg" />
+    <Content Include="images\Niñas bellas\Mascotas\Mi Dragón Amigo FurReal.txt" />
+    <Content Include="images\Niñas bellas\Mascotas\Mini peluche My Little Pony.jpg" />
+    <Content Include="images\Niñas bellas\Mascotas\Mini peluche My Little Pony.txt" />
+    <Content Include="images\Niñas bellas\Mascotas\Miniset Pony Sirena My Little Pony.jpg" />
+    <Content Include="images\Niñas bellas\Mascotas\Miniset Pony Sirena My Little Pony.txt" />
+    <Content Include="images\Niñas bellas\Mascotas\My Little Pony Articulados.jpg" />
+    <Content Include="images\Niñas bellas\Mascotas\My Little Pony Articulados.txt" />
+    <Content Include="images\Niñas bellas\Mascotas\My Little Pony con Accsesorios Rainbowdash.jpg" />
+    <Content Include="images\Niñas bellas\Mascotas\My Little Pony con Accsesorios Rainbowdash.txt" />
+    <Content Include="images\Niñas bellas\Mascotas\Pajaro Parlanchin Little Live Pets.jpg" />
+    <Content Include="images\Niñas bellas\Mascotas\Pajaro Parlanchin Little Live Pets.txt" />
+    <Content Include="images\Niñas bellas\Mascotas\Paquete de la Amistad My Little Pony.jpg" />
+    <Content Include="images\Niñas bellas\Mascotas\Paquete de la Amistad My Little Pony.txt" />
+    <Content Include="images\Niñas bellas\Mascotas\Paquete Mascotas Littlest Pet Shop.jpg" />
+    <Content Include="images\Niñas bellas\Mascotas\Paquete Mascotas Littlest Pet Shop.txt" />
+    <Content Include="images\Niñas bellas\Mascotas\Pax Mi Cachorrito FurReal.jpg" />
+    <Content Include="images\Niñas bellas\Mascotas\Pax Mi Cachorrito FurReal.txt" />
+    <Content Include="images\Niñas bellas\Mascotas\Pinki Pie Basico My Little Pony.png" />
+    <Content Include="images\Niñas bellas\Mascotas\Pinki Pie Basico My Little Pony.txt" />
+    <Content Include="images\Niñas bellas\Mascotas\Playset My Little Pony.jpg" />
+    <Content Include="images\Niñas bellas\Mascotas\Playset My Little Pony.txt" />
+    <Content Include="images\Niñas bellas\Mascotas\Pony a la Moda My Little Pony.jpg" />
+    <Content Include="images\Niñas bellas\Mascotas\Pony a la Moda My Little Pony.txt" />
+    <Content Include="images\Niñas bellas\Mascotas\Pony con Luces My Little Pony.jpg" />
+    <Content Include="images\Niñas bellas\Mascotas\Pony con Luces My Little Pony.txt" />
+    <Content Include="images\Niñas bellas\Mascotas\Pony Sirenas My Little Pony.jpg" />
+    <Content Include="images\Niñas bellas\Mascotas\Pony Sirenas My Little Pony.txt" />
+    <Content Include="images\Niñas bellas\Mascotas\Princesa Celestia My Little Pony.jpg" />
+    <Content Include="images\Niñas bellas\Mascotas\Princesa Celestia My Little Pony.txt" />
+    <Content Include="images\Niñas bellas\Mascotas\Unicornio Dreamtopia.jpg" />
+    <Content Include="images\Niñas bellas\Mascotas\Unicornio Dreamtopia.txt" />
+    <Content Include="images\Niñas bellas\Mascotas\Wonderbolts My Little Pony.jpg" />
+    <Content Include="images\Niñas bellas\Mascotas\Wonderbolts My Little Pony.txt" />
+    <Content Include="images\Niñas bellas\Mascotas\Zoomer 2.jpg" />
+    <Content Include="images\Niñas bellas\Mascotas\Zoomer 2.txt" />
+    <Content Include="images\Niñas bellas\Muñecas\Adriennes Bath Bizz Project MC2.jpg" />
+    <Content Include="images\Niñas bellas\Muñecas\Adriennes Bath Bizz Project MC2.txt" />
+    <Content Include="images\Niñas bellas\Muñecas\Amigas Chelsea Camp Pop.jpg" />
+    <Content Include="images\Niñas bellas\Muñecas\Amigas Chelsea Camp Pop.txt" />
+    <Content Include="images\Niñas bellas\Muñecas\Barbie Diseñadora de Peinados.jpg" />
+    <Content Include="images\Niñas bellas\Muñecas\Barbie Diseñadora de Peinados.txt" />
+    <Content Include="images\Niñas bellas\Muñecas\Bella Melodias Encantadas.jpg" />
+    <Content Include="images\Niñas bellas\Muñecas\Bella Melodias Encantadas.txt" />
+    <Content Include="images\Niñas bellas\Muñecas\Bella vestido Aldea Hasbro.jpg" />
+    <Content Include="images\Niñas bellas\Muñecas\Bella vestido Aldea Hasbro.txt" />
+    <Content Include="images\Niñas bellas\Muñecas\Bella y Bestia Celebracion Real.jpg" />
+    <Content Include="images\Niñas bellas\Muñecas\Bella y Bestia Celebracion Real.txt" />
+    <Content Include="images\Niñas bellas\Muñecas\Cenicienta Moda Magica.jpg" />
+    <Content Include="images\Niñas bellas\Muñecas\Cenicienta Moda Magica.txt" />
+    <Content Include="images\Niñas bellas\Muñecas\Chelsea Dreamtopia .jpg" />
+    <Content Include="images\Niñas bellas\Muñecas\Chelsea Dreamtopia.txt" />
+    <Content Include="images\Niñas bellas\Muñecas\Desfile Helados Polly Pocket.jpg" />
+    <Content Include="images\Niñas bellas\Muñecas\Desfile Helados Polly Pocket.txt" />
+    <Content Include="images\Niñas bellas\Muñecas\Elsa Frozen Copos Magicos.jpg" />
+    <Content Include="images\Niñas bellas\Muñecas\Elsa Frozen Copos Magicos.txt" />
+    <Content Include="images\Niñas bellas\Muñecas\Ever After High Apple White.jpg" />
+    <Content Include="images\Niñas bellas\Muñecas\Ever After High Apple White.txt" />
+    <Content Include="images\Niñas bellas\Muñecas\Frozen Mini.jpg" />
+    <Content Include="images\Niñas bellas\Muñecas\Frozen Mini.txt" />
+    <Content Include="images\Niñas bellas\Muñecas\Mini Sirenas Dreamtopia.jpg" />
+    <Content Include="images\Niñas bellas\Muñecas\Mini Sirenas Dreamtopia.txt" />
+    <Content Include="images\Niñas bellas\Muñecas\Muñeca Lalaloopsy.jpg" />
+    <Content Include="images\Niñas bellas\Muñecas\Muñeca Lalaloopsy.txt" />
+    <Content Include="images\Niñas bellas\Muñecas\Muñecas Princesas Disney.jpg" />
+    <Content Include="images\Niñas bellas\Muñecas\Muñecas Princesas Disney.txt" />
+    <Content Include="images\Niñas bellas\Muñecas\Nancy Flores Famosa.jpg" />
+    <Content Include="images\Niñas bellas\Muñecas\Nancy Flores Famosa.txt" />
+    <Content Include="images\Niñas bellas\Muñecas\Parque Acuatico Polly Pocket.jpg" />
+    <Content Include="images\Niñas bellas\Muñecas\Parque Acuatico Polly Pocket.txt" />
+    <Content Include="images\Niñas bellas\Muñecas\Princesas Valientes Ever After High.jpg" />
+    <Content Include="images\Niñas bellas\Muñecas\Princesas Valientes Ever After High.txt" />
+    <Content Include="images\Niñas bellas\Muñecas\Princesas Valientes Ever After.jpg" />
+    <Content Include="images\Niñas bellas\Muñecas\Princesas Valientes Ever After.txt" />
+    <Content Include="images\Niñas bellas\Muñecas\Shopkins Shoppies Muñecas.jpg" />
+    <Content Include="images\Niñas bellas\Muñecas\Shopkins Shoppies Muñecas.txt" />
+    <Content Include="images\Niñas bellas\Muñecas\Supere Here Girls.jpg" />
+    <Content Include="images\Niñas bellas\Muñecas\Supere Here Girls.txt" />
+    <Content Include="images\Niñas bellas\Muñecas\Surtido Ever After High.jpg" />
+    <Content Include="images\Niñas bellas\Muñecas\Surtido Ever After High.txt" />
+    <Content Include="images\Niñas bellas\Muñecas\Surtido Muñecas Descendientes Basicas.jpg" />
+    <Content Include="images\Niñas bellas\Muñecas\Surtido Muñecas Descendientes Basicas.txt" />
+    <Content Include="images\Niñas bellas\Muñecas\Trolls.jpg" />
+    <Content Include="images\Niñas bellas\Muñecas\Trolls.txt" />
+    <Content Include="images\Niñas bellas\Muñecas\Wonder Woman.jpg" />
+    <Content Include="images\Niñas bellas\Muñecas\Wonder Woman.txt" />
+    <Content Include="images\Niños2\Autopistas\2 Super Truck con Accesorios.jpg" />
+    <Content Include="images\Niños2\Autopistas\2 Super Truck con Accesorios.txt" />
+    <Content Include="images\Niños2\Autopistas\4R Parking 2 Plantas Restaurante.jpg" />
+    <Content Include="images\Niños2\Autopistas\4R Parking 2 Plantas Restaurante.txt" />
+    <Content Include="images\Niños2\Autopistas\Blaze Pista Estadio Monster Dome.jpg" />
+    <Content Include="images\Niños2\Autopistas\Blaze Pista Estadio Monster Dome.txt" />
+    <Content Include="images\Niños2\Autopistas\Cars Movie Pistas Historia Varios Modelos.jpg" />
+    <Content Include="images\Niños2\Autopistas\Cars Movie Pistas Historia Varios Modelos.txt" />
+    <Content Include="images\Niños2\Autopistas\Garage de la copa pistón Cars.jpg" />
+    <Content Include="images\Niños2\Autopistas\Garage de la copa pistón Cars.txt" />
+    <Content Include="images\Niños2\Autopistas\Go Nintendo Mario Kart 8 %28Mario+Luigi%29 4,9 M.jpg" />
+    <Content Include="images\Niños2\Autopistas\Go Nintendo Mario Kart 8 %28Mario+Luigi%29 4,9 M.txt" />
+    <Content Include="images\Niños2\Autopistas\Hot Wheels Carrera Súper Explosiva.jpg" />
+    <Content Include="images\Niños2\Autopistas\Hot Wheels Carrera Súper Explosiva.txt" />
+    <Content Include="images\Niños2\Autopistas\Hot Wheels Circuito de Carreras I.A..jpg" />
+    <Content Include="images\Niños2\Autopistas\Hot Wheels Circuito de Carreras I.A..txt" />
+    <Content Include="images\Niños2\Autopistas\Hot Wheels City Pista Tiburón Devorador.jpg" />
+    <Content Include="images\Niños2\Autopistas\Hot Wheels City Pista Tiburón Devorador.txt" />
+    <Content Include="images\Niños2\Autopistas\Hot Wheels Pista Acrobática Loop and Jump.jpg" />
+    <Content Include="images\Niños2\Autopistas\Hot Wheels Pista Acrobática Loop and Jump.txt" />
+    <Content Include="images\Niños2\Autopistas\Hot Wheels Pista Doble Looping.jpg" />
+    <Content Include="images\Niños2\Autopistas\Hot Wheels Pista Doble Looping.txt" />
+    <Content Include="images\Niños2\Autopistas\Hot Wheels Pista Multiacrobática.jpg" />
+    <Content Include="images\Niños2\Autopistas\Hot Wheels Pista Multiacrobática.txt" />
+    <Content Include="images\Niños2\Autopistas\Hot Wheels Pista Sierra Veloz.jpg" />
+    <Content Include="images\Niños2\Autopistas\Hot Wheels Pista Sierra Veloz.txt" />
+    <Content Include="images\Niños2\Autopistas\Hot Wheels Pista Supercore.jpg" />
+    <Content Include="images\Niños2\Autopistas\Hot Wheels Pista Supercore.txt" />
+    <Content Include="images\Niños2\Autopistas\Mattel Duelo de T-Rex Hot Wheels.jpg" />
+    <Content Include="images\Niños2\Autopistas\Mattel Duelo de T-Rex Hot Wheels.txt" />
+    <Content Include="images\Niños2\Autopistas\Mega Garage Hot Wheels.jpg" />
+    <Content Include="images\Niños2\Autopistas\Mega Garage Hot Wheels.txt" />
+    <Content Include="images\Niños2\Autopistas\Pista Hot Wheels DC Comics Baticueva.jpg" />
+    <Content Include="images\Niños2\Autopistas\Pista Hot Wheels DC Comics Baticueva.txt" />
+    <Content Include="images\Niños2\Autopistas\Pista Hot Wheels Dragón Explosivo.jpg" />
+    <Content Include="images\Niños2\Autopistas\Pista Hot Wheels Dragón Explosivo.txt" />
+    <Content Include="images\Niños2\Autopistas\Pista Hot Wheels Interactiva.jpg" />
+    <Content Include="images\Niños2\Autopistas\Pista Hot Wheels Interactiva.txt" />
+    <Content Include="images\Niños2\Autopistas\Pista Hot Wheels Megarrobot Destructor.jpg" />
+    <Content Include="images\Niños2\Autopistas\Pista Hot Wheels Megarrobot Destructor.txt" />
+    <Content Include="images\Niños2\Autopistas\Pista Thomas &amp; Friends Aventura Industria.txt" />
+    <Content Include="images\Niños2\Autopistas\Pista Thomas &amp; Friends Aventura Industrial.jpg" />
+    <Content Include="images\Niños2\Autopistas\Rayo McQueen Cars.jpg" />
+    <Content Include="images\Niños2\Autopistas\Rayo McQueen Cars.txt" />
+    <Content Include="images\Niños2\Autopistas\Spin Bikes super Looping Set %282 Motos+3 Loopings+4 Rectas+Rampa+Tarjeta%29.jpg" />
+    <Content Include="images\Niños2\Autopistas\Spin Bikes super Looping Set %282 Motos+3 Loopings+4 Rectas+Rampa+Tarjeta%29.txt" />
+    <Content Include="images\Niños2\Autopistas\Thomas &amp; Friends Circuito de la Selva.jpg" />
+    <Content Include="images\Niños2\Autopistas\Thomas &amp; Friends Circuito de la Selva.txt" />
+    <Content Include="images\Niños2\Autopistas\Tut Tut Bólidos Estación de Bomberos + Chema el Bombero.jpg" />
+    <Content Include="images\Niños2\Autopistas\Tut Tut Bólidos Estación de Bomberos + Chema el Bombero.txt" />
+    <Content Include="images\Niños2\Construccion\Bloques Magnéticos 130 Piezas.jpg" />
+    <Content Include="images\Niños2\Construccion\Bloques Magnéticos 130 Piezas.txt" />
+    <Content Include="images\Niños2\Construccion\Construye tu Camión Excavadora.jpg" />
+    <Content Include="images\Niños2\Construccion\Construye tu Camión Excavadora.txt" />
+    <Content Include="images\Niños2\Construccion\Construye tu Todoterreno.jpg" />
+    <Content Include="images\Niños2\Construccion\Construye tu Todoterreno.txt" />
+    <Content Include="images\Niños2\Construccion\Juguettos Construcción Policía Marítima.jpg" />
+    <Content Include="images\Niños2\Construccion\Juguettos Construcción Policía Marítima.txt" />
+    <Content Include="images\Niños2\Construccion\LEGO Arquitecture Fontana de Trevi 21020.jpg" />
+    <Content Include="images\Niños2\Construccion\LEGO Arquitecture Fontana de Trevi 21020.txt" />
+    <Content Include="images\Niños2\Construccion\LEGO Classic Caja de Ladrillos Creativos Mediana 10696.jpg" />
+    <Content Include="images\Niños2\Construccion\LEGO Classic Caja de Ladrillos Creativos Mediana 10696.txt" />
+    <Content Include="images\Niños2\Construccion\LEGO Comics Batman Persecución en Moto por Gothan City 76053.jpg" />
+    <Content Include="images\Niños2\Construccion\LEGO Comics Batman Persecución en Moto por Gothan City 76053.txt" />
+    <Content Include="images\Niños2\Construccion\LEGO Crator Bar de la Esquina 31050.jpg" />
+    <Content Include="images\Niños2\Construccion\LEGO Crator Bar de la Esquina 31050.txt" />
+    <Content Include="images\Niños2\Construccion\LEGO Duplo Town Jungla 10804.jpg" />
+    <Content Include="images\Niños2\Construccion\LEGO Duplo Town Jungla 10804.txt" />
+    <Content Include="images\Niños2\Construccion\LEGO Juniors Camión de la Basura 10680.jpg" />
+    <Content Include="images\Niños2\Construccion\LEGO Juniors Camión de la Basura 10680.txt" />
+    <Content Include="images\Niños2\Construccion\LEGO Juniors La Guarida de Spiderman 10687.jpg" />
+    <Content Include="images\Niños2\Construccion\LEGO Juniors La Guarida de Spiderman 10687.txt" />
+    <Content Include="images\Niños2\Construccion\LEGO Marvel Confidential Capitain America Movie 1 76050.jpg" />
+    <Content Include="images\Niños2\Construccion\LEGO Marvel Confidential Capitain America Movie 1 76050.txt" />
+    <Content Include="images\Niños2\Construccion\LEGO Marvel Los Vengadores Vs Hydra 76030.jpg" />
+    <Content Include="images\Niños2\Construccion\LEGO Marvel Los Vengadores Vs Hydra 76030.txt" />
+    <Content Include="images\Niños2\Construccion\LEGO Minecraft el Fuerte del Desierto 21121.jpg" />
+    <Content Include="images\Niños2\Construccion\LEGO Minecraft el Fuerte del Desierto 21121.txt" />
+    <Content Include="images\Niños2\Construccion\LEGO Minecraft La Primera Noche 21115.jpg" />
+    <Content Include="images\Niños2\Construccion\LEGO Minecraft La Primera Noche 21115.txt" />
+    <Content Include="images\Niños2\Construccion\LEGO Nexo Knights Confidential BB 2016 PT 1 70310.jpg" />
+    <Content Include="images\Niños2\Construccion\LEGO Nexo Knights Confidential BB 2016 PT 1 70310.txt" />
+    <Content Include="images\Niños2\Construccion\LEGO Nexo Knights El Vehículo Malvado de Jestro.jpg" />
+    <Content Include="images\Niños2\Construccion\LEGO Nexo Knights El Vehículo Malvado de Jestro.txt" />
+    <Content Include="images\Niños2\Construccion\LEGO Ninjago Dragón de Cole 70599.jpg" />
+    <Content Include="images\Niños2\Construccion\LEGO Ninjago Dragón de Cole 70599.txt" />
+    <Content Include="images\Niños2\Construccion\LEGO Ninjago Ronin R.E.X. 70735.jpg" />
+    <Content Include="images\Niños2\Construccion\LEGO Ninjago Ronin R.E.X. 70735.txt" />
+    <Content Include="images\Niños2\Construccion\LEGO Star Wars 4 %28 PELICULA 2015%29 75102.jpg" />
+    <Content Include="images\Niños2\Construccion\LEGO Star Wars 4 %28 PELICULA 2015%29 75102.txt" />
+    <Content Include="images\Niños2\Construccion\LEGO Star Wars Death Star 10188.jpg" />
+    <Content Include="images\Niños2\Construccion\LEGO Star Wars Death Star 10188.txt" />
+    <Content Include="images\Niños2\Construccion\LEGO Star Wars Microfighter Confidential Microfighter The Gost 75127.jpg" />
+    <Content Include="images\Niños2\Construccion\LEGO Star Wars Microfighter Confidential Microfighter The Gost 75127.txt" />
+    <Content Include="images\Niños2\Construccion\Mega Bloks Minions Huída en el Coche.jpg" />
+    <Content Include="images\Niños2\Construccion\Mega Bloks Minions Huída en el Coche.txt" />
+    <Content Include="images\Niños2\Construccion\Mega Bolsa de Construcción.jpg" />
+    <Content Include="images\Niños2\Construccion\Mega Bolsa de Construcción.txt" />
+    <Content Include="images\Niños2\fig. accion\Avengers Falcon Figura Electrónica.jpg" />
+    <Content Include="images\Niños2\fig. accion\Avengers Falcon Figura Electrónica.txt" />
+    <Content Include="images\Niños2\fig. accion\Batman Figura Grande.jpg" />
+    <Content Include="images\Niños2\fig. accion\Batman Figura Grande.txt" />
+    <Content Include="images\Niños2\fig. accion\Batman V Superman Figura Superhéroe.jpg" />
+    <Content Include="images\Niños2\fig. accion\Batman V Superman Figura Superhéroe.txt" />
+    <Content Include="images\Niños2\fig. accion\Dinofroz Figura Varios Modelos.jpg" />
+    <Content Include="images\Niños2\fig. accion\Dinofroz Figura Varios Modelos.txt" />
+    <Content Include="images\Niños2\fig. accion\Fig. Colección Capitan America.jpg" />
+    <Content Include="images\Niños2\fig. accion\Fig. Colección Capitan America.txt" />
+    <Content Include="images\Niños2\fig. accion\Fig. Dr. Octopus + Accesorios..jpg" />
+    <Content Include="images\Niños2\fig. accion\Fig. Dr. Octopus + Accesorios..txt" />
+    <Content Include="images\Niños2\fig. accion\Fig. War Machine Electronico..jpg" />
+    <Content Include="images\Niños2\fig. accion\Fig. War Machine Electronico..txt" />
+    <Content Include="images\Niños2\fig. accion\Figura Electrónica Hasbro Star Wars Elite Praetorian Guard.jpg" />
+    <Content Include="images\Niños2\fig. accion\Figura Electrónica Hasbro Star Wars Elite Praetorian Guard.txt" />
+    <Content Include="images\Niños2\fig. accion\Iron Man - Fig. Colección 12.jpg" />
+    <Content Include="images\Niños2\fig. accion\Iron Man - Fig. Colección 12.txt" />
+    <Content Include="images\Niños2\fig. accion\Juguettos T-Rex Transformable.jpg" />
+    <Content Include="images\Niños2\fig. accion\Juguettos T-Rex Transformable.txt" />
+    <Content Include="images\Niños2\fig. accion\Marvel Avengers Surtido.jpg" />
+    <Content Include="images\Niños2\fig. accion\Marvel Avengers Surtido.txt" />
+    <Content Include="images\Niños2\fig. accion\Max Steel - Mega Explosión.jpg" />
+    <Content Include="images\Niños2\fig. accion\Max Steel - Mega Explosión.txt" />
+    <Content Include="images\Niños2\fig. accion\Power Rangers Megazord SúperMegaforce.jpg" />
+    <Content Include="images\Niños2\fig. accion\Power Rangers Megazord SúperMegaforce.txt" />
+    <Content Include="images\Niños2\fig. accion\Power Rangers Ranger Armadura Dx Súper Megaforce.jpg" />
+    <Content Include="images\Niños2\fig. accion\Power Rangers Ranger Armadura Dx Súper Megaforce.txt" />
+    <Content Include="images\Niños2\fig. accion\Spider-Man Figuras Titan.jpg" />
+    <Content Include="images\Niños2\fig. accion\Spider-Man Figuras Titan.txt" />
+    <Content Include="images\Niños2\fig. accion\Spiderman - Legends Series.jpg" />
+    <Content Include="images\Niños2\fig. accion\Spiderman - Legends Series.txt" />
+    <Content Include="images\Niños2\fig. accion\The Avengers Titan Hero Figuras.jpg" />
+    <Content Include="images\Niños2\fig. accion\The Avengers Titan Hero Figuras.txt" />
+    <Content Include="images\Niños2\fig. accion\The Avengers Titan Hero Hulk.jpg" />
+    <Content Include="images\Niños2\fig. accion\The Avengers Titan Hero Hulk.txt" />
+    <Content Include="images\Niños2\fig. accion\Tortugas Ninja Figuras Mutations Tortuga a Tortuga Ninja.jpg" />
+    <Content Include="images\Niños2\fig. accion\Tortugas Ninja Figuras Mutations Tortuga a Tortuga Ninja.txt" />
+    <Content Include="images\Niños2\fig. accion\Transformers Miinicon-deployers.jpg" />
+    <Content Include="images\Niños2\fig. accion\Transformers Miinicon-deployers.txt" />
+    <Content Include="images\Niños2\fig. accion\Transformers Mini Cons.jpg" />
+    <Content Include="images\Niños2\fig. accion\Transformers Mini Cons.txt" />
+    <Content Include="images\Niños2\fig. accion\Twin Cast and Autobot Blaster Transformers Titans Return Leader Class Doomshot and Megatron Transformers Titans Return Voyager.jpg" />
+    <Content Include="images\Niños2\fig. accion\Twin Cast and Autobot Blaster Transformers Titans Return Leader Class Doomshot and Megatron Transformers Titans Return Voyager.txt" />
+    <Content Include="images\Niños2\fig. accion\Wolverine Marvel X-Men Legends Series 6 Pulg.jpg" />
+    <Content Include="images\Niños2\fig. accion\Wolverine Marvel X-Men Legends Series 6 Pulg.txt" />
+    <Content Include="images\Niños2\fig. accion\WWE Figura Double Attack.jpg" />
+    <Content Include="images\Niños2\fig. accion\WWE Figura Double Attack.txt" />
+    <Content Include="images\Niños2\fig. accion\X MEN Legends.jpg" />
+    <Content Include="images\Niños2\fig. accion\X MEN Legends.txt" />
+    <Content Include="images\Niños2\Lanzadores\Ballesta Nerf Zombie Strike.jpg" />
+    <Content Include="images\Niños2\Lanzadores\Ballesta Nerf Zombie Strike.txt" />
+    <Content Include="images\Niños2\Lanzadores\Dardos Nerf Rival Refill 25.jpg" />
+    <Content Include="images\Niños2\Lanzadores\Dardos Nerf Rival Refill 25.txt" />
+    <Content Include="images\Niños2\Lanzadores\Hasbro Nerf Zombie Strike Brainsaw.jpg" />
+    <Content Include="images\Niños2\Lanzadores\Hasbro Nerf Zombie Strike Brainsaw.txt" />
+    <Content Include="images\Niños2\Lanzadores\Lanza Dardos Batman.jpg" />
+    <Content Include="images\Niños2\Lanzadores\Lanza Dardos Batman.txt" />
+    <Content Include="images\Niños2\Lanzadores\Lanza Dardos Boom Co Spinsanity 3x.jpg" />
+    <Content Include="images\Niños2\Lanzadores\Lanza Dardos Boom Co Spinsanity 3x.txt" />
+    <Content Include="images\Niños2\Lanzadores\Lanzadardos Boomco Slambow.jpg" />
+    <Content Include="images\Niños2\Lanzadores\Lanzadardos Boomco Slambow.txt" />
+    <Content Include="images\Niños2\Lanzadores\Lanzadardos Covenant Carbine Boom Co Halo.jpg" />
+    <Content Include="images\Niños2\Lanzadores\Lanzadardos Covenant Carbine Boom Co Halo.txt" />
+    <Content Include="images\Niños2\Lanzadores\Lanzadardos Nerf Raptorstrike.jpg" />
+    <Content Include="images\Niños2\Lanzadores\Lanzadardos Nerf Raptorstrike.txt" />
+    <Content Include="images\Niños2\Lanzadores\Lanzadardos Predator Zuru X-Shot Bug Attack.jpg" />
+    <Content Include="images\Niños2\Lanzadores\Lanzadardos Predator Zuru X-Shot Bug Attack.txt" />
+    <Content Include="images\Niños2\Lanzadores\Lanzadardos Rapid Fire Zuru X-Shot Bug Attack.jpg" />
+    <Content Include="images\Niños2\Lanzadores\Lanzadardos Rapid Fire Zuru X-Shot Bug Attack.txt" />
+    <Content Include="images\Niños2\Lanzadores\Lanzador Boomco Flip Bow.jpg" />
+    <Content Include="images\Niños2\Lanzadores\Lanzador Boomco Flip Bow.txt" />
+    <Content Include="images\Niños2\Lanzadores\Lanzador Hasbro Nerf Mega Twinshock.jpg" />
+    <Content Include="images\Niños2\Lanzadores\Lanzador Hasbro Nerf Mega Twinshock.txt" />
+    <Content Include="images\Niños2\Lanzadores\Lanzador Motofury Nerf Nitro.jpg" />
+    <Content Include="images\Niños2\Lanzadores\Lanzador Motofury Nerf Nitro.txt" />
+    <Content Include="images\Niños2\Lanzadores\Lanzador Multi-Shot Flashfury Chaos Nerf Nitro.jpg" />
+    <Content Include="images\Niños2\Lanzadores\Lanzador Multi-Shot Flashfury Chaos Nerf Nitro.txt" />
+    <Content Include="images\Niños2\Lanzadores\Lanzador Nerf Alphahawk Elite.jpg" />
+    <Content Include="images\Niños2\Lanzadores\Lanzador Nerf Alphahawk Elite.txt" />
+    <Content Include="images\Niños2\Lanzadores\Lanzador Nerf Bowstrike.jpg" />
+    <Content Include="images\Niños2\Lanzadores\Lanzador Nerf Bowstrike.txt" />
+    <Content Include="images\Niños2\Lanzadores\Lanzador Nerf Disruptor Elite.jpg" />
+    <Content Include="images\Niños2\Lanzadores\Lanzador Nerf Disruptor Elite.txt" />
+    <Content Include="images\Niños2\Lanzadores\Lanzador Nerf Doublebreach Mega.jpg" />
+    <Content Include="images\Niños2\Lanzadores\Lanzador Nerf Doublebreach Mega.txt" />
+    <Content Include="images\Niños2\Lanzadores\Lanzador Nerf Doublestrike Zombie.jpg" />
+    <Content Include="images\Niños2\Lanzadores\Lanzador Nerf Doublestrike Zombie.txt" />
+    <Content Include="images\Niños2\Lanzadores\Lanzador Nerf Elite Triad EX3.jpg" />
+    <Content Include="images\Niños2\Lanzadores\Lanzador Nerf Elite Triad EX3.txt" />
+    <Content Include="images\Niños2\Lanzadores\Lanzador Nerf Falconfire Elite.jpg" />
+    <Content Include="images\Niños2\Lanzadores\Lanzador Nerf Falconfire Elite.txt" />
+    <Content Include="images\Niños2\Lanzadores\Lanzador Nerf Negotiator Doomlands.jpg" />
+    <Content Include="images\Niños2\Lanzadores\Lanzador Nerf Negotiator Doomlands.txt" />
+    <Content Include="images\Niños2\Lanzadores\Lanzador Nerf Zombie Strike Crosscut.jpg" />
+    <Content Include="images\Niños2\Lanzadores\Lanzador Nerf Zombie Strike Crosscut.txt" />
+    <Content Include="images\Niños2\Lanzadores\Set de lanzador Duelfury Demolition Nerf Nitro.jpg" />
+    <Content Include="images\Niños2\Lanzadores\Set de lanzador Duelfury Demolition Nerf Nitro.txt" />
+    <Content Include="images\Niños2\Lanzadores\Set Hasbro Nerf Nitro Delux.jpg" />
+    <Content Include="images\Niños2\Lanzadores\Set Hasbro Nerf Nitro Delux.txt" />
+    <Content Include="images\Niños2\Vehiculos\4R Camión Portacoches con Luz y Sonido.jpg" />
+    <Content Include="images\Niños2\Vehiculos\4R Camión Portacoches con Luz y Sonido.txt" />
+    <Content Include="images\Niños2\Vehiculos\4R Coche con Caravana.jpg" />
+    <Content Include="images\Niños2\Vehiculos\4R Coche con Caravana.txt" />
+    <Content Include="images\Niños2\Vehiculos\4R Radio Control Toyota FJ Cruiser  Vraios Modelos.jpg" />
+    <Content Include="images\Niños2\Vehiculos\4R Radio Control Toyota FJ Cruiser 118 Vraios Modelos.txt" />
+    <Content Include="images\Niños2\Vehiculos\4R Vehículo Urbano Camión de Basuras RL.txt" />
+    <Content Include="images\Niños2\Vehiculos\4R Vehículo Urbano Camión de Basuras.jpg" />
+    <Content Include="images\Niños2\Vehiculos\GO!!! Mario Kart Wii Wild Wing + Mario.jpg" />
+    <Content Include="images\Niños2\Vehiculos\GO!!! Mario Kart Wii Wild Wing + Mario.txt" />
+    <Content Include="images\Niños2\Vehiculos\Hot Wheels Pack 10 Vehículos Varios ModeloS.jpg" />
+    <Content Include="images\Niños2\Vehiculos\Hot Wheels Pack 10 Vehículos Varios ModeloS.txt" />
+    <Content Include="images\Niños2\Vehiculos\Moto Repsol 6V.jpg" />
+    <Content Include="images\Niños2\Vehiculos\Moto Repsol 6V.txt" />
+    <Content Include="images\Niños2\Vehiculos\Nenittos Mi Súper Camión Portacoches.jpg" />
+    <Content Include="images\Niños2\Vehiculos\Nenittos Mi Súper Camión Portacoches.txt" />
+    <Content Include="images\Niños2\Vehiculos\Patrulla Policial Especial Rescate.jpg" />
+    <Content Include="images\Niños2\Vehiculos\Patrulla Policial Especial Rescate.txt" />
+    <Content Include="images\Niños2\Vehiculos\Radio Control Ferrari Varios Colores.jpg" />
+    <Content Include="images\Niños2\Vehiculos\Radio Control Ferrari Varios Colores.txt" />
+    <Content Include="images\Niños2\Vehiculos\Radio Control Mario Kart 7.jpg" />
+    <Content Include="images\Niños2\Vehiculos\Radio Control Mario Kart 7.txt" />
+    <Content Include="images\Niños2\Vehiculos\Scalextric C2 Rally X-Treme.jpg" />
+    <Content Include="images\Niños2\Vehiculos\Scalextric C2 Rally X-Treme.txt" />
+    <Content Include="Ima\1.png" />
+    <Content Include="Ima\2.png" />
+    <Content Include="Ima\3.png" />
+    <Content Include="Ima\Niñas bellas\carritos\bati.jpg" />
+    <Content Include="Ima\Niñas bellas\carritos\bati.txt" />
+    <Content Include="Ima\Niñas bellas\carritos\bici.jpg" />
+    <Content Include="Ima\Niñas bellas\carritos\bici.txt" />
+    <Content Include="Ima\Niñas bellas\carritos\buu.jpg" />
+    <Content Include="Ima\Niñas bellas\carritos\buu.txt" />
+    <Content Include="Ima\Niñas bellas\carritos\caballo.jpg" />
+    <Content Include="Ima\Niñas bellas\carritos\caballo.txt" />
+    <Content Include="Ima\Niñas bellas\carritos\chida.jpg" />
+    <Content Include="Ima\Niñas bellas\carritos\chida.txt" />
+    <Content Include="Ima\Niñas bellas\carritos\gobierno.jpg" />
+    <Content Include="Ima\Niñas bellas\carritos\gobierno.txt" />
+    <Content Include="Ima\Niñas bellas\carritos\hi.jpg" />
+    <Content Include="Ima\Niñas bellas\carritos\hi.txt" />
+    <Content Include="Ima\Niñas bellas\carritos\jet.jpg" />
+    <Content Include="Ima\Niñas bellas\carritos\jet.txt" />
+    <Content Include="Ima\Niñas bellas\carritos\lancha.jpg" />
+    <Content Include="Ima\Niñas bellas\carritos\lancha.txt" />
+    <Content Include="Ima\Niñas bellas\carritos\me0.jpg" />
+    <Content Include="Ima\Niñas bellas\carritos\me0.txt" />
+    <Content Include="Ima\Niñas bellas\carritos\mi.jpg" />
+    <Content Include="Ima\Niñas bellas\carritos\mi.txt" />
+    <Content Include="Ima\Niñas bellas\carritos\mot.jpg" />
+    <Content Include="Ima\Niñas bellas\carritos\mot.txt" />
+    <Content Include="Ima\Niñas bellas\carritos\nado.jpg" />
+    <Content Include="Ima\Niñas bellas\carritos\nado.txt" />
+    <Content Include="Ima\Niñas bellas\carritos\no.jpg" />
+    <Content Include="Ima\Niñas bellas\carritos\no.txt" />
+    <Content Include="Ima\Niñas bellas\carritos\ora.jpg" />
+    <Content Include="Ima\Niñas bellas\carritos\ora.txt" />
+    <Content Include="Ima\Niñas bellas\carritos\otro.jpg" />
+    <Content Include="Ima\Niñas bellas\carritos\otro.txt" />
+    <Content Include="Ima\Niñas bellas\carritos\peque.jpg" />
+    <Content Include="Ima\Niñas bellas\carritos\peque.txt" />
+    <Content Include="Ima\Niñas bellas\carritos\perro.jpg" />
+    <Content Include="Ima\Niñas bellas\carritos\perro.txt" />
+    <Content Include="Ima\Niñas bellas\carritos\polly.jpg" />
+    <Content Include="Ima\Niñas bellas\carritos\polly.txt" />
+    <Content Include="Ima\Niñas bellas\carritos\pow.jpg" />
+    <Content Include="Ima\Niñas bellas\carritos\pow.txt" />
+    <Content Include="Ima\Niñas bellas\carritos\rosa.jpg" />
+    <Content Include="Ima\Niñas bellas\carritos\rosa.txt" />
+    <Content Include="Ima\Niñas bellas\carritos\vuela.jpg" />
+    <Content Include="Ima\Niñas bellas\carritos\vuela.txt" />
+    <Content Include="Ima\Niñas bellas\carritos\woo.jpg" />
+    <Content Include="Ima\Niñas bellas\carritos\woo.txt" />
+    <Content Include="Ima\Niñas bellas\carritos\wui.jpg" />
+    <Content Include="Ima\Niñas bellas\carritos\wui.txt" />
+    <Content Include="Ima\Niñas bellas\carritos\yes.jpg" />
+    <Content Include="Ima\Niñas bellas\carritos\yes.txt" />
+    <Content Include="Ima\Niñas bellas\Mascotas\Borreguito FurReal.jpg" />
+    <Content Include="Ima\Niñas bellas\Mascotas\Borreguito FurReal.txt" />
+    <Content Include="Ima\Niñas bellas\Mascotas\Cachorritos Zuppies.jpg" />
+    <Content Include="Ima\Niñas bellas\Mascotas\Cachorritos Zuppies.txt" />
+    <Content Include="Ima\Niñas bellas\Mascotas\Cheese Sandwich My Little Pony.jpg" />
+    <Content Include="Ima\Niñas bellas\Mascotas\Cheese Sandwich My Little Pony.txt" />
+    <Content Include="Ima\Niñas bellas\Mascotas\Duo Peluche Littlest Pet Shop.jpg" />
+    <Content Include="Ima\Niñas bellas\Mascotas\Duo Peluche Littlest Pet Shop.txt" />
+    <Content Include="Ima\Niñas bellas\Mascotas\El Tigre Jugueton Rayler.jpg" />
+    <Content Include="Ima\Niñas bellas\Mascotas\El Tigre Jugueton Rayler.txt" />
+    <Content Include="Ima\Niñas bellas\Mascotas\Gato Botitas FurReal.jpg" />
+    <Content Include="Ima\Niñas bellas\Mascotas\Gato Botitas FurReal.txt" />
+    <Content Include="Ima\Niñas bellas\Mascotas\Mascota Parlanchina Little Live Pets.jpg" />
+    <Content Include="Ima\Niñas bellas\Mascotas\Mascota Parlanchina Little Live Pets.txt" />
+    <Content Include="Ima\Niñas bellas\Mascotas\Mi Dragón Amigo FurReal.jpg" />
+    <Content Include="Ima\Niñas bellas\Mascotas\Mi Dragón Amigo FurReal.txt" />
+    <Content Include="Ima\Niñas bellas\Mascotas\Mini peluche My Little Pony.jpg" />
+    <Content Include="Ima\Niñas bellas\Mascotas\Mini peluche My Little Pony.txt" />
+    <Content Include="Ima\Niñas bellas\Mascotas\Miniset Pony Sirena My Little Pony.jpg" />
+    <Content Include="Ima\Niñas bellas\Mascotas\Miniset Pony Sirena My Little Pony.txt" />
+    <Content Include="Ima\Niñas bellas\Mascotas\My Little Pony Articulados.jpg" />
+    <Content Include="Ima\Niñas bellas\Mascotas\My Little Pony Articulados.txt" />
+    <Content Include="Ima\Niñas bellas\Mascotas\My Little Pony con Accsesorios Rainbowdash.jpg" />
+    <Content Include="Ima\Niñas bellas\Mascotas\My Little Pony con Accsesorios Rainbowdash.txt" />
+    <Content Include="Ima\Niñas bellas\Mascotas\Pajaro Parlanchin Little Live Pets.jpg" />
+    <Content Include="Ima\Niñas bellas\Mascotas\Pajaro Parlanchin Little Live Pets.txt" />
+    <Content Include="Ima\Niñas bellas\Mascotas\Paquete de la Amistad My Little Pony.jpg" />
+    <Content Include="Ima\Niñas bellas\Mascotas\Paquete de la Amistad My Little Pony.txt" />
+    <Content Include="Ima\Niñas bellas\Mascotas\Paquete Mascotas Littlest Pet Shop.jpg" />
+    <Content Include="Ima\Niñas bellas\Mascotas\Paquete Mascotas Littlest Pet Shop.txt" />
+    <Content Include="Ima\Niñas bellas\Mascotas\Pax Mi Cachorrito FurReal.jpg" />
+    <Content Include="Ima\Niñas bellas\Mascotas\Pax Mi Cachorrito FurReal.txt" />
+    <Content Include="Ima\Niñas bellas\Mascotas\Pinki Pie Basico My Little Pony.png" />
+    <Content Include="Ima\Niñas bellas\Mascotas\Pinki Pie Basico My Little Pony.txt" />
+    <Content Include="Ima\Niñas bellas\Mascotas\Playset My Little Pony.jpg" />
+    <Content Include="Ima\Niñas bellas\Mascotas\Playset My Little Pony.txt" />
+    <Content Include="Ima\Niñas bellas\Mascotas\Pony a la Moda My Little Pony.jpg" />
+    <Content Include="Ima\Niñas bellas\Mascotas\Pony a la Moda My Little Pony.txt" />
+    <Content Include="Ima\Niñas bellas\Mascotas\Pony con Luces My Little Pony.jpg" />
+    <Content Include="Ima\Niñas bellas\Mascotas\Pony con Luces My Little Pony.txt" />
+    <Content Include="Ima\Niñas bellas\Mascotas\Pony Sirenas My Little Pony.jpg" />
+    <Content Include="Ima\Niñas bellas\Mascotas\Pony Sirenas My Little Pony.txt" />
+    <Content Include="Ima\Niñas bellas\Mascotas\Princesa Celestia My Little Pony.jpg" />
+    <Content Include="Ima\Niñas bellas\Mascotas\Princesa Celestia My Little Pony.txt" />
+    <Content Include="Ima\Niñas bellas\Mascotas\Unicornio Dreamtopia.jpg" />
+    <Content Include="Ima\Niñas bellas\Mascotas\Unicornio Dreamtopia.txt" />
+    <Content Include="Ima\Niñas bellas\Mascotas\Wonderbolts My Little Pony.jpg" />
+    <Content Include="Ima\Niñas bellas\Mascotas\Wonderbolts My Little Pony.txt" />
+    <Content Include="Ima\Niñas bellas\Mascotas\Zoomer 2.jpg" />
+    <Content Include="Ima\Niñas bellas\Mascotas\Zoomer 2.txt" />
+    <Content Include="Ima\Niñas bellas\Muñecas\Adriennes Bath Bizz Project MC2.jpg" />
+    <Content Include="Ima\Niñas bellas\Muñecas\Adriennes Bath Bizz Project MC2.txt" />
+    <Content Include="Ima\Niñas bellas\Muñecas\Amigas Chelsea Camp Pop.jpg" />
+    <Content Include="Ima\Niñas bellas\Muñecas\Amigas Chelsea Camp Pop.txt" />
+    <Content Include="Ima\Niñas bellas\Muñecas\Barbie Diseñadora de Peinados.jpg" />
+    <Content Include="Ima\Niñas bellas\Muñecas\Barbie Diseñadora de Peinados.txt" />
+    <Content Include="Ima\Niñas bellas\Muñecas\Bella Melodias Encantadas.jpg" />
+    <Content Include="Ima\Niñas bellas\Muñecas\Bella Melodias Encantadas.txt" />
+    <Content Include="Ima\Niñas bellas\Muñecas\Bella vestido Aldea Hasbro.jpg" />
+    <Content Include="Ima\Niñas bellas\Muñecas\Bella vestido Aldea Hasbro.txt" />
+    <Content Include="Ima\Niñas bellas\Muñecas\Bella y Bestia Celebracion Real.jpg" />
+    <Content Include="Ima\Niñas bellas\Muñecas\Bella y Bestia Celebracion Real.txt" />
+    <Content Include="Ima\Niñas bellas\Muñecas\Cenicienta Moda Magica.jpg" />
+    <Content Include="Ima\Niñas bellas\Muñecas\Cenicienta Moda Magica.txt" />
+    <Content Include="Ima\Niñas bellas\Muñecas\Chelsea Dreamtopia .jpg" />
+    <Content Include="Ima\Niñas bellas\Muñecas\Chelsea Dreamtopia.txt" />
+    <Content Include="Ima\Niñas bellas\Muñecas\Desfile Helados Polly Pocket.jpg" />
+    <Content Include="Ima\Niñas bellas\Muñecas\Desfile Helados Polly Pocket.txt" />
+    <Content Include="Ima\Niñas bellas\Muñecas\Elsa Frozen Copos Magicos.jpg" />
+    <Content Include="Ima\Niñas bellas\Muñecas\Elsa Frozen Copos Magicos.txt" />
+    <Content Include="Ima\Niñas bellas\Muñecas\Ever After High Apple White.jpg" />
+    <Content Include="Ima\Niñas bellas\Muñecas\Ever After High Apple White.txt" />
+    <Content Include="Ima\Niñas bellas\Muñecas\Frozen Mini.jpg" />
+    <Content Include="Ima\Niñas bellas\Muñecas\Frozen Mini.txt" />
+    <Content Include="Ima\Niñas bellas\Muñecas\Mini Sirenas Dreamtopia.jpg" />
+    <Content Include="Ima\Niñas bellas\Muñecas\Mini Sirenas Dreamtopia.txt" />
+    <Content Include="Ima\Niñas bellas\Muñecas\Muñeca Lalaloopsy.jpg" />
+    <Content Include="Ima\Niñas bellas\Muñecas\Muñeca Lalaloopsy.txt" />
+    <Content Include="Ima\Niñas bellas\Muñecas\Muñecas Princesas Disney.jpg" />
+    <Content Include="Ima\Niñas bellas\Muñecas\Muñecas Princesas Disney.txt" />
+    <Content Include="Ima\Niñas bellas\Muñecas\Nancy Flores Famosa.jpg" />
+    <Content Include="Ima\Niñas bellas\Muñecas\Nancy Flores Famosa.txt" />
+    <Content Include="Ima\Niñas bellas\Muñecas\Parque Acuatico Polly Pocket.jpg" />
+    <Content Include="Ima\Niñas bellas\Muñecas\Parque Acuatico Polly Pocket.txt" />
+    <Content Include="Ima\Niñas bellas\Muñecas\Princesas Valientes Ever After High.jpg" />
+    <Content Include="Ima\Niñas bellas\Muñecas\Princesas Valientes Ever After High.txt" />
+    <Content Include="Ima\Niñas bellas\Muñecas\Princesas Valientes Ever After.jpg" />
+    <Content Include="Ima\Niñas bellas\Muñecas\Princesas Valientes Ever After.txt" />
+    <Content Include="Ima\Niñas bellas\Muñecas\Shopkins Shoppies Muñecas.jpg" />
+    <Content Include="Ima\Niñas bellas\Muñecas\Shopkins Shoppies Muñecas.txt" />
+    <Content Include="Ima\Niñas bellas\Muñecas\Supere Here Girls.jpg" />
+    <Content Include="Ima\Niñas bellas\Muñecas\Supere Here Girls.txt" />
+    <Content Include="Ima\Niñas bellas\Muñecas\Surtido Ever After High.jpg" />
+    <Content Include="Ima\Niñas bellas\Muñecas\Surtido Ever After High.txt" />
+    <Content Include="Ima\Niñas bellas\Muñecas\Surtido Muñecas Descendientes Basicas.jpg" />
+    <Content Include="Ima\Niñas bellas\Muñecas\Surtido Muñecas Descendientes Basicas.txt" />
+    <Content Include="Ima\Niñas bellas\Muñecas\Trolls.jpg" />
+    <Content Include="Ima\Niñas bellas\Muñecas\Trolls.txt" />
+    <Content Include="Ima\Niñas bellas\Muñecas\Wonder Woman.jpg" />
+    <Content Include="Ima\Niñas bellas\Muñecas\Wonder Woman.txt" />
+    <Content Include="Ima\Pow.jpg" />
+    <Content Include="Niñas_Muñecas.aspx" />
+    <Content Include="Niños_Autopistas.aspx" />
+    <Content Include="Niños_construccion.aspx" />
+    <Content Include="Niños_figurasaccion.aspx" />
+    <Content Include="Niños_Lanzadores.aspx" />
+    <Content Include="Niños_vehiculos.aspx" />
+    <Content Include="packages.config" />
+    <Content Include="ApplicationInsights.config">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </Content>
+    <Content Include="css\estilosPersonalizados.scss" />
+    <Content Include="css\radioButton.scss" />
+    <Content Include="productsBebes_Aprendizaje.aspx" />
+    <Content Include="productsBebes_Nacidos.aspx" />
+    <Content Include="ProductsBebe_tapetes.aspx" />
+    <Content Include="Content\bootstrap.min.css.map" />
+    <Content Include="Content\bootstrap.css.map" />
+    <Content Include="Content\bootstrap-theme.min.css.map" />
+    <Content Include="Content\bootstrap-theme.css.map" />
+    <None Include="Scripts\jquery-1.9.1.intellisense.js" />
+    <Content Include="Scripts\bootstrap.js" />
+    <Content Include="Scripts\bootstrap.min.js" />
+    <Content Include="Scripts\jquery-1.9.1.js" />
+    <Content Include="Scripts\jquery-1.9.1.min.js" />
+    <Content Include="themes\amelia\bootstrap.css" />
+    <Content Include="themes\amelia\bootstrap.min.css" />
+    <Content Include="themes\bootshop\bootstrap.min.css" />
+    <Content Include="themes\businessltd\bootstrap.min.css" />
+    <Content Include="themes\cerulean\bootstrap.min.css" />
+    <Content Include="themes\css\base.css" />
+    <Content Include="themes\css\bootstrap-responsive.min.css" />
+    <Content Include="themes\css\font-awesome-ie7.css" />
+    <Content Include="themes\css\font-awesome.css" />
+    <Content Include="themes\cyborg\bootstrap.min.css" />
+    <Content Include="themes\font\fontawesome-webfont.svg" />
+    <Content Include="themes\images\carousel\1.png" />
+    <Content Include="themes\images\carousel\2.png" />
+    <Content Include="themes\images\carousel\3.png" />
+    <Content Include="themes\images\carousel\4.png" />
+    <Content Include="themes\images\carousel\5.png" />
+    <Content Include="themes\images\carousel\6.png" />
+    <Content Include="themes\images\carousel\7.png" />
+    <Content Include="themes\images\facebook.png" />
+    <Content Include="themes\images\headerRepeat.png" />
+    <Content Include="themes\images\ico-cart.png" />
+    <Content Include="themes\images\ico\apple-touch-icon-114-precomposed.png" />
+    <Content Include="themes\images\ico\apple-touch-icon-144-precomposed.png" />
+    <Content Include="themes\images\ico\apple-touch-icon-57-precomposed.png" />
+    <Content Include="themes\images\ico\apple-touch-icon-72-precomposed.png" />
+    <Content Include="themes\images\ico\favicon.ico" />
+    <Content Include="themes\images\lightbox\Close.png" />
+    <Content Include="themes\images\lightbox\lightbox-blank.gif" />
+    <Content Include="themes\images\lightbox\lightbox-btn-close.gif" />
+    <Content Include="themes\images\lightbox\lightbox-btn-next.gif" />
+    <Content Include="themes\images\lightbox\lightbox-btn-prev.gif" />
+    <Content Include="themes\images\lightbox\lightbox-ico-loading.gif" />
+    <Content Include="themes\images\logo.png" />
+    <Content Include="themes\images\new.png" />
+    <Content Include="themes\images\payment_methods.png" />
+    <Content Include="themes\images\products\1.jpg" />
+    <Content Include="themes\images\products\10.jpg" />
+    <Content Include="themes\images\products\11.jpg" />
+    <Content Include="themes\images\products\12.jpg" />
+    <Content Include="themes\images\products\13.jpg" />
+    <Content Include="themes\images\products\2.jpg" />
+    <Content Include="themes\images\products\3.jpg" />
+    <Content Include="themes\images\products\4.jpg" />
+    <Content Include="themes\images\products\5.jpg" />
+    <Content Include="themes\images\products\6.jpg" />
+    <Content Include="themes\images\products\7.jpg" />
+    <Content Include="themes\images\products\8.jpg" />
+    <Content Include="themes\images\products\9.jpg" />
+    <Content Include="themes\images\products\b1.jpg" />
+    <Content Include="themes\images\products\b2.jpg" />
+    <Content Include="themes\images\products\b3.jpg" />
+    <Content Include="themes\images\products\b4.jpg" />
+    <Content Include="themes\images\products\kindle.png" />
+    <Content Include="themes\images\products\large\3.jpg" />
+    <Content Include="themes\images\products\large\f1.jpg" />
+    <Content Include="themes\images\products\large\f2.jpg" />
+    <Content Include="themes\images\products\large\f3.jpg" />
+    <Content Include="themes\images\products\panasonic.jpg" />
+    <Content Include="themes\images\search.png" />
+    <Content Include="themes\images\tabRepeatInactive.png" />
+    <Content Include="themes\images\twitter.png" />
+    <Content Include="themes\images\youtube.png" />
+    <Content Include="themes\img\glyphicons-halflings-white.png" />
+    <Content Include="themes\img\glyphicons-halflings.png" />
+    <Content Include="themes\journal\bootstrap.min.css" />
+    <Content Include="themes\js\bootshop.js" />
+    <Content Include="themes\js\bootstrap.min.js" />
+    <Content Include="themes\js\google-code-prettify\prettify.css" />
+    <Content Include="themes\js\google-code-prettify\prettify.js" />
+    <Content Include="themes\js\jquery.js" />
+    <Content Include="themes\js\jquery.lightbox-0.5.js" />
+    <Content Include="themes\js\less.js" />
+    <Content Include="themes\plantillas\PlantillaCatalogo\agrement.txt" />
+    <Content Include="themes\plantillas\PlantillaCatalogo\bootstrap-shop\bootstrap\css\bootstrap-responsive.min.css" />
+    <Content Include="themes\plantillas\PlantillaCatalogo\bootstrap-shop\bootstrap\css\bootstrap.min.css" />
+    <Content Include="themes\plantillas\PlantillaCatalogo\bootstrap-shop\bootstrap\img\glyphicons-halflings-white.png" />
+    <Content Include="themes\plantillas\PlantillaCatalogo\bootstrap-shop\bootstrap\img\glyphicons-halflings.png" />
+    <Content Include="themes\plantillas\PlantillaCatalogo\bootstrap-shop\bootstrap\js\bootstrap.min.js" />
+    <Content Include="themes\plantillas\PlantillaCatalogo\bootstrap-shop\compair.html" />
+    <Content Include="themes\plantillas\PlantillaCatalogo\bootstrap-shop\components.html" />
+    <Content Include="themes\plantillas\PlantillaCatalogo\bootstrap-shop\contact.html" />
+    <Content Include="themes\plantillas\PlantillaCatalogo\bootstrap-shop\faq.html" />
+    <Content Include="themes\plantillas\PlantillaCatalogo\bootstrap-shop\forgetpass.html" />
+    <Content Include="themes\plantillas\PlantillaCatalogo\bootstrap-shop\index1.html" />
+    <Content Include="themes\plantillas\PlantillaCatalogo\bootstrap-shop\legal_notice.html" />
+    <Content Include="themes\plantillas\PlantillaCatalogo\bootstrap-shop\login.html" />
+    <Content Include="themes\plantillas\PlantillaCatalogo\bootstrap-shop\normal.html" />
+    <Content Include="themes\plantillas\PlantillaCatalogo\bootstrap-shop\products.html" />
+    <Content Include="themes\plantillas\PlantillaCatalogo\bootstrap-shop\product_details.html" />
+    <Content Include="themes\plantillas\PlantillaCatalogo\bootstrap-shop\product_summary.html" />
+    <Content Include="themes\plantillas\PlantillaCatalogo\bootstrap-shop\register.html" />
+    <Content Include="themes\plantillas\PlantillaCatalogo\bootstrap-shop\special_offer.html" />
+    <Content Include="themes\plantillas\PlantillaCatalogo\bootstrap-shop\tac.html" />
+    <Content Include="themes\plantillas\PlantillaCatalogo\bootstrap-shop\themes\amelia\bootstrap.css" />
+    <Content Include="themes\plantillas\PlantillaCatalogo\bootstrap-shop\themes\amelia\bootstrap.min.css" />
+    <Content Include="themes\plantillas\PlantillaCatalogo\bootstrap-shop\themes\bootshop\bootstrap.min.css" />
+    <Content Include="themes\plantillas\PlantillaCatalogo\bootstrap-shop\themes\businessltd\bootstrap.min.css" />
+    <Content Include="themes\plantillas\PlantillaCatalogo\bootstrap-shop\themes\cerulean\bootstrap.min.css" />
+    <Content Include="themes\plantillas\PlantillaCatalogo\bootstrap-shop\themes\css\base.css" />
+    <Content Include="themes\plantillas\PlantillaCatalogo\bootstrap-shop\themes\css\bootstrap-responsive.min.css" />
+    <Content Include="themes\plantillas\PlantillaCatalogo\bootstrap-shop\themes\css\font-awesome-ie7.css" />
+    <Content Include="themes\plantillas\PlantillaCatalogo\bootstrap-shop\themes\css\font-awesome.css" />
+    <Content Include="themes\plantillas\PlantillaCatalogo\bootstrap-shop\themes\cyborg\bootstrap.min.css" />
+    <Content Include="themes\plantillas\PlantillaCatalogo\bootstrap-shop\themes\font\fontawesome-webfont.svg" />
+    <Content Include="themes\plantillas\PlantillaCatalogo\bootstrap-shop\themes\images\carousel\1.png" />
+    <Content Include="themes\plantillas\PlantillaCatalogo\bootstrap-shop\themes\images\carousel\2.png" />
+    <Content Include="themes\plantillas\PlantillaCatalogo\bootstrap-shop\themes\images\carousel\3.png" />
+    <Content Include="themes\plantillas\PlantillaCatalogo\bootstrap-shop\themes\images\carousel\4.png" />
+    <Content Include="themes\plantillas\PlantillaCatalogo\bootstrap-shop\themes\images\carousel\5.png" />
+    <Content Include="themes\plantillas\PlantillaCatalogo\bootstrap-shop\themes\images\carousel\6.png" />
+    <Content Include="themes\plantillas\PlantillaCatalogo\bootstrap-shop\themes\images\carousel\7.png" />
+    <Content Include="themes\plantillas\PlantillaCatalogo\bootstrap-shop\themes\images\facebook.png" />
+    <Content Include="themes\plantillas\PlantillaCatalogo\bootstrap-shop\themes\images\headerRepeat.png" />
+    <Content Include="themes\plantillas\PlantillaCatalogo\bootstrap-shop\themes\images\ico-cart.png" />
+    <Content Include="themes\plantillas\PlantillaCatalogo\bootstrap-shop\themes\images\ico\apple-touch-icon-114-precomposed.png" />
+    <Content Include="themes\plantillas\PlantillaCatalogo\bootstrap-shop\themes\images\ico\apple-touch-icon-144-precomposed.png" />
+    <Content Include="themes\plantillas\PlantillaCatalogo\bootstrap-shop\themes\images\ico\apple-touch-icon-57-precomposed.png" />
+    <Content Include="themes\plantillas\PlantillaCatalogo\bootstrap-shop\themes\images\ico\apple-touch-icon-72-precomposed.png" />
+    <Content Include="themes\plantillas\PlantillaCatalogo\bootstrap-shop\themes\images\ico\favicon.ico" />
+    <Content Include="themes\plantillas\PlantillaCatalogo\bootstrap-shop\themes\images\lightbox\Close.png" />
+    <Content Include="themes\plantillas\PlantillaCatalogo\bootstrap-shop\themes\images\lightbox\lightbox-blank.gif" />
+    <Content Include="themes\plantillas\PlantillaCatalogo\bootstrap-shop\themes\images\lightbox\lightbox-btn-close.gif" />
+    <Content Include="themes\plantillas\PlantillaCatalogo\bootstrap-shop\themes\images\lightbox\lightbox-btn-next.gif" />
+    <Content Include="themes\plantillas\PlantillaCatalogo\bootstrap-shop\themes\images\lightbox\lightbox-btn-prev.gif" />
+    <Content Include="themes\plantillas\PlantillaCatalogo\bootstrap-shop\themes\images\lightbox\lightbox-ico-loading.gif" />
+    <Content Include="themes\plantillas\PlantillaCatalogo\bootstrap-shop\themes\images\logo.png" />
+    <Content Include="themes\plantillas\PlantillaCatalogo\bootstrap-shop\themes\images\new.png" />
+    <Content Include="themes\plantillas\PlantillaCatalogo\bootstrap-shop\themes\images\payment_methods.png" />
+    <Content Include="themes\plantillas\PlantillaCatalogo\bootstrap-shop\themes\images\products\1.jpg" />
+    <Content Include="themes\plantillas\PlantillaCatalogo\bootstrap-shop\themes\images\products\10.jpg" />
+    <Content Include="themes\plantillas\PlantillaCatalogo\bootstrap-shop\themes\images\products\11.jpg" />
+    <Content Include="themes\plantillas\PlantillaCatalogo\bootstrap-shop\themes\images\products\12.jpg" />
+    <Content Include="themes\plantillas\PlantillaCatalogo\bootstrap-shop\themes\images\products\13.jpg" />
+    <Content Include="themes\plantillas\PlantillaCatalogo\bootstrap-shop\themes\images\products\2.jpg" />
+    <Content Include="themes\plantillas\PlantillaCatalogo\bootstrap-shop\themes\images\products\3.jpg" />
+    <Content Include="themes\plantillas\PlantillaCatalogo\bootstrap-shop\themes\images\products\4.jpg" />
+    <Content Include="themes\plantillas\PlantillaCatalogo\bootstrap-shop\themes\images\products\5.jpg" />
+    <Content Include="themes\plantillas\PlantillaCatalogo\bootstrap-shop\themes\images\products\6.jpg" />
+    <Content Include="themes\plantillas\PlantillaCatalogo\bootstrap-shop\themes\images\products\7.jpg" />
+    <Content Include="themes\plantillas\PlantillaCatalogo\bootstrap-shop\themes\images\products\8.jpg" />
+    <Content Include="themes\plantillas\PlantillaCatalogo\bootstrap-shop\themes\images\products\9.jpg" />
+    <Content Include="themes\plantillas\PlantillaCatalogo\bootstrap-shop\themes\images\products\b1.jpg" />
+    <Content Include="themes\plantillas\PlantillaCatalogo\bootstrap-shop\themes\images\products\b2.jpg" />
+    <Content Include="themes\plantillas\PlantillaCatalogo\bootstrap-shop\themes\images\products\b3.jpg" />
+    <Content Include="themes\plantillas\PlantillaCatalogo\bootstrap-shop\themes\images\products\b4.jpg" />
+    <Content Include="themes\plantillas\PlantillaCatalogo\bootstrap-shop\themes\images\products\kindle.png" />
+    <Content Include="themes\plantillas\PlantillaCatalogo\bootstrap-shop\themes\images\products\large\3.jpg" />
+    <Content Include="themes\plantillas\PlantillaCatalogo\bootstrap-shop\themes\images\products\large\f1.jpg" />
+    <Content Include="themes\plantillas\PlantillaCatalogo\bootstrap-shop\themes\images\products\large\f2.jpg" />
+    <Content Include="themes\plantillas\PlantillaCatalogo\bootstrap-shop\themes\images\products\large\f3.jpg" />
+    <Content Include="themes\plantillas\PlantillaCatalogo\bootstrap-shop\themes\images\products\panasonic.jpg" />
+    <Content Include="themes\plantillas\PlantillaCatalogo\bootstrap-shop\themes\images\search.png" />
+    <Content Include="themes\plantillas\PlantillaCatalogo\bootstrap-shop\themes\images\tabRepeatInactive.png" />
+    <Content Include="themes\plantillas\PlantillaCatalogo\bootstrap-shop\themes\images\twitter.png" />
+    <Content Include="themes\plantillas\PlantillaCatalogo\bootstrap-shop\themes\images\youtube.png" />
+    <Content Include="themes\plantillas\PlantillaCatalogo\bootstrap-shop\themes\img\glyphicons-halflings-white.png" />
+    <Content Include="themes\plantillas\PlantillaCatalogo\bootstrap-shop\themes\img\glyphicons-halflings.png" />
+    <Content Include="themes\plantillas\PlantillaCatalogo\bootstrap-shop\themes\journal\bootstrap.min.css" />
+    <Content Include="themes\plantillas\PlantillaCatalogo\bootstrap-shop\themes\js\bootshop.js" />
+    <Content Include="themes\plantillas\PlantillaCatalogo\bootstrap-shop\themes\js\bootstrap.min.js" />
+    <Content Include="themes\plantillas\PlantillaCatalogo\bootstrap-shop\themes\js\google-code-prettify\prettify.css" />
+    <Content Include="themes\plantillas\PlantillaCatalogo\bootstrap-shop\themes\js\google-code-prettify\prettify.js" />
+    <Content Include="themes\plantillas\PlantillaCatalogo\bootstrap-shop\themes\js\jquery.js" />
+    <Content Include="themes\plantillas\PlantillaCatalogo\bootstrap-shop\themes\js\jquery.lightbox-0.5.js" />
+    <Content Include="themes\plantillas\PlantillaCatalogo\bootstrap-shop\themes\js\less.js" />
+    <Content Include="themes\plantillas\PlantillaCatalogo\bootstrap-shop\themes\readable\bootstrap.min.css" />
+    <Content Include="themes\plantillas\PlantillaCatalogo\bootstrap-shop\themes\simplex\bootstrap.min.css" />
+    <Content Include="themes\plantillas\PlantillaCatalogo\bootstrap-shop\themes\slate\bootstrap.min.css" />
+    <Content Include="themes\plantillas\PlantillaCatalogo\bootstrap-shop\themes\spacelab\bootstrap.min.css" />
+    <Content Include="themes\plantillas\PlantillaCatalogo\bootstrap-shop\themes\spruce\bootstrap.css" />
+    <Content Include="themes\plantillas\PlantillaCatalogo\bootstrap-shop\themes\spruce\bootstrap.min.css" />
+    <Content Include="themes\plantillas\PlantillaCatalogo\bootstrap-shop\themes\superhero\bootstrap.min.css" />
+    <Content Include="themes\plantillas\PlantillaCatalogo\bootstrap-shop\themes\switch\images\clr\amelia.png" />
+    <Content Include="themes\plantillas\PlantillaCatalogo\bootstrap-shop\themes\switch\images\clr\bootshop.png" />
+    <Content Include="themes\plantillas\PlantillaCatalogo\bootstrap-shop\themes\switch\images\clr\businessltd.png" />
+    <Content Include="themes\plantillas\PlantillaCatalogo\bootstrap-shop\themes\switch\images\clr\cerulean.png" />
+    <Content Include="themes\plantillas\PlantillaCatalogo\bootstrap-shop\themes\switch\images\clr\cyborg.png" />
+    <Content Include="themes\plantillas\PlantillaCatalogo\bootstrap-shop\themes\switch\images\clr\journal.png" />
+    <Content Include="themes\plantillas\PlantillaCatalogo\bootstrap-shop\themes\switch\images\clr\readable.png" />
+    <Content Include="themes\plantillas\PlantillaCatalogo\bootstrap-shop\themes\switch\images\clr\simplex.png" />
+    <Content Include="themes\plantillas\PlantillaCatalogo\bootstrap-shop\themes\switch\images\clr\slate.png" />
+    <Content Include="themes\plantillas\PlantillaCatalogo\bootstrap-shop\themes\switch\images\clr\spacelab.png" />
+    <Content Include="themes\plantillas\PlantillaCatalogo\bootstrap-shop\themes\switch\images\clr\spruce.png" />
+    <Content Include="themes\plantillas\PlantillaCatalogo\bootstrap-shop\themes\switch\images\clr\superhero.png" />
+    <Content Include="themes\plantillas\PlantillaCatalogo\bootstrap-shop\themes\switch\images\clr\united.png" />
+    <Content Include="themes\plantillas\PlantillaCatalogo\bootstrap-shop\themes\switch\images\hideme.png" />
+    <Content Include="themes\plantillas\PlantillaCatalogo\bootstrap-shop\themes\switch\images\pattern\pattern1.png" />
+    <Content Include="themes\plantillas\PlantillaCatalogo\bootstrap-shop\themes\switch\images\pattern\pattern10.png" />
+    <Content Include="themes\plantillas\PlantillaCatalogo\bootstrap-shop\themes\switch\images\pattern\pattern11.png" />
+    <Content Include="themes\plantillas\PlantillaCatalogo\bootstrap-shop\themes\switch\images\pattern\pattern12.png" />
+    <Content Include="themes\plantillas\PlantillaCatalogo\bootstrap-shop\themes\switch\images\pattern\pattern13.png" />
+    <Content Include="themes\plantillas\PlantillaCatalogo\bootstrap-shop\themes\switch\images\pattern\pattern14.png" />
+    <Content Include="themes\plantillas\PlantillaCatalogo\bootstrap-shop\themes\switch\images\pattern\pattern15.png" />
+    <Content Include="themes\plantillas\PlantillaCatalogo\bootstrap-shop\themes\switch\images\pattern\pattern16.png" />
+    <Content Include="themes\plantillas\PlantillaCatalogo\bootstrap-shop\themes\switch\images\pattern\pattern16~.png" />
+    <Content Include="themes\plantillas\PlantillaCatalogo\bootstrap-shop\themes\switch\images\pattern\pattern17.png" />
+    <Content Include="themes\plantillas\PlantillaCatalogo\bootstrap-shop\themes\switch\images\pattern\pattern17~.png" />
+    <Content Include="themes\plantillas\PlantillaCatalogo\bootstrap-shop\themes\switch\images\pattern\pattern18.png" />
+    <Content Include="themes\plantillas\PlantillaCatalogo\bootstrap-shop\themes\switch\images\pattern\pattern19.png" />
+    <Content Include="themes\plantillas\PlantillaCatalogo\bootstrap-shop\themes\switch\images\pattern\pattern19~.png" />
+    <Content Include="themes\plantillas\PlantillaCatalogo\bootstrap-shop\themes\switch\images\pattern\pattern2.png" />
+    <Content Include="themes\plantillas\PlantillaCatalogo\bootstrap-shop\themes\switch\images\pattern\pattern20.png" />
+    <Content Include="themes\plantillas\PlantillaCatalogo\bootstrap-shop\themes\switch\images\pattern\pattern20~.png" />
+    <Content Include="themes\plantillas\PlantillaCatalogo\bootstrap-shop\themes\switch\images\pattern\pattern3.png" />
+    <Content Include="themes\plantillas\PlantillaCatalogo\bootstrap-shop\themes\switch\images\pattern\pattern4.png" />
+    <Content Include="themes\plantillas\PlantillaCatalogo\bootstrap-shop\themes\switch\images\pattern\pattern5.png" />
+    <Content Include="themes\plantillas\PlantillaCatalogo\bootstrap-shop\themes\switch\images\pattern\pattern6.png" />
+    <Content Include="themes\plantillas\PlantillaCatalogo\bootstrap-shop\themes\switch\images\pattern\pattern7.png" />
+    <Content Include="themes\plantillas\PlantillaCatalogo\bootstrap-shop\themes\switch\images\pattern\pattern8.png" />
+    <Content Include="themes\plantillas\PlantillaCatalogo\bootstrap-shop\themes\switch\images\pattern\pattern9.png" />
+    <Content Include="themes\plantillas\PlantillaCatalogo\bootstrap-shop\themes\switch\images\styleTgl.png" />
+    <Content Include="themes\plantillas\PlantillaCatalogo\bootstrap-shop\themes\switch\theamswitcher.js" />
+    <Content Include="themes\plantillas\PlantillaCatalogo\bootstrap-shop\themes\switch\themeswitch.css" />
+    <Content Include="themes\plantillas\PlantillaCatalogo\bootstrap-shop\themes\united\bootstrap.min.css" />
+    <Content Include="themes\plantillas\PlantillaCatalogo\readme.txt" />
+    <Content Include="themes\readable\bootstrap.min.css" />
+    <Content Include="themes\simplex\bootstrap.min.css" />
+    <Content Include="themes\slate\bootstrap.min.css" />
+    <Content Include="themes\spacelab\bootstrap.min.css" />
+    <Content Include="themes\spruce\bootstrap.css" />
+    <Content Include="themes\spruce\bootstrap.min.css" />
+    <Content Include="themes\superhero\bootstrap.min.css" />
+    <Content Include="themes\switch\images\clr\amelia.png" />
+    <Content Include="themes\switch\images\clr\bootshop.png" />
+    <Content Include="themes\switch\images\clr\businessltd.png" />
+    <Content Include="themes\switch\images\clr\cerulean.png" />
+    <Content Include="themes\switch\images\clr\cyborg.png" />
+    <Content Include="themes\switch\images\clr\journal.png" />
+    <Content Include="themes\switch\images\clr\readable.png" />
+    <Content Include="themes\switch\images\clr\simplex.png" />
+    <Content Include="themes\switch\images\clr\slate.png" />
+    <Content Include="themes\switch\images\clr\spacelab.png" />
+    <Content Include="themes\switch\images\clr\spruce.png" />
+    <Content Include="themes\switch\images\clr\superhero.png" />
+    <Content Include="themes\switch\images\clr\united.png" />
+    <Content Include="themes\switch\images\hideme.png" />
+    <Content Include="themes\switch\images\pattern\pattern1.png" />
+    <Content Include="themes\switch\images\pattern\pattern10.png" />
+    <Content Include="themes\switch\images\pattern\pattern11.png" />
+    <Content Include="themes\switch\images\pattern\pattern12.png" />
+    <Content Include="themes\switch\images\pattern\pattern13.png" />
+    <Content Include="themes\switch\images\pattern\pattern14.png" />
+    <Content Include="themes\switch\images\pattern\pattern15.png" />
+    <Content Include="themes\switch\images\pattern\pattern16.png" />
+    <Content Include="themes\switch\images\pattern\pattern16~.png" />
+    <Content Include="themes\switch\images\pattern\pattern17.png" />
+    <Content Include="themes\switch\images\pattern\pattern17~.png" />
+    <Content Include="themes\switch\images\pattern\pattern18.png" />
+    <Content Include="themes\switch\images\pattern\pattern19.png" />
+    <Content Include="themes\switch\images\pattern\pattern19~.png" />
+    <Content Include="themes\switch\images\pattern\pattern2.png" />
+    <Content Include="themes\switch\images\pattern\pattern20.png" />
+    <Content Include="themes\switch\images\pattern\pattern20~.png" />
+    <Content Include="themes\switch\images\pattern\pattern3.png" />
+    <Content Include="themes\switch\images\pattern\pattern4.png" />
+    <Content Include="themes\switch\images\pattern\pattern5.png" />
+    <Content Include="themes\switch\images\pattern\pattern6.png" />
+    <Content Include="themes\switch\images\pattern\pattern7.png" />
+    <Content Include="themes\switch\images\pattern\pattern8.png" />
+    <Content Include="themes\switch\images\pattern\pattern9.png" />
+    <Content Include="themes\switch\images\styleTgl.png" />
+    <Content Include="themes\switch\theamswitcher.js" />
+    <Content Include="themes\switch\themeswitch.css" />
+    <Content Include="themes\united\bootstrap.min.css" />
+    <Content Include="Inicio.aspx" />
+    <Content Include="themes\font\fontawesome-webfont.eot" />
+    <Content Include="themes\font\fontawesome-webfont.ttf" />
+    <Content Include="themes\font\fontawesome-webfont.woff" />
+    <Content Include="themes\font\museo_slab_300-webfont.eot" />
+    <Content Include="themes\font\museo_slab_300-webfont.ttf" />
+    <Content Include="themes\font\museo_slab_500-webfont.eot" />
+    <Content Include="themes\font\museo_slab_500-webfont.ttf" />
+    <Content Include="themes\font\proximanova-webfont.eot" />
+    <Content Include="themes\font\proximanova-webfont.ttf" />
+    <Content Include="themes\less\accordion.less" />
+    <Content Include="themes\less\alerts.less" />
+    <Content Include="themes\less\amelia.less" />
+    <Content Include="themes\less\amelia\bootswatch.less" />
+    <Content Include="themes\less\amelia\variables.less" />
+    <Content Include="themes\less\bootshop.less" />
+    <Content Include="themes\less\bootshop\main.less" />
+    <Content Include="themes\less\bootshop\variables.less" />
+    <Content Include="themes\less\bootstrap.less" />
+    <Content Include="themes\less\breadcrumbs.less" />
+    <Content Include="themes\less\button-groups.less" />
+    <Content Include="themes\less\buttons.less" />
+    <Content Include="themes\less\carousel.less" />
+    <Content Include="themes\less\classified.less" />
+    <Content Include="themes\less\close.less" />
+    <Content Include="themes\less\code.less" />
+    <Content Include="themes\less\component-animations.less" />
+    <Content Include="themes\less\dropdowns.less" />
+    <Content Include="themes\less\font-awesome-ie7.less" />
+    <Content Include="themes\less\font-awesome.less" />
+    <Content Include="themes\less\forms.less" />
+    <Content Include="themes\less\grid.less" />
+    <Content Include="themes\less\hero-unit.less" />
+    <Content Include="themes\less\labels-badges.less" />
+    <Content Include="themes\less\layouts.less" />
+    <Content Include="themes\less\mixins.less" />
+    <Content Include="themes\less\modals.less" />
+    <Content Include="themes\less\navbar.less" />
+    <Content Include="themes\less\navs.less" />
+    <Content Include="themes\less\pager.less" />
+    <Content Include="themes\less\pagination.less" />
+    <Content Include="themes\less\popovers.less" />
+    <Content Include="themes\less\progress-bars.less" />
+    <Content Include="themes\less\reset.less" />
+    <Content Include="themes\less\responsive-1200px-min.less" />
+    <Content Include="themes\less\responsive-767px-max.less" />
+    <Content Include="themes\less\responsive-768px-979px.less" />
+    <Content Include="themes\less\responsive-navbar.less" />
+    <Content Include="themes\less\responsive-utilities.less" />
+    <Content Include="themes\less\responsive.less" />
+    <Content Include="themes\less\scaffolding.less" />
+    <Content Include="themes\less\simplex.less" />
+    <Content Include="themes\less\simplex\bootswatch.less" />
+    <Content Include="themes\less\simplex\variables.less" />
+    <Content Include="themes\less\sprites.less" />
+    <Content Include="themes\less\tables.less" />
+    <Content Include="themes\less\thumbnails.less" />
+    <Content Include="themes\less\tooltip.less" />
+    <Content Include="themes\less\type.less" />
+    <Content Include="themes\less\utilities.less" />
+    <Content Include="themes\less\variables.less" />
+    <Content Include="themes\less\wells.less" />
+    <Content Include="themes\plantillas\PlantillaCatalogo\bootstrap-shop\themes\font\fontawesome-webfont.eot" />
+    <Content Include="themes\plantillas\PlantillaCatalogo\bootstrap-shop\themes\font\fontawesome-webfont.ttf" />
+    <Content Include="themes\plantillas\PlantillaCatalogo\bootstrap-shop\themes\font\fontawesome-webfont.woff" />
+    <Content Include="themes\plantillas\PlantillaCatalogo\bootstrap-shop\themes\font\museo_slab_300-webfont.eot" />
+    <Content Include="themes\plantillas\PlantillaCatalogo\bootstrap-shop\themes\font\museo_slab_300-webfont.ttf" />
+    <Content Include="themes\plantillas\PlantillaCatalogo\bootstrap-shop\themes\font\museo_slab_500-webfont.eot" />
+    <Content Include="themes\plantillas\PlantillaCatalogo\bootstrap-shop\themes\font\museo_slab_500-webfont.ttf" />
+    <Content Include="themes\plantillas\PlantillaCatalogo\bootstrap-shop\themes\font\proximanova-webfont.eot" />
+    <Content Include="themes\plantillas\PlantillaCatalogo\bootstrap-shop\themes\font\proximanova-webfont.ttf" />
+    <Content Include="themes\plantillas\PlantillaCatalogo\bootstrap-shop\themes\less\accordion.less" />
+    <Content Include="themes\plantillas\PlantillaCatalogo\bootstrap-shop\themes\less\alerts.less" />
+    <Content Include="themes\plantillas\PlantillaCatalogo\bootstrap-shop\themes\less\amelia.less" />
+    <Content Include="themes\plantillas\PlantillaCatalogo\bootstrap-shop\themes\less\amelia\bootswatch.less" />
+    <Content Include="themes\plantillas\PlantillaCatalogo\bootstrap-shop\themes\less\amelia\variables.less" />
+    <Content Include="themes\plantillas\PlantillaCatalogo\bootstrap-shop\themes\less\bootshop.less" />
+    <Content Include="themes\plantillas\PlantillaCatalogo\bootstrap-shop\themes\less\bootshop\main.less" />
+    <Content Include="themes\plantillas\PlantillaCatalogo\bootstrap-shop\themes\less\bootshop\variables.less" />
+    <Content Include="themes\plantillas\PlantillaCatalogo\bootstrap-shop\themes\less\bootstrap.less" />
+    <Content Include="themes\plantillas\PlantillaCatalogo\bootstrap-shop\themes\less\breadcrumbs.less" />
+    <Content Include="themes\plantillas\PlantillaCatalogo\bootstrap-shop\themes\less\button-groups.less" />
+    <Content Include="themes\plantillas\PlantillaCatalogo\bootstrap-shop\themes\less\buttons.less" />
+    <Content Include="themes\plantillas\PlantillaCatalogo\bootstrap-shop\themes\less\carousel.less" />
+    <Content Include="themes\plantillas\PlantillaCatalogo\bootstrap-shop\themes\less\classified.less" />
+    <Content Include="themes\plantillas\PlantillaCatalogo\bootstrap-shop\themes\less\close.less" />
+    <Content Include="themes\plantillas\PlantillaCatalogo\bootstrap-shop\themes\less\code.less" />
+    <Content Include="themes\plantillas\PlantillaCatalogo\bootstrap-shop\themes\less\component-animations.less" />
+    <Content Include="themes\plantillas\PlantillaCatalogo\bootstrap-shop\themes\less\dropdowns.less" />
+    <Content Include="themes\plantillas\PlantillaCatalogo\bootstrap-shop\themes\less\font-awesome-ie7.less" />
+    <Content Include="themes\plantillas\PlantillaCatalogo\bootstrap-shop\themes\less\font-awesome.less" />
+    <Content Include="themes\plantillas\PlantillaCatalogo\bootstrap-shop\themes\less\forms.less" />
+    <Content Include="themes\plantillas\PlantillaCatalogo\bootstrap-shop\themes\less\grid.less" />
+    <Content Include="themes\plantillas\PlantillaCatalogo\bootstrap-shop\themes\less\hero-unit.less" />
+    <Content Include="themes\plantillas\PlantillaCatalogo\bootstrap-shop\themes\less\labels-badges.less" />
+    <Content Include="themes\plantillas\PlantillaCatalogo\bootstrap-shop\themes\less\layouts.less" />
+    <Content Include="themes\plantillas\PlantillaCatalogo\bootstrap-shop\themes\less\mixins.less" />
+    <Content Include="themes\plantillas\PlantillaCatalogo\bootstrap-shop\themes\less\modals.less" />
+    <Content Include="themes\plantillas\PlantillaCatalogo\bootstrap-shop\themes\less\navbar.less" />
+    <Content Include="themes\plantillas\PlantillaCatalogo\bootstrap-shop\themes\less\navs.less" />
+    <Content Include="themes\plantillas\PlantillaCatalogo\bootstrap-shop\themes\less\pager.less" />
+    <Content Include="themes\plantillas\PlantillaCatalogo\bootstrap-shop\themes\less\pagination.less" />
+    <Content Include="themes\plantillas\PlantillaCatalogo\bootstrap-shop\themes\less\popovers.less" />
+    <Content Include="themes\plantillas\PlantillaCatalogo\bootstrap-shop\themes\less\progress-bars.less" />
+    <Content Include="themes\plantillas\PlantillaCatalogo\bootstrap-shop\themes\less\reset.less" />
+    <Content Include="themes\plantillas\PlantillaCatalogo\bootstrap-shop\themes\less\responsive-1200px-min.less" />
+    <Content Include="themes\plantillas\PlantillaCatalogo\bootstrap-shop\themes\less\responsive-767px-max.less" />
+    <Content Include="themes\plantillas\PlantillaCatalogo\bootstrap-shop\themes\less\responsive-768px-979px.less" />
+    <Content Include="themes\plantillas\PlantillaCatalogo\bootstrap-shop\themes\less\responsive-navbar.less" />
+    <Content Include="themes\plantillas\PlantillaCatalogo\bootstrap-shop\themes\less\responsive-utilities.less" />
+    <Content Include="themes\plantillas\PlantillaCatalogo\bootstrap-shop\themes\less\responsive.less" />
+    <Content Include="themes\plantillas\PlantillaCatalogo\bootstrap-shop\themes\less\scaffolding.less" />
+    <Content Include="themes\plantillas\PlantillaCatalogo\bootstrap-shop\themes\less\simplex.less" />
+    <Content Include="themes\plantillas\PlantillaCatalogo\bootstrap-shop\themes\less\simplex\bootswatch.less" />
+    <Content Include="themes\plantillas\PlantillaCatalogo\bootstrap-shop\themes\less\simplex\variables.less" />
+    <Content Include="themes\plantillas\PlantillaCatalogo\bootstrap-shop\themes\less\sprites.less" />
+    <Content Include="themes\plantillas\PlantillaCatalogo\bootstrap-shop\themes\less\tables.less" />
+    <Content Include="themes\plantillas\PlantillaCatalogo\bootstrap-shop\themes\less\thumbnails.less" />
+    <Content Include="themes\plantillas\PlantillaCatalogo\bootstrap-shop\themes\less\tooltip.less" />
+    <Content Include="themes\plantillas\PlantillaCatalogo\bootstrap-shop\themes\less\type.less" />
+    <Content Include="themes\plantillas\PlantillaCatalogo\bootstrap-shop\themes\less\utilities.less" />
+    <Content Include="themes\plantillas\PlantillaCatalogo\bootstrap-shop\themes\less\variables.less" />
+    <Content Include="themes\plantillas\PlantillaCatalogo\bootstrap-shop\themes\less\wells.less" />
+    <Content Include="WebForm2.aspx" />
+    <Content Include="Scripts\jquery-1.9.1.min.map" />
+    <None Include="Web.Debug.config">
+      <DependentUpon>Web.config</DependentUpon>
+    </None>
+    <None Include="Web.Release.config">
+      <DependentUpon>Web.config</DependentUpon>
+    </None>
+  </ItemGroup>
+  <ItemGroup>
+    <Content Include="css\bootstrap.css" />
+    <Content Include="css\bootstrap.min.css" />
+    <Content Include="css\custom.css" />
+    <Content Include="css\styles.css" />
+    <Content Include="Global.asax" />
+    <Content Include="Buscador.html" />
+    <Content Include="index.html" />
+    <Content Include="js\bootstrap.js" />
+    <Content Include="js\bootstrap.min.js" />
+    <Content Include="js\custom.js" />
+    <Content Include="js\ie10-viewport-bug-workaround.js" />
+    <Content Include="js\jquery-1.11.3.min.js" />
+    <Content Include="js\jquery.easing.min.js" />
+    <Content Include="Web.config" />
+  </ItemGroup>
+  <ItemGroup>
+    <Compile Include="2.aspx.cs">
+      <DependentUpon>2.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="2.aspx.designer.cs">
+      <DependentUpon>2.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Encuesta.aspx.cs">
+      <DependentUpon>Encuesta.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Encuesta.aspx.designer.cs">
+      <DependentUpon>Encuesta.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Carrito.aspx.cs">
+      <DependentUpon>Carrito.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Carrito.aspx.designer.cs">
+      <DependentUpon>Carrito.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="consturccion_niñas.aspx.cs">
+      <DependentUpon>consturccion_niñas.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="consturccion_niñas.aspx.designer.cs">
+      <DependentUpon>consturccion_niñas.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Heroinas_Niñas.aspx.cs">
+      <DependentUpon>Heroinas_Niñas.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Heroinas_Niñas.aspx.designer.cs">
+      <DependentUpon>Heroinas_Niñas.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Manualidades_Niñas.aspx.cs">
+      <DependentUpon>Manualidades_Niñas.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Manualidades_Niñas.aspx.designer.cs">
+      <DependentUpon>Manualidades_Niñas.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="mascotas_niñas.aspx.cs">
+      <DependentUpon>mascotas_niñas.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="mascotas_niñas.aspx.designer.cs">
+      <DependentUpon>mascotas_niñas.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Niñas_vehiculos.aspx.cs">
+      <DependentUpon>Niñas_vehiculos.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Niñas_vehiculos.aspx.designer.cs">
+      <DependentUpon>Niñas_vehiculos.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Global.asax.cs">
+      <DependentUpon>Global.asax</DependentUpon>
+    </Compile>
+    <Compile Include="Niñas_Muñecas.aspx.cs">
+      <DependentUpon>Niñas_Muñecas.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Niñas_Muñecas.aspx.designer.cs">
+      <DependentUpon>Niñas_Muñecas.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Niños_Autopistas.aspx.cs">
+      <DependentUpon>Niños_Autopistas.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Niños_Autopistas.aspx.designer.cs">
+      <DependentUpon>Niños_Autopistas.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Niños_construccion.aspx.cs">
+      <DependentUpon>Niños_construccion.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Niños_construccion.aspx.designer.cs">
+      <DependentUpon>Niños_construccion.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Niños_figurasaccion.aspx.cs">
+      <DependentUpon>Niños_figurasaccion.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Niños_figurasaccion.aspx.designer.cs">
+      <DependentUpon>Niños_figurasaccion.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Niños_Lanzadores.aspx.cs">
+      <DependentUpon>Niños_Lanzadores.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Niños_Lanzadores.aspx.designer.cs">
+      <DependentUpon>Niños_Lanzadores.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Niños_vehiculos.aspx.cs">
+      <DependentUpon>Niños_vehiculos.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Niños_vehiculos.aspx.designer.cs">
+      <DependentUpon>Niños_vehiculos.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="productsBebes_Aprendizaje.aspx.cs">
+      <DependentUpon>productsBebes_Aprendizaje.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="productsBebes_Aprendizaje.aspx.designer.cs">
+      <DependentUpon>productsBebes_Aprendizaje.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="productsBebes_Nacidos.aspx.cs">
+      <DependentUpon>productsBebes_Nacidos.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="productsBebes_Nacidos.aspx.designer.cs">
+      <DependentUpon>productsBebes_Nacidos.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="ProductsBebe_tapetes.aspx.cs">
+      <DependentUpon>ProductsBebe_tapetes.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="ProductsBebe_tapetes.aspx.designer.cs">
+      <DependentUpon>ProductsBebe_tapetes.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Properties\AssemblyInfo.cs" />
+    <Compile Include="Inicio.aspx.cs">
+      <DependentUpon>Inicio.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Inicio.aspx.designer.cs">
+      <DependentUpon>Inicio.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Utils\DBManualConnection.cs" />
+    <Compile Include="WebForm2.aspx.cs">
+      <DependentUpon>WebForm2.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="WebForm2.aspx.designer.cs">
+      <DependentUpon>WebForm2.aspx</DependentUpon>
+    </Compile>
+  </ItemGroup>
+  <ItemGroup>
+    <Folder Include="App_Data\" />
+    <Folder Include="fonts\" />
+    <Folder Include="Models\" />
+    <Folder Include="themes\less\oregional\" />
+    <Folder Include="themes\plantillas\PlantillaCatalogo\bootstrap-shop\themes\less\oregional\" />
+  </ItemGroup>
+  <PropertyGroup>
+    <VisualStudioVersion Condition="'$(VisualStudioVersion)' == ''">10.0</VisualStudioVersion>
+    <VSToolsPath Condition="'$(VSToolsPath)' == ''">$(MSBuildExtensionsPath32)\Microsoft\VisualStudio\v$(VisualStudioVersion)</VSToolsPath>
+  </PropertyGroup>
+  <Import Project="$(MSBuildBinPath)\Microsoft.CSharp.targets" />
+  <Import Project="$(VSToolsPath)\WebApplications\Microsoft.WebApplication.targets" Condition="'$(VSToolsPath)' != ''" />
+  <Import Project="$(MSBuildExtensionsPath32)\Microsoft\VisualStudio\v10.0\WebApplications\Microsoft.WebApplication.targets" Condition="false" />
+  <ProjectExtensions>
+    <VisualStudio>
+      <FlavorProperties GUID="{349c5851-65df-11da-9384-00065b846f21}">
+        <WebProjectProperties>
+          <UseIIS>True</UseIIS>
+          <AutoAssignPort>True</AutoAssignPort>
+          <DevelopmentServerPort>56431</DevelopmentServerPort>
+          <DevelopmentServerVPath>/</DevelopmentServerVPath>
+          <IISUrl>http://localhost:56431/</IISUrl>
+          <NTLMAuthentication>False</NTLMAuthentication>
+          <UseCustomServer>False</UseCustomServer>
+          <CustomServerUrl>
+          </CustomServerUrl>
+          <SaveServerSettingsInUserFile>False</SaveServerSettingsInUserFile>
+        </WebProjectProperties>
+      </FlavorProperties>
+    </VisualStudio>
+  </ProjectExtensions>
+  <Target Name="EnsureNuGetPackageBuildImports" BeforeTargets="PrepareForBuild">
+    <PropertyGroup>
+      <ErrorText>Este proyecto hace referencia a los paquetes NuGet que faltan en este equipo. Use la restauración de paquetes NuGet para descargarlos. Para obtener más información, consulte http://go.microsoft.com/fwlink/?LinkID=322105. El archivo que falta es {0}.</ErrorText>
+    </PropertyGroup>
+    <Error Condition="!Exists('..\packages\Microsoft.Net.Compilers.1.0.0\build\Microsoft.Net.Compilers.props')" Text="$([System.String]::Format('$(ErrorText)', '..\packages\Microsoft.Net.Compilers.1.0.0\build\Microsoft.Net.Compilers.props'))" />
+    <Error Condition="!Exists('..\packages\Microsoft.CodeDom.Providers.DotNetCompilerPlatform.1.0.0\build\Microsoft.CodeDom.Providers.DotNetCompilerPlatform.props')" Text="$([System.String]::Format('$(ErrorText)', '..\packages\Microsoft.CodeDom.Providers.DotNetCompilerPlatform.1.0.0\build\Microsoft.CodeDom.Providers.DotNetCompilerPlatform.props'))" />
+  </Target>
+  <!-- To modify your build process, add your task inside one of the targets below and uncomment it. 
+       Other similar extension points exist, see Microsoft.Common.targets.
+  <Target Name="BeforeBuild">
+  </Target>
+  <Target Name="AfterBuild">
+  </Target>
+  -->
+</Project>
