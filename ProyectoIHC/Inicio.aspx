@@ -18,7 +18,7 @@
 		    <div class="carousel-inner">
 		      <div class="item active">
 		      <div class="container">
-			    <a href="register.html"><img style="width:100%" src="Ima\1.png" alt=""/></a>
+			    <a href="register.html"><img style="width:100%" src="Ima\3.png" alt=""/></a>
 			    <div class="carousel-caption">
 				      <h4>Second Thumbnail label</h4>
 				      <p>Cras justo odio, dapibus ac facilisis in, egestas eget quam. Donec id elit non mi porta gravida at eget metus. Nullam id dolor id nibh ultricies vehicula ut id elit.</p>
@@ -27,7 +27,7 @@
 		      </div>
 		      <div class="item">
 		      <div class="container">
-			    <a href="register.html"><img style="width:100%" src="Ima\2.png" alt=""/></a>
+			    <a href="register.html"><img style="width:100%" src="Ima\4.png" alt=""/></a>
 				    <div class="carousel-caption">
 				      <h4>Second Thumbnail label</h4>
 				      <p>Cras justo odio, dapibus ac facilisis in, egestas eget quam. Donec id elit non mi porta gravida at eget metus. Nullam id dolor id nibh ultricies vehicula ut id elit.</p>
@@ -36,40 +36,12 @@
 		      </div>
 		      <div class="item">
 		      <div class="container">
-			    <a href="register.html"><img src="Ima\3.png" alt=""/></a>
+			    <a href="register.html"><img src="Ima\LEGO.png" alt=""/></a>
 			    <div class="carousel-caption">
 				      <h4>Second Thumbnail label</h4>
 				      <p>Cras justo odio, dapibus ac facilisis in, egestas eget quam. Donec id elit non mi porta gravida at eget metus. Nullam id dolor id nibh ultricies vehicula ut id elit.</p>
 				    </div>
 			
-		      </div>
-		      </div>
-		       <div class="item">
-		       <div class="container">
-			    <a href="register.html"><img src="Ima\4.png" alt=""/></a>
-			    <div class="carousel-caption">
-				      <h4>Second Thumbnail label</h4>
-				      <p>Cras justo odio, dapibus ac facilisis in, egestas eget quam. Donec id elit non mi porta gravida at eget metus. Nullam id dolor id nibh ultricies vehicula ut id elit.</p>
-				    </div>
-		   
-		      </div>
-		      </div>
-		       <div class="item">
-		       <div class="container">
-			    <a href="register.html"><img src="Ima\LEGO.png" alt=""/></a>
-			    <div class="carousel-caption">
-				      <h4>Second Thumbnail label</h4>
-				      <p>Cras justo odio, dapibus ac facilisis in, egestas eget quam. Donec id elit non mi porta gravida at eget metus. Nullam id dolor id nibh ultricies vehicula ut id elit.</p>
-			    </div>
-		      </div>
-		      </div>
-		       <div class="item">
-		       <div class="container">
-			    <a href="register.html"><img src="Ima\Fisher Price.png" alt=""/></a>
-			    <div class="carousel-caption">
-				      <h4>Second Thumbnail label</h4>
-				      <p>Cras justo odio, dapibus ac facilisis in, egestas eget quam. Donec id elit non mi porta gravida at eget metus. Nullam id dolor id nibh ultricies vehicula ut id elit.</p>
-				    </div>
 		      </div>
 		      </div>
 		    </div>
@@ -104,7 +76,7 @@
 				<li class="span3">
 				  <div class="thumbnail">
 				  <i class="tag"></i>
-					<a href="product_details.html"><img src="Ima\polly.jpg" alt=""></a>
+					<a href="product_details.html"><img src="Ima\polly.jpg" alt="" width="140" height="50"></a>
 					<div class="caption">
 					  <h5>Polly Pocket - Vehículo Desfile de Helados</h5>
 					  <h4><a class="btn" href="product_details.html">VIEW</a> <span class="pull-right">$429.00</span></h4>
@@ -124,7 +96,7 @@
 				<li class="span3">
 				  <div class="thumbnail">
 				  <i class="tag"></i>
-					<a href="product_details.html"><img src="Ima\p.jpg" alt=""></a>
+					<a href="product_details.html"><img src="Ima\p.jpg" alt="" width="140" ></a>
 					<div class="caption">
 					  <h5>Surtido Polly Pocket Modas</h5>
 					   <h4><a class="btn" href="product_details.html">VIEW</a> <span class="pull-right">$119.00</span></h4>
@@ -138,9 +110,9 @@
 				<li class="span3">
 				  <div class="thumbnail">
 				  <i class="tag"></i>
-					<a href="product_details.html"><img src="ima\Tortu.jpg" alt=""></a>
+					<a href="product_details.html"><img src="ima\Tortu.jpg" width="160" height="30" alt=""></a>
 					<div class="caption">
-					  <h5>Tortugas Ninja Figuras Mutations Tortuga a Tortuga Ninja</h5>
+					  <h5>Tortugas Ninja Figuras</h5>
 					  <h4><a class="btn" href="product_details.html">VIEW</a> <span class="pull-right">$222.00</span></h4>
 					</div>
 				  </div>
@@ -148,7 +120,7 @@
 				<li class="span3">
 				  <div class="thumbnail">
 				  <i class="tag"></i>
-					<a href="product_details.html"><img src="Ima\po.jpg" alt=""></a>
+					<a href="product_details.html"><img src="Ima\po.jpg" width="140" alt=""></a>
 					<div class="caption">
 					  <h5>Peluche Mediano - My Little Pony</h5>
 					  <h4><a class="btn" href="product_details.html">VIEW</a> <span class="pull-right">$255.00</span></h4>
@@ -157,7 +129,7 @@
 				</li>
 				<li class="span3">
 				  <div class="thumbnail">
-					<a href="product_details.html"><img src="Ima\pr.jpg" alt=""></a>
+					<a href="product_details.html"><img src="Ima\pr.jpg" width="160" alt=""></a>
 					<div class="caption">
 					  <h5>Pinkie Pie - Basico</h5>
 					   <h4><a class="btn" href="product_details.html">VIEW</a> <span class="pull-right">$229.00</span></h4>
@@ -166,7 +138,7 @@
 				</li>
 				<li class="span3">
 				  <div class="thumbnail">
-					<a href="product_details.html"><img src="ima\Death.jpg" alt=""></a>
+					<a href="product_details.html"><img src="ima\Death.jpg" width="140" alt=""></a>
 					<div class="caption">
 					  <h5>LEGO Star Wars Death Star </h5>
 					   <h4><a class="btn" href="product_details.html">VIEW</a> <span class="pull-right">$222.00</span></h4>
@@ -190,7 +162,7 @@
 				  <div class="thumbnail">
 					<a href="product_details.html"><img src="ima\10v.jpg" alt=""></a>
 					<div class="caption">
-					  <h5>Hot Wheels Pack 10 Vehículos Varios ModeloS</h5>
+					  <h5>Hot Wheels Pack 10</h5>
 					  <h4><a class="btn" href="product_details.html">VIEW</a> <span class="pull-right">$222.00</span></h4>
 					</div>
 				  </div>
@@ -199,7 +171,7 @@
 				  <div class="thumbnail">
 					<a href="product_details.html"><img src="Ima\f.jpg" alt=""></a>
 					<div class="caption">
-					  <h5>Elsa Frozen Canta Conmigo 16 "</h5>
+					  <h5>Elsa Frozen Canta</h5>
 					   <h4><a class="btn" href="product_details.html">VIEW</a> <span class="pull-right">$1629.00</span></h4>
 					</div>
 				  </div>
@@ -219,10 +191,10 @@
 			  <ul class="thumbnails">
 				<li class="span3">
 				  <div class="thumbnail">
-					<a href="product_details.html"><img src="Ima\jet.jpg" alt=""></a>
+					<a href="product_details.html"><img src="ima\Bzombie.jpg" alt=""></a>
 					<div class="caption">
-					  <h5>Jet de lujo de Barbie</h5>
-					  <h4><a class="btn" href="product_details.html">VIEW</a> <span class="pull-right">$1,579.00</span></h4>
+					  <h5>Ballesta Nerf Zombie Strike</h5>
+					   <h4><a class="btn" href="product_details.html">VIEW</a> <span class="pull-right">$222.00</span></h4>
 					</div>
 				  </div>
 				</li>
@@ -239,7 +211,7 @@
 				  <div class="thumbnail">
 					<a href="product_details.html"><img src="Ima\casa.jpg" alt=""></a>
 					<div class="caption">
-					  <h5>Barbie - Casa de los Sueños</h5>
+					  <h5>Barbie - Casa </h5>
 					   <h4><a class="btn" href="product_details.html">VIEW</a> <span class="pull-right">$3,289.00</span></h4>
 					</div>
 				  </div>
@@ -248,7 +220,7 @@
 				  <div class="thumbnail">
 					<a href="product_details.html"><img src="ima\PistaT.jpg" alt=""></a>
 					<div class="caption">
-					  <h5>Hot Wheels City Pista Tiburón Devorador</h5>
+					  <h5>Hot Wheels City Pista</h5>
 					   <h4><a class="btn" href="product_details.html">VIEW</a> <span class="pull-right">$222.00</span></h4>
 					</div>
 				  </div>
@@ -277,7 +249,7 @@
 				</li>
 				<li class="span3">
 				  <div class="thumbnail">
-					<a  href="product_details.html"><img src="Ima\oso.jpg" alt=""/></a>
+					<a  href="product_details.html"><img src="Ima\oso.jpg" width="215" alt=""/></a>
 					<div class="caption">
 					  <h5>F-P Brilliant Basics Primera Osito</h5>
 					  <p> 
@@ -290,9 +262,9 @@
 				</li>
 				<li class="span3">
 				  <div class="thumbnail">
-					<a  href="product_details.html"><img src="ima\Rojo.jpg" alt=""/></a>
+					<a  href="product_details.html"><img src="ima\Rojo.jpg" width="215" alt=""/></a>
 					<div class="caption">
-					  <h5>Figura Electrónica Hasbro Star Wars Elite Praetorian Guard</h5>
+					  <h5>Figura Electrónica Hasbro Star</h5>
 					  <p> 
 					  </p>
 					   <h4 style="text-align:center">
@@ -304,12 +276,9 @@
 				</li>
 				<li class="span3">
 				  <div class="thumbnail">
-					<a  href="product_details.html"><img src="Ima\baile.jpg" alt=""/></a>
+					<a  href="product_details.html"><img src="Ima\baile.jpg" width="215" alt=""/></a>
 					<div class="caption">
 					  <h5>Barbie Surtido - Sets de Juego</h5>
-					  <p> 
-						Lorem Ipsum is simply dummy text. 
-					  </p>
 					  <h4 style="text-align:center"><a class="btn" href="product_details.html"> <i class="icon-zoom-in"></i></a> 
                           <a class="btn btn-primary" href="#">$264.00</a></h4>
 					</div>
@@ -318,12 +287,10 @@
 				</li>
 				<li class="span3">
 				  <div class="thumbnail">
-					<a  href="product_details.html"><img src="Ima\bebe.jpg" alt=""/></a>
+					<a  href="product_details.html"><img src="Ima\bebe.jpg" width="215" alt=""/></a>
 					<div class="caption">
 					  <h5>Corn Popper - Fisher Price</h5>
-					  <p> 
-						Lorem Ipsum is simply dummy text. 
-					  </p>
+				
 					  <h4 style="text-align:center"><a class="btn" href="product_details.html"> <i class="icon-zoom-in"></i></a> 
                           <a class="btn btn-primary" href="#">$222.00</a></h4>
 					</div>
@@ -332,7 +299,7 @@
 				</li>
 				<li class="span3">
 				  <div class="thumbnail">
-					<a  href="product_details.html"><img src="ima\jug.jpg" alt=""/></a>
+					<a  href="product_details.html"><img src="ima\jug.jpg" width="215" alt=""/></a>
 					<div class="caption">
 					  <h5>Juguettos T-Rex Transformable</h5>
 					  <p> 

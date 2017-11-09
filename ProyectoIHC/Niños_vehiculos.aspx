@@ -71,7 +71,7 @@
     <ul id="topMenu" class="nav pull-right">
 	 <li class=""><a href="Inicio.aspx">Inicio</a></li>
 	 <li class=""><a href="normal.html">Catalogo</a></li>
-	 <li class=""><a href="contact.html">Encuesta</a></li>
+	 <li class=""><a href="Encuesta.aspx">Encuesta</a></li>
     <li class=""><a href="contact.html">Contactanos</a></li>
 	 <li class="">
 	</li>
@@ -329,9 +329,10 @@
 			  <div class="thumbnail">
 				<a href="product_details.html"><img src="../../../../Ima/Niños2/Vehiculos/4R Camión Portacoches con Luz y Sonido.jpg" alt=""/></a>
 				<div class="caption">
-				  <h5>4R Camión Portacoches con Luz y Sonido</h5>
-				   <h4 style="text-align:center"><a class="btn" href="product_details.html"> <i class="icon-zoom-in"></i></a> <a class="btn" href="#">Agregar <i class="icon-shopping-cart"></i></a> <a class="btn btn-primary" href="#">$964.81</a></h4>
+				  <h5>4R Camión Portacoches con Luz</h5>
+				   <h4 style="text-align:center"><a class="btn" href="product_details.html"> <i class="icon-zoom-in"></i></a> <a class="btn btn-primary" href="#">$964.81</a></h4>
 				</div>
+                   <a class="btn add-to-cart" href="javascript:void(0);">Agregar<i class="icon-shopping-cart"></i></a> 
 			  </div>
 			</li>
 			<li class="span3">
@@ -339,17 +340,19 @@
 				<a href="product_details.html"><img src="../../../../Ima/Niños2/Vehiculos/4R Coche con Caravana.jpg" alt=""/></a>
 				<div class="caption">
 				  <h5>4R Coche con Caravana</h5>
-				   <h4 style="text-align:center"><a class="btn" href="product_details.html"> <i class="icon-zoom-in"></i></a> <a class="btn" href="#">Agregar <i class="icon-shopping-cart"></i></a> <a class="btn btn-primary" href="#">$224.41</a></h4>
+				   <h4 style="text-align:center"><a class="btn" href="product_details.html"> <i class="icon-zoom-in"></i></a> <a class="btn btn-primary" href="#">$224.41</a></h4>
 				</div>
+                   <a class="btn add-to-cart" href="javascript:void(0);">Agregar<i class="icon-shopping-cart"></i></a> 
 			  </div>
 			</li>
 			<li class="span3">
 			  <div class="thumbnail">
 				<a href="product_details.html"><img src="../../../../Ima/Niños2/Vehiculos/4R Radio Control Toyota FJ Cruiser  Vraios Modelos.jpg" alt=""/></a>
 				<div class="caption">
-				  <h5>4R Radio Control Toyota FJ Cruiser  Vraios Modelos</h5>
-				    <h4 style="text-align:center"><a class="btn" href="product_details.html"> <i class="icon-zoom-in"></i></a> <a class="btn" href="#">Agregar <i class="icon-shopping-cart"></i></a> <a class="btn btn-primary" href="#">$448.15</a></h4>
+				  <h5>4R Radio Control Toyota FJ Cruiser</h5>
+				    <h4 style="text-align:center"><a class="btn" href="product_details.html"> <i class="icon-zoom-in"></i></a> <a class="btn btn-primary" href="#">$448.15</a></h4>
 				</div>
+                   <a class="btn add-to-cart" href="javascript:void(0);">Agregar<i class="icon-shopping-cart"></i></a> 
 			  </div>
 			</li>
 			<li class="span3">
@@ -357,17 +360,19 @@
 				<a href="product_details.html"><img src="../../../../Ima/Niños2/Vehiculos/Moto Repsol 6V.jpg" alt=""/></a>
 				<div class="caption">
 				  <h5>Moto Repsol 6V</h5>
-				    <h4 style="text-align:center"><a class="btn" href="product_details.html"> <i class="icon-zoom-in"></i></a> <a class="btn" href="#">Agregar <i class="icon-shopping-cart"></i></a> <a class="btn btn-primary" href="#">$2806.84</a></h4>
+				    <h4 style="text-align:center"><a class="btn" href="product_details.html"> <i class="icon-zoom-in"></i></a> <a class="btn btn-primary" href="#">$2806.84</a></h4>
 				</div>
+                   <a class="btn add-to-cart" href="javascript:void(0);">Agregar<i class="icon-shopping-cart"></i></a> 
 			  </div>
 			</li>
 			<li class="span3">
 			  <div class="thumbnail">
 				<a href="product_details.html"><img src="../../../../Ima/Niños2/Vehiculos/Hot Wheels Pack 10 Vehículos Varios ModeloS.jpg" alt=""/></a>
 				<div class="caption">
-				  <h5>Hot Wheels Pack 10 Vehículos Varios ModeloS</h5>
-				    <h4 style="text-align:center"><a class="btn" href="product_details.html"> <i class="icon-zoom-in"></i></a> <a class="btn" href="#">Add to <i class="icon-shopping-cart"></i></a> <a class="btn btn-primary" href="#">$448.00</a></h4>
+				  <h5>Hot Wheels Pack 10 Vehículos</h5>
+				    <h4 style="text-align:center"><a class="btn" href="product_details.html"> <i class="icon-zoom-in"></i></a> <a class="btn btn-primary" href="#">$448.00</a></h4>
 				</div>
+                   <a class="btn add-to-cart" href="javascript:void(0);">Agregar<i class="icon-shopping-cart"></i></a> 
 			  </div>
 			</li>
 			<li class="span3">
@@ -375,8 +380,9 @@
 				<a href="product_details.html"><img src="../../../../Ima/Niños2/Vehiculos/Patrulla Policial Especial Rescate.jpg" alt=""/></a>
 				<div class="caption">
 				  <h5>Patrulla Policial Especial Rescate</h5>
-				    <h4 style="text-align:center"><a class="btn" href="product_details.html"> <i class="icon-zoom-in"></i></a> <a class="btn" href="#">Agregar <i class="icon-shopping-cart"></i></a> <a class="btn btn-primary" href="#">$358.30</a></h4>
+				    <h4 style="text-align:center"><a class="btn" href="product_details.html"> <i class="icon-zoom-in"></i></a> <a class="btn btn-primary" href="#">$358.30</a></h4>
 				</div>
+                   <a class="btn add-to-cart" href="javascript:void(0);">Agregar<i class="icon-shopping-cart"></i></a> 
 			  </div>
 			</li>
 		  </ul>

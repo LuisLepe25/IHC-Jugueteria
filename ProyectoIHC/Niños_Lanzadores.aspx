@@ -70,7 +70,7 @@
     <ul id="topMenu" class="nav pull-right">
 	 <li class=""><a href="Inicio.aspx">Inicio</a></li>
 	 <li class=""><a href="normal.html">Catalogo</a></li>
-	 <li class=""><a href="contact.html">Encuesta</a></li>
+	 <li class=""><a href="Encuesta.aspx">Encuesta</a></li>
     <li class=""><a href="contact.html">Contactanos</a></li>
 	 <li class="">
 	</li>
@@ -325,8 +325,9 @@
 				<a href="product_details.html"><img src="../../../../Ima/Niños2/Lanzadores/Lanza Dardos Batman.jpg" alt=""/></a>
 				<div class="caption">
 				  <h5>Lanza Dardos Batman</h5>
-				   <h4 style="text-align:center"><a class="btn" href="product_details.html"> <i class="icon-zoom-in"></i></a> <a class="btn" href="#">Agregar <i class="icon-shopping-cart"></i></a> <a class="btn btn-primary" href="#">$279.20</a></h4>
+				   <h4 style="text-align:center"><a class="btn" href="product_details.html"> <i class="icon-zoom-in"></i></a> <a class="btn btn-primary" href="#">$279.20</a></h4>
 				</div>
+                   <a class="btn add-to-cart" href="javascript:void(0);">Agregar<i class="icon-shopping-cart"></i></a> 
 			  </div>
 			</li>
 			<li class="span3">
@@ -334,8 +335,9 @@
 				<a href="product_details.html"><img src="../../../../Ima/Niños2/Lanzadores/Lanzadardos Rapid Fire Zuru X-Shot Bug Attack.jpg" alt=""/></a>
 				<div class="caption">
 				  <h5>Lanzadardos Rapid Fire Zuru</h5>
-				   <h4 style="text-align:center"><a class="btn" href="product_details.html"> <i class="icon-zoom-in"></i></a> <a class="btn" href="#">Agregar <i class="icon-shopping-cart"></i></a> <a class="btn btn-primary" href="#">$191.20</a></h4>
+				   <h4 style="text-align:center"><a class="btn" href="product_details.html"> <i class="icon-zoom-in"></i></a> <a class="btn btn-primary" href="#">$191.20</a></h4>
 				</div>
+                   <a class="btn add-to-cart" href="javascript:void(0);">Agregar<i class="icon-shopping-cart"></i></a> 
 			  </div>
 			</li>
 			<li class="span3">
@@ -343,26 +345,29 @@
 				<a href="product_details.html"><img src="../../../../Ima/Niños2/Lanzadores/Lanzadardos Boomco Slambow.jpg" alt=""/></a>
 				<div class="caption">
 				  <h5>Lanzadardos Boomco Slambow</h5>
-				    <h4 style="text-align:center"><a class="btn" href="product_details.html"> <i class="icon-zoom-in"></i></a> <a class="btn" href="#">Agregar <i class="icon-shopping-cart"></i></a> <a class="btn btn-primary" href="#">$367.20</a></h4>
+				    <h4 style="text-align:center"><a class="btn" href="product_details.html"> <i class="icon-zoom-in"></i></a> <a class="btn btn-primary" href="#">$367.20</a></h4>
 				</div>
+                   <a class="btn add-to-cart" href="javascript:void(0);">Agregar<i class="icon-shopping-cart"></i></a> 
 			  </div>
 			</li>
 			<li class="span3">
 			  <div class="thumbnail">
 				<a href="product_details.html"><img src="../../../../Ima/Niños2/Lanzadores/Lanzadardos Predator Zuru X-Shot Bug Attack.jpg" alt=""/></a>
 				<div class="caption">
-				  <h5>Lanzadardos Predator Zuru X-Shot Bug Attack</h5>
-				    <h4 style="text-align:center"><a class="btn" href="product_details.html"> <i class="icon-zoom-in"></i></a> <a class="btn" href="#">Agregar <i class="icon-shopping-cart"></i></a> <a class="btn btn-primary" href="#">$239.20</a></h4>
+				  <h5>Lanzadardos Predator Zuru X-Shot</h5>
+				    <h4 style="text-align:center"><a class="btn" href="product_details.html"> <i class="icon-zoom-in"></i></a> <a class="btn btn-primary" href="#">$239.20</a></h4>
 				</div>
+                   <a class="btn add-to-cart" href="javascript:void(0);">Agregar<i class="icon-shopping-cart"></i></a> 
 			  </div>
 			</li>
             <li class="span3">
                 <div class="thumbnail">
                     <a href="product_details.html"><img src="../../../../Ima/Niños2/Lanzadores/Lanzadardos Covenant Carbine Boom Co Halo.jpg" alt="" /></a>
                     <div class="caption">
-                        <h5>Lanzadardos Covenant Carbine Boom</h5>
-                        <h4 style="text-align:center"><a class="btn" href="product_details.html"> <i class="icon-zoom-in"></i></a> <a class="btn" href="#">Add to <i class="icon-shopping-cart"></i></a> <a class="btn btn-primary" href="#">$447.20</a></h4>
+                        <h5>Lanzadardos Covenant Carbine</h5>
+                        <h4 style="text-align:center"><a class="btn" href="product_details.html"> <i class="icon-zoom-in"></i></a> <a class="btn btn-primary" href="#">$447.20</a></h4>
                     </div>
+                     <a class="btn add-to-cart" href="javascript:void(0);">Agregar<i class="icon-shopping-cart"></i></a> 
                 </div>
             </li>
             <li class="span3">
@@ -370,8 +375,9 @@
                     <a href="product_details.html"><img src="../../../../Ima/Niños2/Lanzadores/Lanzadardos Nerf Raptorstrike.jpg" alt="" /></a>
                     <div class="caption">
                         <h5>Lanzadardos Nerf Raptorstrike</h5>
-                        <h4 style="text-align:center"><a class="btn" href="product_details.html"> <i class="icon-zoom-in"></i></a> <a class="btn" href="#">Add to <i class="icon-shopping-cart"></i></a> <a class="btn btn-primary" href="#">$1,146.75</a></h4>
+                        <h4 style="text-align:center"><a class="btn" href="product_details.html"> <i class="icon-zoom-in"></i></a> <a class="btn btn-primary" href="#">$1,146.75</a></h4>
                     </div>
+                     <a class="btn add-to-cart" href="javascript:void(0);">Agregar<i class="icon-shopping-cart"></i></a> 
                 </div>
             </li>
 		  </ul>

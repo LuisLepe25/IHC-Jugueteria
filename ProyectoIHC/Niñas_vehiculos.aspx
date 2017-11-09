@@ -71,7 +71,7 @@
     <ul id="topMenu" class="nav pull-right">
 	 <li class=""><a href="Inicio.aspx">Inicio</a></li>
 	 <li class=""><a href="normal.html">Catalogo</a></li>
-	 <li class=""><a href="contact.html">Encuesta</a></li>
+	 <li class=""><a href="Encuesta.aspx">Encuesta</a></li>
     <li class=""><a href="contact.html">Contactanos</a></li>
 	 <li class="">
 	</li>
@@ -305,8 +305,9 @@
 				<a href="product_details.html"><img src="Ima/Niñas%20bellas/carritos/buu.jpg" alt=""/></a>
 				<div class="caption">
 				  <h5>Wonder Woman - Jet Invisible</h5>
-				   <h4 style="text-align:center"><a class="btn" href="product_details.html"> <i class="icon-zoom-in"></i></a> <a class="btn" href="#">Agregar<i class="icon-shopping-cart"></i></a> <a class="btn btn-primary" href="#">$679.00<a></h4>
+				   <h4 style="text-align:center"><a class="btn" href="product_details.html"> <i class="icon-zoom-in"></i></a>  <a class="btn btn-primary" href="#">$679.00<a></h4>
 				</div>
+                  <a class="btn add-to-cart" href="javascript:void(0);">Agregar<i class="icon-shopping-cart"></i></a> 
 			  </div>
 			</li>
 			<li class="span3">
@@ -314,8 +315,9 @@
 				<a href="product_details.html"><img src="Ima/Niñas%20bellas/carritos/caballo.jpg" alt=""/></a>
 				<div class="caption">
 				  <h5>Barbie Dreamtopia Villa Caramero carruaje</h5>
-				   <h4 style="text-align:center"><a class="btn" href="product_details.html"> <i class="icon-zoom-in"></i></a> <a class="btn" href="#">Agregar<i class="icon-shopping-cart"></i></a> <a class="btn btn-primary" href="#">$869.00</a></h4>
+				   <h4 style="text-align:center"><a class="btn" href="product_details.html"> <i class="icon-zoom-in"></i></a> <a class="btn btn-primary" href="#">$869.00</a></h4>
 				</div>
+                  <a class="btn add-to-cart" href="javascript:void(0);">Agregar<i class="icon-shopping-cart"></i></a> 
 			  </div>
 			</li>
 			<li class="span3">
@@ -323,8 +325,9 @@
 				<a href="product_details.html"><img src="Ima/Niñas%20bellas/carritos/chida.jpg" alt=""/></a>
 				<div class="caption">
 				  <h5>Barbie En Una Aventura Espacial</h5>
-				    <h4 style="text-align:center"><a class="btn" href="product_details.html"> <i class="icon-zoom-in"></i></a> <a class="btn" href="#">Agregar<i class="icon-shopping-cart"></i></a> <a class="btn btn-primary" href="#">$1,400.30</a></h4>
+				    <h4 style="text-align:center"><a class="btn" href="product_details.html"> <i class="icon-zoom-in"></i></a> <a class="btn btn-primary" href="#">$1,400.30</a></h4>
 				</div>
+                  <a class="btn add-to-cart" href="javascript:void(0);">Agregar<i class="icon-shopping-cart"></i></a> 
 			  </div>
 			</li>
 			<li class="span3">
@@ -332,8 +335,9 @@
 				<a href="product_details.html"><img src="Ima/Niñas%20bellas/carritos/gobierno.jpg" alt=""/></a>
 				<div class="caption">
 				  <h5>Barbie En Una Aventura Espacial</h5>
-				    <h4 style="text-align:center"><a class="btn" href="product_details.html"> <i class="icon-zoom-in"></i></a> <a class="btn" href="#">Agregar<i class="icon-shopping-cart"></i></a> <a class="btn btn-primary" href="#">$329.00</a></h4>
+				    <h4 style="text-align:center"><a class="btn" href="product_details.html"> <i class="icon-zoom-in"></i></a> <a class="btn btn-primary" href="#">$329.00</a></h4>
 				</div>
+                  <a class="btn add-to-cart" href="javascript:void(0);">Agregar<i class="icon-shopping-cart"></i></a> 
 			  </div>
 			</li>
 			<li class="span3">
@@ -341,8 +345,9 @@
 				<a href="product_details.html"><img src="Ima/Niñas%20bellas/carritos/hi.jpg" alt=""/></a>
 				<div class="caption">
 				  <h5>Ladybug y Tikki en su Motoneta</h5>
-				    <h4 style="text-align:center"><a class="btn" href="product_details.html"> <i class="icon-zoom-in"></i></a> <a class="btn" href="#">Agregar<i class="icon-shopping-cart"></i></a> <a class="btn btn-primary" href="#">$499.00</a></h4>
+				    <h4 style="text-align:center"><a class="btn" href="product_details.html"> <i class="icon-zoom-in"></i></a> <a class="btn btn-primary" href="#">$499.00</a></h4>
 				</div>
+                  <a class="btn add-to-cart" href="javascript:void(0);">Agregar<i class="icon-shopping-cart"></i></a> 
 			  </div>
 			</li>
 			<li class="span3">
@@ -350,8 +355,9 @@
 				<a href="product_details.html"><img src="Ima/Niñas%20bellas/carritos/jet.jpg" alt=""/></a>
 				<div class="caption">
 				  <h5>Jet de barbie</h5>
-				    <h4 style="text-align:center"><a class="btn" href="product_details.html"> <i class="icon-zoom-in"></i></a> <a class="btn" href="#">Agregar<i class="icon-shopping-cart"></i></a> <a class="btn btn-primary" href="#">$869.00</a></h4>
+				    <h4 style="text-align:center"><a class="btn" href="product_details.html"> <i class="icon-zoom-in"></i></a> <a class="btn btn-primary" href="#">$869.00</a></h4>
 				</div>
+                  <a class="btn add-to-cart" href="javascript:void(0);">Agregar<i class="icon-shopping-cart"></i></a> 
 			  </div>
 			</li>
 		  </ul>

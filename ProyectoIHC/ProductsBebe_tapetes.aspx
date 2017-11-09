@@ -71,7 +71,7 @@
     <ul id="topMenu" class="nav pull-right">
 	 <li class=""><a href="Inicio.aspx">Inicio</a></li>
 	 <li class=""><a href="normal.html">Catalogo</a></li>
-	 <li class=""><a href="contact.html">Encuesta</a></li>
+	 <li class=""><a href="Encuesta.aspx">Encuesta</a></li>
     <li class=""><a href="contact.html">Contactanos</a></li>
 	 <li class="">
 	</li>
@@ -328,8 +328,9 @@
 				<a href="product_details.html"> <img src="Ima/bebes/bebes_Tapetes/Gimnasio%20Fisher%20Price%20auto%20convertible%203%20en%201.jpg" alt=""/></a>
 				<div class="caption">
 				  <h5>Gimnasio Fisher Price </h5>
-				   <h4 style="text-align:center"><a class="btn" href="product_details.html"> <i class="icon-zoom-in"></i></a> <a class="btn" href="#">Agregar <i class="icon-shopping-cart"></i></a> <a class="btn btn-primary" href="#">$1439.20</a></h4>
+				   <h4 style="text-align:center"><a class="btn" href="product_details.html"> <i class="icon-zoom-in"></i></a>  <a class="btn btn-primary" href="#">$1439.20</a></h4>
 				</div>
+                   <a class="btn add-to-cart" href="javascript:void(0);">Agregar<i class="icon-shopping-cart"></i></a> 
 			  </div>
 			</li>
 			<li class="span3">
@@ -337,8 +338,9 @@
 				<a href="product_details.html"> <img src="Ima/bebes/bebes_Tapetes/Gimnasio%20Fisher%20Price%20espejito%20musical.jpg"  alt=""/></a>
 				<div class="caption">
 				  <h5>Gimnasio Fisher Price espejito</h5>
-				   <h4 style="text-align:center"><a class="btn" href="product_details.html"> <i class="icon-zoom-in"></i></a> <a class="btn" href="#">Agregar <i class="icon-shopping-cart"></i></a> <a class="btn btn-primary" href="#">$783.20</a></h4>
+				   <h4 style="text-align:center"><a class="btn" href="product_details.html"> <i class="icon-zoom-in"></i></a>  <a class="btn btn-primary" href="#">$783.20</a></h4>
 				</div>
+                   <a class="btn add-to-cart" href="javascript:void(0);">Agregar<i class="icon-shopping-cart"></i></a> 
 			  </div>
 			</li>
 			<li class="span3">
@@ -346,8 +348,9 @@
 				<a href="product_details.html"> <img src="Ima/bebes/bebes_Tapetes/Gimnasio%20Tiny%20Love%20City%20Safari%20sintético%20multicolor.jpg" alt=""/></a>
 				<div class="caption">
 				  <h5>Gimnasio Tiny Love City Safari</h5>
-				    <h4 style="text-align:center"><a class="btn" href="product_details.html"> <i class="icon-zoom-in"></i></a> <a class="btn" href="#">Agregar <i class="icon-shopping-cart"></i></a> <a class="btn btn-primary" href="#">$1839.20</a></h4>
+				    <h4 style="text-align:center"><a class="btn" href="product_details.html"> <i class="icon-zoom-in"></i></a>  <a class="btn btn-primary" href="#">$1839.20</a></h4>
 				</div>
+                   <a class="btn add-to-cart" href="javascript:void(0);">Agregar<i class="icon-shopping-cart"></i></a> 
 			  </div>
 			</li>
 			<li class="span3">
@@ -355,8 +358,9 @@
 				<a href="product_details.html"> <img src="Ima/bebes/bebes_Tapetes/Gimnasio%20Tiny%20Love%20Debajo%20del%20mar.jpg"  alt=""/></a>
 				<div class="caption">
 				  <h5>Gimnasio Tiny Love Debajo del mar</h5>
-				    <h4 style="text-align:center"><a class="btn" href="product_details.html"> <i class="icon-zoom-in"></i></a> <a class="btn" href="#">Agregar <i class="icon-shopping-cart"></i></a> <a class="btn btn-primary" href="#">$1599.20</a></h4>
+				    <h4 style="text-align:center"><a class="btn" href="product_details.html"> <i class="icon-zoom-in"></i></a> <a class="btn btn-primary" href="#">$1599.20</a></h4>
 				</div>
+                   <a class="btn add-to-cart" href="javascript:void(0);">Agregar<i class="icon-shopping-cart"></i></a> 
 			  </div>
 			</li>
 			<li class="span3">
@@ -364,8 +368,9 @@
 				<a href="product_details.html"><img src="Ima/bebes/bebes_Tapetes/Gimnasio%20Tiny%20Love%20Here%20I%20Grow%20unisex.jpg" alt=""/></a>
 				<div class="caption">
 				  <h5>Gimnasio Tiny Love </h5>
-				    <h4 style="text-align:center"><a class="btn" href="product_details.html"> <i class="icon-zoom-in"></i></a> <a class="btn" href="#">Add to <i class="icon-shopping-cart"></i></a> <a class="btn btn-primary" href="#">$2399.20</a></h4>
+				    <h4 style="text-align:center"><a class="btn" href="product_details.html"> <i class="icon-zoom-in"></i></a>  <a class="btn btn-primary" href="#">$2399.20</a></h4>
 				</div>
+                   <a class="btn add-to-cart" href="javascript:void(0);">Agregar<i class="icon-shopping-cart"></i></a> 
 			  </div>
 			</li>
 			<li class="span3">
@@ -373,8 +378,9 @@
 				<a href="product_details.html"><img src="Ima/bebes/bebes_Tapetes/Gimnasio%20Tiny%20Love%20mis%20amigos%20musicales.jpg" alt=""/></a>
 				<div class="caption">
 				  <h5>Gimnasio Tiny Love mis amigos</h5>
-				    <h4 style="text-align:center"><a class="btn" href="product_details.html"> <i class="icon-zoom-in"></i></a> <a class="btn" href="#">Agregar <i class="icon-shopping-cart"></i></a> <a class="btn btn-primary" href="#">$1839.20</a></h4>
+				    <h4 style="text-align:center"><a class="btn" href="product_details.html"> <i class="icon-zoom-in"></i></a>  <a class="btn btn-primary" href="#">$1839.20</a></h4>
 				</div>
+                   <a class="btn add-to-cart" href="javascript:void(0);">Agregar<i class="icon-shopping-cart"></i></a> 
 			  </div>
 			</li>
 		  </ul>

@@ -71,7 +71,7 @@
     <ul id="topMenu" class="nav pull-right">
 	 <li class=""><a href="Inicio.aspx">Inicio</a></li>
 	 <li class=""><a href="normal.html">Catalogo</a></li>
-	 <li class=""><a href="contact.html">Encuesta</a></li>
+	 <li class=""><a href="Encuesta.aspx">Encuesta</a></li>
     <li class=""><a href="contact.html">Contactanos</a></li>
 	 <li class="">
 	</li>
@@ -328,8 +328,9 @@
 				<a href="product_details.html"><img src="../../../../Ima/Niños2/Autopistas/2 Super Truck con Accesorios.jpg" alt=""/></a>
 				<div class="caption">
 				  <h5>Super Truck con Accesorios</h5>
-				   <h4 style="text-align:center"><a class="btn" href="product_details.html"> <i class="icon-zoom-in"></i></a> <a class="btn" href="#">Agregar <i class="icon-shopping-cart"></i></a> <a class="btn btn-primary" href="#">$420.20</a></h4>
+				   <h4 style="text-align:center"><a class="btn" href="product_details.html"> <i class="icon-zoom-in"></i></a>  <a class="btn btn-primary" href="#">$420.20</a></h4>
 				</div>
+                   <a class="btn add-to-cart" href="javascript:void(0);">Agregar<i class="icon-shopping-cart"></i></a> 
 			  </div>
 			</li>
 			<li class="span3">
@@ -337,8 +338,9 @@
 				<a href="product_details.html"><img src="../../../../Ima/Niños2/Autopistas/4R Parking 2 Plantas Restaurante.jpg" alt=""/></a>
 				<div class="caption">
 				  <h5>4R Parking 2 Plantas Restaurante</h5>
-				   <h4 style="text-align:center"><a class="btn" href="product_details.html"> <i class="icon-zoom-in"></i></a> <a class="btn" href="#">Agregar <i class="icon-shopping-cart"></i></a> <a class="btn btn-primary" href="#">$559.95</a></h4>
+				   <h4 style="text-align:center"><a class="btn" href="product_details.html"> <i class="icon-zoom-in"></i></a>  <a class="btn btn-primary" href="#">$559.95</a></h4>
 				</div>
+                   <a class="btn add-to-cart" href="javascript:void(0);">Agregar<i class="icon-shopping-cart"></i></a> 
 			  </div>
 			</li>
 			<li class="span3">
@@ -346,8 +348,9 @@
 				<a href="product_details.html"><img src="../../../../Ima/Niños2/Autopistas/Blaze Pista Estadio Monster Dome.jpg" alt=""/></a>
 				<div class="caption">
 				  <h5>Blaze Pista Estadio Monster Dome</h5>
-				    <h4 style="text-align:center"><a class="btn" href="product_details.html"> <i class="icon-zoom-in"></i></a> <a class="btn" href="#">Agregar <i class="icon-shopping-cart"></i></a> <a class="btn btn-primary" href="#">$920.30</a></h4>
+				    <h4 style="text-align:center"><a class="btn" href="product_details.html"> <i class="icon-zoom-in"></i></a>  <a class="btn btn-primary" href="#">$920.30</a></h4>
 				</div>
+                   <a class="btn add-to-cart" href="javascript:void(0);">Agregar<i class="icon-shopping-cart"></i></a> 
 			  </div>
 			</li>
 			<li class="span3">
@@ -355,8 +358,9 @@
 				<a href="product_details.html"><img src="../../../../Ima/Niños2/Autopistas/Cars Movie Pistas Historia Varios Modelos.jpg" alt=""/></a>
 				<div class="caption">
 				  <h5>Cars Movie Pistas Historia Varios Modelos</h5>
-				    <h4 style="text-align:center"><a class="btn" href="product_details.html"> <i class="icon-zoom-in"></i></a> <a class="btn" href="#">Agregar <i class="icon-shopping-cart"></i></a> <a class="btn btn-primary" href="#">$467.20</a></h4>
+				    <h4 style="text-align:center"><a class="btn" href="product_details.html"> <i class="icon-zoom-in"></i></a>  <a class="btn btn-primary" href="#">$467.20</a></h4>
 				</div>
+                   <a class="btn add-to-cart" href="javascript:void(0);">Agregar<i class="icon-shopping-cart"></i></a> 
 			  </div>
 			</li>
 			<li class="span3">
@@ -364,17 +368,19 @@
 				<a href="product_details.html"><img src="../../../../Ima/Niños2/Autopistas/Garage de la copa pistón Cars.jpg" alt=""/></a>
 				<div class="caption">
 				  <h5>Garage de la copa pistón Cars</h5>
-				    <h4 style="text-align:center"><a class="btn" href="product_details.html"> <i class="icon-zoom-in"></i></a> <a class="btn" href="#">Add to <i class="icon-shopping-cart"></i></a> <a class="btn btn-primary" href="#">$455.20</a></h4>
+				    <h4 style="text-align:center"><a class="btn" href="product_details.html"> <i class="icon-zoom-in"></i></a> <a class="btn btn-primary" href="#">$455.20</a></h4>
 				</div>
+                   <a class="btn add-to-cart" href="javascript:void(0);">Agregar<i class="icon-shopping-cart"></i></a> 
 			  </div>
 			</li>
 			<li class="span3">
 			  <div class="thumbnail">
 				<a href="product_details.html"><img src="../../../../Ima/Niños2/Autopistas/Hot Wheels Carrera Súper Explosiva.jpg" alt=""/></a>
 				<div class="caption">
-				  <h5>Hot Wheels Carrera Súper Explosiva</h5>
-				    <h4 style="text-align:center"><a class="btn" href="product_details.html"> <i class="icon-zoom-in"></i></a> <a class="btn" href="#">Agregar <i class="icon-shopping-cart"></i></a> <a class="btn btn-primary" href="#">$375.20</a></h4>
+				  <h5>Hot Wheels Carrera Súper</h5>
+				    <h4 style="text-align:center"><a class="btn" href="product_details.html"> <i class="icon-zoom-in"></i></a>  <a class="btn btn-primary" href="#">$375.20</a></h4>
 				</div>
+                   <a class="btn add-to-cart" href="javascript:void(0);">Agregar<i class="icon-shopping-cart"></i></a> 
 			  </div>
 			</li>
 		  </ul>

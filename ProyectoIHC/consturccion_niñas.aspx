@@ -71,7 +71,7 @@
     <ul id="topMenu" class="nav pull-right">
 	 <li class=""><a href="Inicio.aspx">Inicio</a></li>
 	 <li class=""><a href="normal.html">Catalogo</a></li>
-	 <li class=""><a href="contact.html">Encuesta</a></li>
+	 <li class=""><a href="Encuesta.aspx">Encuesta</a></li>
     <li class=""><a href="contact.html">Contactanos</a></li>
 	 <li class="">
 	</li>
@@ -290,8 +290,9 @@
 				<a href="product_details.html">  <img src="Ima/Niñas%20bellas/construccion/Ana%20Frozen%20-%20Lego.jpg" alt=""/></a>
 				<div class="caption">
 				  <h5>Ana Frozen-Lego</h5>
-				   <h4 style="text-align:center"><a class="btn" href="product_details.html"> <i class="icon-zoom-in"></i></a> <a class="btn" href="#">Agregar<i class="icon-shopping-cart"></i></a> <a class="btn btn-primary" href="#">$429.00<a></h4>
+				   <h4 style="text-align:center"><a class="btn" href="product_details.html"> <i class="icon-zoom-in"></i></a> <a class="btn btn-primary" href="#">$429.00<a></h4>
 				</div>
+                  <a class="btn add-to-cart" href="javascript:void(0);">Agregar<i class="icon-shopping-cart"></i></a> 
 			  </div>
 			</li>
 			<li class="span3">
@@ -299,8 +300,9 @@
 				<a href="product_details.html">   <img src="Ima/Niñas%20bellas/construccion/Batichica%20Bat%20Jet%20-%20Lego.jpg" alt=""/></a>
 				<div class="caption">
 				  <h5>Batichica BatJet-Lego</h5>
-				   <h4 style="text-align:center"><a class="btn" href="product_details.html"> <i class="icon-zoom-in"></i></a> <a class="btn" href="#">Agregar<i class="icon-shopping-cart"></i></a> <a class="btn btn-primary" href="#">$589.00</a></h4>
+				   <h4 style="text-align:center"><a class="btn" href="product_details.html"> <i class="icon-zoom-in"></i></a>  <a class="btn btn-primary" href="#">$589.00</a></h4>
 				</div>
+                  <a class="btn add-to-cart" href="javascript:void(0);">Agregar<i class="icon-shopping-cart"></i></a> 
 			  </div>
 			</li>
 			<li class="span3">
@@ -308,8 +310,9 @@
 				<a href="product_details.html">  <img src="Ima/Niñas%20bellas/construccion/Bloques%20de%20Construcción%20-%20Casa%20de%20Masha.jpg" alt=""/></a>
 				<div class="caption">
 				  <h5>Bloques de Construccion-Casa de Masha</h5>
-				    <h4 style="text-align:center"><a class="btn" href="product_details.html"> <i class="icon-zoom-in"></i></a> <a class="btn" href="#">Agregar<i class="icon-shopping-cart"></i></a> <a class="btn btn-primary" href="#">$849.00</a></h4>
+				    <h4 style="text-align:center"><a class="btn" href="product_details.html"> <i class="icon-zoom-in"></i></a> <a class="btn btn-primary" href="#">$849.00</a></h4>
 				</div>
+                  <a class="btn add-to-cart" href="javascript:void(0);">Agregar<i class="icon-shopping-cart"></i></a> 
 			  </div>
 			</li>
 			<li class="span3">
@@ -317,8 +320,9 @@
 				<a href="product_details.html"> <img src="Ima/Niñas%20bellas/construccion/Bloques%20Masha.jpg"  alt=""/></a>
 				<div class="caption">
 				  <h5>Bloque Masha</h5>
-				    <h4 style="text-align:center"><a class="btn" href="product_details.html"> <i class="icon-zoom-in"></i></a> <a class="btn" href="#">Agregar<i class="icon-shopping-cart"></i></a> <a class="btn btn-primary" href="#">$155.00</a></h4>
+				    <h4 style="text-align:center"><a class="btn" href="product_details.html"> <i class="icon-zoom-in"></i></a> <a class="btn btn-primary" href="#">$155.00</a></h4>
 				</div>
+                  <a class="btn add-to-cart" href="javascript:void(0);">Agregar<i class="icon-shopping-cart"></i></a> 
 			  </div>
 			</li>
 			<li class="span3">
@@ -326,8 +330,9 @@
 				<a href="product_details.html">  <img src="Ima/Niñas%20bellas/construccion/Carro%20Nave%20-%20Lashina.jpg" alt=""/></a>
 				<div class="caption">
 				  <h5>Carro Nave-Lashina</h5>
-				    <h4 style="text-align:center"><a class="btn" href="product_details.html"> <i class="icon-zoom-in"></i></a> <a class="btn" href="#">Agregar<i class="icon-shopping-cart"></i></a> <a class="btn btn-primary" href="#">$315.00</a></h4>
+				    <h4 style="text-align:center"><a class="btn" href="product_details.html"> <i class="icon-zoom-in"></i></a>  <a class="btn btn-primary" href="#">$315.00</a></h4>
 				</div>
+                  <a class="btn add-to-cart" href="javascript:void(0);">Agregar<i class="icon-shopping-cart"></i></a> 
 			  </div>
 			</li>
 			<li class="span3">
@@ -335,8 +340,9 @@
 				<a href="product_details.html">  <img src="Ima/Niñas%20bellas/construccion/Castillo%20Encantado%20Bella%20-%20Lego.jpg" alt=""/></a>
 				<div class="caption">
 				  <h5>Castillo encantado Bella</h5>
-				    <h4 style="text-align:center"><a class="btn" href="product_details.html"> <i class="icon-zoom-in"></i></a> <a class="btn" href="#">Agregar<i class="icon-shopping-cart"></i></a> <a class="btn btn-primary" href="#">$1,119.00</a></h4>
+				    <h4 style="text-align:center"><a class="btn" href="product_details.html"> <i class="icon-zoom-in"></i></a> <a class="btn btn-primary" href="#">$1,119.00</a></h4>
 				</div>
+                  <a class="btn add-to-cart" href="javascript:void(0);">Agregar<i class="icon-shopping-cart"></i></a> 
 			  </div>
 			</li>
 		  </ul>

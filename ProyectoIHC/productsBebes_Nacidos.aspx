@@ -71,7 +71,7 @@
     <ul id="topMenu" class="nav pull-right">
 	 <li class=""><a href="Inicio.aspx">Inicio</a></li>
 	 <li class=""><a href="normal.html">Catalogo</a></li>
-	 <li class=""><a href="contact.html">Encuesta</a></li>
+	 <li class=""><a href="Encuesta.aspx">Encuesta</a></li>
     <li class=""><a href="contact.html">Contactanos</a></li>
 	 <li class="">
 	</li>
@@ -325,8 +325,9 @@
 				<a href="product_details.html"> <img src="Ima/bebes/Recien%20nacidos/Centro%20de%20entretenimiento%20Infanti%20Web%20verde.jpg" alt=""/></a>
 				<div class="caption">
 				  <h5>Centro de entretenimiento Infanti</h5>
-				   <h4 style="text-align:center"><a class="btn" href="product_details.html"> <i class="icon-zoom-in"></i></a> <a class="btn" href="#">Agregar <i class="icon-shopping-cart"></i></a> <a class="btn btn-primary" href="#">$2847.20 </a></h4>
+				   <h4 style="text-align:center"><a class="btn" href="product_details.html"> <i class="icon-zoom-in"></i></a>  <a class="btn btn-primary" href="#">$2847.20 </a></h4>
 				</div>
+                   <a class="btn add-to-cart" href="javascript:void(0);">Agregar<i class="icon-shopping-cart"></i></a> 
 			  </div>
 			</li>
 			<li class="span3">
@@ -334,8 +335,9 @@
 				<a href="product_details.html"> <img src="Ima/bebes/Recien%20nacidos/Juguete%20didáctico%20Mon%20Caramel.jpg" alt=""/></a>
 				<div class="caption">
 				  <h5>Juguete didáctico Mon Caramel</h5>
-				   <h4 style="text-align:center"><a class="btn" href="product_details.html"> <i class="icon-zoom-in"></i></a> <a class="btn" href="#">Agregar <i class="icon-shopping-cart"></i></a> <a class="btn btn-primary" href="#">$159.20</a></h4>
+				   <h4 style="text-align:center"><a class="btn" href="product_details.html"> <i class="icon-zoom-in"></i></a>  <a class="btn btn-primary" href="#">$159.20</a></h4>
 				</div>
+                   <a class="btn add-to-cart" href="javascript:void(0);">Agregar<i class="icon-shopping-cart"></i></a> 
 			  </div>
 			</li>
 			<li class="span3">
@@ -343,8 +345,9 @@
 				<a href="product_details.html"> <img src="Ima/bebes/Recien%20nacidos/Juguete%20didáctico%20Tiny%20Love%20unisex.jpg" alt=""/></a>
 				<div class="caption">
 				  <h5>Juguete didáctico Tiny Love unisex</h5>
-				    <h4 style="text-align:center"><a class="btn" href="product_details.html"> <i class="icon-zoom-in"></i></a> <a class="btn" href="#">Agregar <i class="icon-shopping-cart"></i></a> <a class="btn btn-primary" href="#">$1439.20</a></h4>
+				    <h4 style="text-align:center"><a class="btn" href="product_details.html"> <i class="icon-zoom-in"></i></a>  <a class="btn btn-primary" href="#">$1439.20</a></h4>
 				</div>
+                   <a class="btn add-to-cart" href="javascript:void(0);">Agregar<i class="icon-shopping-cart"></i></a> 
 			  </div>
 			</li>
 			<li class="span3">
@@ -352,8 +355,9 @@
 				<a href="product_details.html"> <img src="Ima/bebes/Recien%20nacidos/Mordedera%20Fisher%20Price%20Jirafa%20de%20la%20Selva.jpg" alt=""/></a>
 				<div class="caption">
 				  <h5>Mordedera Fisher Price Jirafa</h5>
-				    <h4 style="text-align:center"><a class="btn" href="product_details.html"> <i class="icon-zoom-in"></i></a> <a class="btn" href="#">Agregar <i class="icon-shopping-cart"></i></a> <a class="btn btn-primary" href="#">$119.20</a></h4>
+				    <h4 style="text-align:center"><a class="btn" href="product_details.html"> <i class="icon-zoom-in"></i></a> <a class="btn btn-primary" href="#">$119.20</a></h4>
 				</div>
+                   <a class="btn add-to-cart" href="javascript:void(0);">Agregar<i class="icon-shopping-cart"></i></a> 
 			  </div>
 			</li>
 			<li class="span3">
@@ -361,8 +365,9 @@
 				<a href="product_details.html"> <img src="Ima/bebes/Recien%20nacidos/Señor%20Cara%20de%20Papa%20Star%20Wars%20BB-8.jpg" alt=""/></a>
 				<div class="caption">
 				  <h5>Señor Cara de Papa Star Wars BB-8</h5>
-				    <h4 style="text-align:center"><a class="btn" href="product_details.html"> <i class="icon-zoom-in"></i></a> <a class="btn" href="#">Add to <i class="icon-shopping-cart"></i></a> <a class="btn btn-primary" href="#">$509.15</a></h4>
+				    <h4 style="text-align:center"><a class="btn" href="product_details.html"> <i class="icon-zoom-in"></i></a>  <a class="btn btn-primary" href="#">$509.15</a></h4>
 				</div>
+                   <a class="btn add-to-cart" href="javascript:void(0);">Agregar<i class="icon-shopping-cart"></i></a> 
 			  </div>
 			</li>
 			<li class="span3">
@@ -370,8 +375,9 @@
 				<a href="product_details.html"> <img src="Ima/bebes/Recien%20nacidos/Titeres%20Mon%20Caramel%20unisex.jpg" alt=""/></a>
 				<div class="caption">
 				  <h5>Titeres Mon Caramel unisex</h5>
-				    <h4 style="text-align:center"><a class="btn" href="product_details.html"> <i class="icon-zoom-in"></i></a> <a class="btn" href="#">Agregar <i class="icon-shopping-cart"></i></a> <a class="btn btn-primary" href="#">$199.20</a></h4>
+				    <h4 style="text-align:center"><a class="btn" href="product_details.html"> <i class="icon-zoom-in"></i></a>  <a class="btn btn-primary" href="#">$199.20</a></h4>
 				</div>
+                   <a class="btn add-to-cart" href="javascript:void(0);">Agregar<i class="icon-shopping-cart"></i></a> 
 			  </div>
 			</li>
 		  </ul>

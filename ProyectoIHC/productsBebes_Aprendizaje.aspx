@@ -71,7 +71,7 @@
     <ul id="topMenu" class="nav pull-right">
 	 <li class=""><a href="Inicio.aspx">Inicio</a></li>
 	 <li class=""><a href="normal.html">Catalogo</a></li>
-	 <li class=""><a href="contact.html">Encuesta</a></li>
+	 <li class=""><a href="Encuesta.aspx">Encuesta</a></li>
     <li class=""><a href="contact.html">Contactanos</a></li>
 	 <li class="">
 	</li>
@@ -326,8 +326,9 @@
 				<a href="product_details.html"><img src="Ima/bebes/Aprendizaje/Camaleón%20Fisher%20Price.jpg" alt=""/></a>
 				<div class="caption">
 				  <h5>Camaleón Fisher Price</h5>
-				   <h4 style="text-align:center"><a class="btn" href="product_details.html"> <i class="icon-zoom-in"></i></a> <a class="btn" href="#">Agregar <i class="icon-shopping-cart"></i></a> <a class="btn btn-primary" href="#">$475.15 </a></h4>
+				   <h4 style="text-align:center"><a class="btn" href="product_details.html"> <i class="icon-zoom-in"></i></a>  <a class="btn btn-primary" href="#">$475.15 </a></h4>
 				</div>
+                  <a class="btn add-to-cart" href="javascript:void(0);">Agregar<i class="icon-shopping-cart"></i></a> 
 			  </div>
 			</li>
 			<li class="span3">
@@ -335,8 +336,9 @@
 				<a href="product_details.html"> <img src="Ima/bebes/Aprendizaje/Coder%20Fisher%20Price.jpg" alt=""/></a>
 				<div class="caption">
 				  <h5>Coder Fisher Price</h5>
-				   <h4 style="text-align:center"><a class="btn" href="product_details.html"> <i class="icon-zoom-in"></i></a> <a class="btn" href="#">Agregar <i class="icon-shopping-cart"></i></a> <a class="btn btn-primary" href="#">$1274.15 </a></h4>
+				   <h4 style="text-align:center"><a class="btn" href="product_details.html"> <i class="icon-zoom-in"></i></a>  <a class="btn btn-primary" href="#">$1274.15 </a></h4>
 				</div>
+                  <a class="btn add-to-cart" href="javascript:void(0);">Agregar<i class="icon-shopping-cart"></i></a> 
 			  </div>
 			</li>
 			<li class="span3">
@@ -344,8 +346,9 @@
 				<a href="product_details.html"> <img src="Ima/bebes/Aprendizaje/Dino%20Pelotas%20Divertidas%20Fisher%20Price.jpg" alt=""/></a>
 				<div class="caption">
 				  <h5>Dino Pelotas Divertidas</h5>
-				    <h4 style="text-align:center"><a class="btn" href="product_details.html"> <i class="icon-zoom-in"></i></a> <a class="btn" href="#">Agregar <i class="icon-shopping-cart"></i></a> <a class="btn btn-primary" href="#">$296.65 </a></h4>
+				    <h4 style="text-align:center"><a class="btn" href="product_details.html"> <i class="icon-zoom-in"></i></a>  <a class="btn btn-primary" href="#">$296.65 </a></h4>
 				</div>
+                  <a class="btn add-to-cart" href="javascript:void(0);">Agregar<i class="icon-shopping-cart"></i></a> 
 			  </div>
 			</li>
 			<li class="span3">
@@ -353,8 +356,9 @@
 				<a href="product_details.html"> <img src="Ima/bebes/Aprendizaje/Juguete%20didáctico%20Rana%20Kids%20II%20Pop&Giggle%20pond%20pal.jpg" alt=""/></a>
 				<div class="caption">
 				  <h5>Juguete didáctico Rana</h5>
-				    <h4 style="text-align:center"><a class="btn" href="product_details.html"> <i class="icon-zoom-in"></i></a> <a class="btn" href="#">Agregar <i class="icon-shopping-cart"></i></a> <a class="btn btn-primary" href="#">$764.15</a></h4>
+				    <h4 style="text-align:center"><a class="btn" href="product_details.html"> <i class="icon-zoom-in"></i></a>  <a class="btn btn-primary" href="#">$764.15</a></h4>
 				</div>
+                  <a class="btn add-to-cart" href="javascript:void(0);">Agregar<i class="icon-shopping-cart"></i></a> 
 			  </div>
 			</li>
 			<li class="span3">
@@ -362,8 +366,9 @@
 				<a href="product_details.html"> <img src="Ima/bebes/Aprendizaje/Monstruo%20Come%20Discos%20Fisher%20Price.jpg" alt=""/></a>
 				<div class="caption">
 				  <h5>Monstruo Come Discos</h5>
-				    <h4 style="text-align:center"><a class="btn" href="product_details.html"> <i class="icon-zoom-in"></i></a> <a class="btn" href="#">Add to <i class="icon-shopping-cart"></i></a> <a class="btn btn-primary" href="#">$398.65</a></h4>
+				    <h4 style="text-align:center"><a class="btn" href="product_details.html"> <i class="icon-zoom-in"></i></a>  <a class="btn btn-primary" href="#">$398.65</a></h4>
 				</div>
+                  <a class="btn add-to-cart" href="javascript:void(0);">Agregar<i class="icon-shopping-cart"></i></a> 
 			  </div>
 			</li>
 			<li class="span3">
@@ -371,8 +376,9 @@
 				<a href="product_details.html">  <img src="Ima/bebes/Aprendizaje/Monstruo%20Pelotas%20Saltarinas%20Fisher-%20Price.jpg" alt=""/></a>
 				<div class="caption">
 				  <h5>Monstruo Pelotas Saltarinas</h5>
-				    <h4 style="text-align:center"><a class="btn" href="product_details.html"> <i class="icon-zoom-in"></i></a> <a class="btn" href="#">Agregar <i class="icon-shopping-cart"></i></a> <a class="btn btn-primary" href="#">$764.15</a></h4>
+				    <h4 style="text-align:center"><a class="btn" href="product_details.html"> <i class="icon-zoom-in"></i></a> <a class="btn btn-primary" href="#">$764.15</a></h4>
 				</div>
+                  <a class="btn add-to-cart" href="javascript:void(0);">Agregar<i class="icon-shopping-cart"></i></a> 
 			  </div>
 			</li>
 		  </ul>

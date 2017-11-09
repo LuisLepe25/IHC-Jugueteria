@@ -71,7 +71,7 @@
     <ul id="topMenu" class="nav pull-right">
 	 <li class=""><a href="Inicio.aspx">Inicio</a></li>
 	 <li class=""><a href="normal.html">Catalogo</a></li>
-	 <li class=""><a href="contact.html">Encuesta</a></li>
+	 <li class=""><a href="Encuesta.aspx">Encuesta</a></li>
     <li class=""><a href="contact.html">Contactanos</a></li>
 	 <li class="">
 	</li>
@@ -294,8 +294,9 @@
 				<a href="product_details.html"><img src="Ima/Niñas%20bellas/Heroinas/Accesorios%20Super%20Girl.jpg" alt=""/></a>
 				<div class="caption">
 				  <h5>Accesorios Super Girl</h5>
-				   <h4 style="text-align:center"><a class="btn" href="product_details.html"> <i class="icon-zoom-in"></i></a> <a class="btn" href="#">Agregar<i class="icon-shopping-cart"></i></a> <a class="btn btn-primary" href="#">$299.00<a></h4>
+				   <h4 style="text-align:center"><a class="btn" href="product_details.html"> <i class="icon-zoom-in"></i></a>  <a class="btn btn-primary" href="#">$299.00<a></h4>
 				</div>
+                  <a class="btn add-to-cart" href="javascript:void(0);">Agregar<i class="icon-shopping-cart"></i></a> 
 			  </div>
 			</li>
 			<li class="span3">
@@ -303,8 +304,9 @@
 				<a href="product_details.html"><img src="Ima/Niñas%20bellas/Heroinas/Amigas%20Barbie%20Escuadron%20Secreto.jpg"  alt=""/></a>
 				<div class="caption">
 				  <h5>Amigas  Barbie Escuadron Secreto</h5>
-				   <h4 style="text-align:center"><a class="btn" href="product_details.html"> <i class="icon-zoom-in"></i></a> <a class="btn" href="#">Agregar<i class="icon-shopping-cart"></i></a> <a class="btn btn-primary" href="#">$209.00</a></h4>
+				   <h4 style="text-align:center"><a class="btn" href="product_details.html"> <i class="icon-zoom-in"></i></a>  <a class="btn btn-primary" href="#">$209.00</a></h4>
 				</div>
+                  <a class="btn add-to-cart" href="javascript:void(0);">Agregar<i class="icon-shopping-cart"></i></a> 
 			  </div>
 			</li>
 			<li class="span3">
@@ -312,8 +314,9 @@
 				<a href="product_details.html">  <img src="Ima/Niñas%20bellas/Heroinas/Barbie%20Agente%20Secreto.jpg" alt=""/></a>
 				<div class="caption">
 				  <h5>Barbie Agente Secreto</h5>
-				    <h4 style="text-align:center"><a class="btn" href="product_details.html"> <i class="icon-zoom-in"></i></a> <a class="btn" href="#">Agregar<i class="icon-shopping-cart"></i></a> <a class="btn btn-primary" href="#">$359.00</a></h4>
+				    <h4 style="text-align:center"><a class="btn" href="product_details.html"> <i class="icon-zoom-in"></i></a>  <a class="btn btn-primary" href="#">$359.00</a></h4>
 				</div>
+                  <a class="btn add-to-cart" href="javascript:void(0);">Agregar<i class="icon-shopping-cart"></i></a> 
 			  </div>
 			</li>
 			<li class="span3">
@@ -321,8 +324,9 @@
 				<a href="product_details.html"> <img src="Ima/Niñas%20bellas/Heroinas/Batgirl%20-%20Batilanzador.jpg" alt=""/></a>
 				<div class="caption">
 				  <h5>Batgirl-Batilanzador</h5>
-				    <h4 style="text-align:center"><a class="btn" href="product_details.html"> <i class="icon-zoom-in"></i></a> <a class="btn" href="#">Agregar<i class="icon-shopping-cart"></i></a> <a class="btn btn-primary" href="#">$410.00</a></h4>
+				    <h4 style="text-align:center"><a class="btn" href="product_details.html"> <i class="icon-zoom-in"></i></a> <a class="btn btn-primary" href="#">$410.00</a></h4>
 				</div>
+                  <a class="btn add-to-cart" href="javascript:void(0);">Agregar<i class="icon-shopping-cart"></i></a> 
 			  </div>
 			</li>
 			<li class="span3">
@@ -330,8 +334,9 @@
 				<a href="product_details.html"> <img src="Ima/Niñas%20bellas/Heroinas/Batichica.jpg" alt=""/></a>
 				<div class="caption">
 				  <h5>Batichica</h5>
-				    <h4 style="text-align:center"><a class="btn" href="product_details.html"> <i class="icon-zoom-in"></i></a> <a class="btn" href="#">Agregar<i class="icon-shopping-cart"></i></a> <a class="btn btn-primary" href="#">$239.00</a></h4>
+				    <h4 style="text-align:center"><a class="btn" href="product_details.html"> <i class="icon-zoom-in"></i></a>  <a class="btn btn-primary" href="#">$239.00</a></h4>
 				</div>
+                  <a class="btn add-to-cart" href="javascript:void(0);">Agregar<i class="icon-shopping-cart"></i></a> 
 			  </div>
 			</li>
 			<li class="span3">
@@ -339,8 +344,9 @@
 				<a href="product_details.html"> <img src="Ima/Niñas%20bellas/Heroinas/Chicas%20Superpoderosas%20Bellota%20-%20Muñeca%20Grande.jpg"  alt=""/></a>
 				<div class="caption">
 				  <h5>Chicas Superpoderosa Bellota</h5>
-				    <h4 style="text-align:center"><a class="btn" href="product_details.html"> <i class="icon-zoom-in"></i></a> <a class="btn" href="#">Agregar<i class="icon-shopping-cart"></i></a> <a class="btn btn-primary" href="#">$429.00</a></h4>
+				    <h4 style="text-align:center"><a class="btn" href="product_details.html"> <i class="icon-zoom-in"></i></a> <a class="btn btn-primary" href="#">$429.00</a></h4>
 				</div>
+                  <a class="btn add-to-cart" href="javascript:void(0);">Agregar<i class="icon-shopping-cart"></i></a> 
 			  </div>
 			</li>
 		  </ul>

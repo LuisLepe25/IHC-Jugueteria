@@ -71,7 +71,7 @@
     <ul id="topMenu" class="nav pull-right">
 	 <li class=""><a href="Inicio.aspx">Inicio</a></li>
 	 <li class=""><a href="normal.html">Catalogo</a></li>
-	 <li class=""><a href="contact.html">Encuesta</a></li>
+	 <li class=""><a href="Encuesta.aspx">Encuesta</a></li>
     <li class=""><a href="contact.html">Contactanos</a></li>
 	 <li class="">
 	</li>
@@ -292,8 +292,9 @@ Drogo está lleno de sorpresas y diversión.
 				<a href="product_details.html"> <img src="Ima/Niñas%20bellas/Mascotas/Cheese%20Sandwich%20My%20Little%20Pony.jpg" alt=""/></a>
 				<div class="caption">
 				  <h5>Cheese Sandwich My Little Pony</h5>
-				   <h4 style="text-align:center"><a class="btn" href="product_details.html"> <i class="icon-zoom-in"></i></a> <a class="btn" href="#">Agregar<i class="icon-shopping-cart"></i></a> <a class="btn btn-primary" href="#">$329.00<a></h4>
+				   <h4 style="text-align:center"><a class="btn" href="product_details.html"> <i class="icon-zoom-in"></i></a>  <a class="btn btn-primary" href="#">$329.00<a></h4>
 				</div>
+                  <a class="btn add-to-cart" href="javascript:void(0);">Agregar<i class="icon-shopping-cart"></i></a> 
 			  </div>
 			</li>
 			<li class="span3">
@@ -301,8 +302,9 @@ Drogo está lleno de sorpresas y diversión.
 				<a href="product_details.html"><img src="Ima/Niñas%20bellas/Mascotas/Duo%20Peluche%20Littlest%20Pet%20Shop.jpg"  alt=""/></a>
 				<div class="caption">
 				  <h5>Dou Peluche Littlest Pet Shop</h5>
-				   <h4 style="text-align:center"><a class="btn" href="product_details.html"> <i class="icon-zoom-in"></i></a> <a class="btn" href="#">Agregar<i class="icon-shopping-cart"></i></a> <a class="btn btn-primary" href="#">$225.00</a></h4>
+				   <h4 style="text-align:center"><a class="btn" href="product_details.html"> <i class="icon-zoom-in"></i></a><a class="btn btn-primary" href="#">$225.00</a></h4>
 				</div>
+                  <a class="btn add-to-cart" href="javascript:void(0);">Agregar<i class="icon-shopping-cart"></i></a> 
 			  </div>
 			</li>
 			<li class="span3">
@@ -310,8 +312,9 @@ Drogo está lleno de sorpresas y diversión.
 				<a href="product_details.html">  <img src="Ima/Niñas%20bellas/Mascotas/El%20Tigre%20Jugueton%20Rayler.jpg" alt=""/></a>
 				<div class="caption">
 				  <h5>El tigre jugueton Rayler</h5>
-				    <h4 style="text-align:center"><a class="btn" href="product_details.html"> <i class="icon-zoom-in"></i></a> <a class="btn" href="#">Agregar<i class="icon-shopping-cart"></i></a> <a class="btn btn-primary" href="#">$2899.00</a></h4>
+				    <h4 style="text-align:center"><a class="btn" href="product_details.html"> <i class="icon-zoom-in"></i></a> <a class="btn btn-primary" href="#">$2899.00</a></h4>
 				</div>
+                  <a class="btn add-to-cart" href="javascript:void(0);">Agregar<i class="icon-shopping-cart"></i></a> 
 			  </div>
 			</li>
 			<li class="span3">
@@ -319,8 +322,9 @@ Drogo está lleno de sorpresas y diversión.
 				<a href="product_details.html"> <img src="Ima/Niñas%20bellas/Mascotas/Gato%20Botitas%20FurReal.jpg" alt=""/></a>
 				<div class="caption">
 				  <h5>Gato botitas furreal</h5>
-				    <h4 style="text-align:center"><a class="btn" href="product_details.html"> <i class="icon-zoom-in"></i></a> <a class="btn" href="#">Agregar<i class="icon-shopping-cart"></i></a> <a class="btn btn-primary" href="#">$1449.00</a></h4>
+				    <h4 style="text-align:center"><a class="btn" href="product_details.html"> <i class="icon-zoom-in"></i></a> <a class="btn btn-primary" href="#">$1449.00</a></h4>
 				</div>
+                  <a class="btn add-to-cart" href="javascript:void(0);">Agregar<i class="icon-shopping-cart"></i></a> 
 			  </div>
 			</li>
 			<li class="span3">
@@ -328,8 +332,9 @@ Drogo está lleno de sorpresas y diversión.
 				<a href="product_details.html"> <img src="Ima/Niñas%20bellas/Mascotas/Mascota%20Parlanchina%20Little%20Live%20Pets.jpg" alt=""/></a>
 				<div class="caption">
 				  <h5>Mascota parlanchina little live pets</h5>
-				    <h4 style="text-align:center"><a class="btn" href="product_details.html"> <i class="icon-zoom-in"></i></a> <a class="btn" href="#">Agregar<i class="icon-shopping-cart"></i></a> <a class="btn btn-primary" href="#">$365.00</a></h4>
+				    <h4 style="text-align:center"><a class="btn" href="product_details.html"> <i class="icon-zoom-in"></i></a> <a class="btn btn-primary" href="#">$365.00</a></h4>
 				</div>
+                  <a class="btn add-to-cart" href="javascript:void(0);">Agregar<i class="icon-shopping-cart"></i></a> 
 			  </div>
 			</li>
 			<li class="span3">
@@ -337,8 +342,9 @@ Drogo está lleno de sorpresas y diversión.
 				<a href="product_details.html"> <img src="Ima/Niñas%20bellas/Mascotas/Mi%20Dragón%20Amigo%20FurReal.jpg" alt=""/></a>
 				<div class="caption">
 				  <h5>Mi dragon amigo furreal</h5>
-				    <h4 style="text-align:center"><a class="btn" href="product_details.html"> <i class="icon-zoom-in"></i></a> <a class="btn" href="#">Agregar<i class="icon-shopping-cart"></i></a> <a class="btn btn-primary" href="#">$2,119.00</a></h4>
+				    <h4 style="text-align:center"><a class="btn" href="product_details.html"> <i class="icon-zoom-in"></i></a>  <a class="btn btn-primary" href="#">$2,119.00</a></h4>
 				</div>
+                  <a class="btn add-to-cart" href="javascript:void(0);">Agregar<i class="icon-shopping-cart"></i></a> 
 			  </div>
 			</li>
 		  </ul>

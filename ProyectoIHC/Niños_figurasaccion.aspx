@@ -113,7 +113,7 @@
 			<div class="span4">
 				<h3>Ahora Disponible</h3>				
 				<hr class="soft"/>
-				<h5>Batman V Superman Figura Superhéroe</h5>
+				<h5>Batman V Superman Figura</h5>
 				<p>
                     Diviértete recreando escenas de la película de Batman V Superman con este surtido de figuras de súper héroes.
                     Hay varios modelos, no sabemos cuál recibirás, es sorpresa. Si deseas uno en concreto, contacta con nosotros después de hacer el pedido.
@@ -255,7 +255,7 @@
 			  <div class="thumbnail">
 				<a href="product_details.html"><img src="../../../../Ima/Niños2/fig. accion/Batman V Superman Figura Superhéroe.jpg" alt=""/></a>
 				<div class="caption">
-				  <h5>Batman V Superman Figura Superhéroe</h5>
+				  <h5>Batman V Superman Figura</h5>
 				    <h4 style="text-align:center">
                         <a class="btn" href="product_details.html"> <i class="icon-zoom-in"></i></a>
                         <a class="btn btn-primary" href="#">$358.30</a></h4>

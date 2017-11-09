@@ -71,7 +71,7 @@
     <ul id="topMenu" class="nav pull-right">
 	 <li class=""><a href="Inicio.aspx">Inicio</a></li>
 	 <li class=""><a href="normal.html">Catalogo</a></li>
-	 <li class=""><a href="contact.html">Encuesta</a></li>
+	 <li class=""><a href="Encuesta.aspx">Encuesta</a></li>
     <li class=""><a href="contact.html">Contactanos</a></li>
 	 <li class="">
 	</li>
@@ -291,8 +291,9 @@
 				<a href="product_details.html"> <img src="Ima/Niñas%20bellas/manuealidades/Cool%20Maker%20-%20Sew%20Cool.jpg" alt=""/></a>
 				<div class="caption">
 				  <h5>Cool Maker - Sew Cool</h5>
-				   <h4 style="text-align:center"><a class="btn" href="product_details.html"> <i class="icon-zoom-in"></i></a> <a class="btn" href="#">Agregar<i class="icon-shopping-cart"></i></a> <a class="btn btn-primary" href="#">$1,079.00<a></h4>
+				   <h4 style="text-align:center"><a class="btn" href="product_details.html"> <i class="icon-zoom-in"></i></a> <a class="btn btn-primary" href="#">$1,079.00<a></h4>
 				</div>
+                  <a class="btn add-to-cart" href="javascript:void(0);">Agregar<i class="icon-shopping-cart"></i></a> 
 			  </div>
 			</li>
 			<li class="span3">
@@ -300,8 +301,9 @@
 				<a href="product_details.html"> <img src="Ima/Niñas%20bellas/manuealidades/Crea%20y%20Diseña%20tu%20Colcha%20-%20Sew%20Cool.jpg" alt=""/></a>
 				<div class="caption">
 				  <h5>Crea y Diseña tu Colcha - Sew Cool</h5>
-				   <h4 style="text-align:center"><a class="btn" href="product_details.html"> <i class="icon-zoom-in"></i></a> <a class="btn" href="#">Agregar<i class="icon-shopping-cart"></i></a> <a class="btn btn-primary" href="#">$499.00</a></h4>
+				   <h4 style="text-align:center"><a class="btn" href="product_details.html"> <i class="icon-zoom-in"></i></a> <a class="btn btn-primary" href="#">$499.00</a></h4>
 				</div>
+                  <a class="btn add-to-cart" href="javascript:void(0);">Agregar<i class="icon-shopping-cart"></i></a> 
 			  </div>
 			</li>
 			<li class="span3">
@@ -309,8 +311,9 @@
 				<a href="product_details.html">  <img src="Ima/Niñas%20bellas/manuealidades/Diseño%20de%20Modas%20-%20Sew%20Cool.jpg" alt=""/></a>
 				<div class="caption">
 				  <h5>Diseño de Modas - Sew Cool</h5>
-				    <h4 style="text-align:center"><a class="btn" href="product_details.html"> <i class="icon-zoom-in"></i></a> <a class="btn" href="#">Agregar<i class="icon-shopping-cart"></i></a> <a class="btn btn-primary" href="#">$119.00</a></h4>
+				    <h4 style="text-align:center"><a class="btn" href="product_details.html"> <i class="icon-zoom-in"></i></a> <a class="btn btn-primary" href="#">$119.00</a></h4>
 				</div>
+                  <a class="btn add-to-cart" href="javascript:void(0);">Agregar<i class="icon-shopping-cart"></i></a> 
 			  </div>
 			</li>
 			<li class="span3">
@@ -318,8 +321,9 @@
 				<a href="product_details.html">  <img src="Ima/Niñas%20bellas/manuealidades/Doh%20Vinci%20-%20Kit%20de%20decoraciones%20creativas.jpg" alt=""/></a>
 				<div class="caption">
 				  <h5>Doh Vinci - Kit de decoraciones creativas</h5>
-				    <h4 style="text-align:center"><a class="btn" href="product_details.html"> <i class="icon-zoom-in"></i></a> <a class="btn" href="#">Agregar<i class="icon-shopping-cart"></i></a> <a class="btn btn-primary" href="#">$669.00</a></h4>
+				    <h4 style="text-align:center"><a class="btn" href="product_details.html"> <i class="icon-zoom-in"></i></a>  <a class="btn btn-primary" href="#">$669.00</a></h4>
 				</div>
+                  <a class="btn add-to-cart" href="javascript:void(0);">Agregar<i class="icon-shopping-cart"></i></a> 
 			  </div>
 			</li>
 			<li class="span3">
@@ -327,8 +331,9 @@
 				<a href="product_details.html"> <img src="Ima/Niñas%20bellas/manuealidades/Doh%20Vinci%20-%20Mega%20Estudio%20de%20Arte.jpg"  alt=""/></a>
 				<div class="caption">
 				  <h5>Doh Vinci - Mega Estudio de Arte</h5>
-				    <h4 style="text-align:center"><a class="btn" href="product_details.html"> <i class="icon-zoom-in"></i></a> <a class="btn" href="#">Agregar<i class="icon-shopping-cart"></i></a> <a class="btn btn-primary" href="#">$519.00</a></h4>
+				    <h4 style="text-align:center"><a class="btn" href="product_details.html"> <i class="icon-zoom-in"></i></a> <a class="btn btn-primary" href="#">$519.00</a></h4>
 				</div>
+                  <a class="btn add-to-cart" href="javascript:void(0);">Agregar<i class="icon-shopping-cart"></i></a> 
 			  </div>
 			</li>
 			<li class="span3">
@@ -336,8 +341,9 @@
 				<a href="product_details.html">  <img src="Ima/Niñas%20bellas/manuealidades/Doh%20Vinci%20-%20Trolls%20Wall%20Art.jpg" alt=""/></a>
 				<div class="caption">
 				  <h5>Doh Vinci - Trolls Wall Art</h5>
-				    <h4 style="text-align:center"><a class="btn" href="product_details.html"> <i class="icon-zoom-in"></i></a> <a class="btn" href="#">Agregar<i class="icon-shopping-cart"></i></a> <a class="btn btn-primary" href="#">$379.00</a></h4>
+				    <h4 style="text-align:center"><a class="btn" href="product_details.html"> <i class="icon-zoom-in"></i></a> <a class="btn btn-primary" href="#">$379.00</a></h4>
 				</div>
+                  <a class="btn add-to-cart" href="javascript:void(0);">Agregar<i class="icon-shopping-cart"></i></a> 
 			  </div>
 			</li>
 		  </ul>
