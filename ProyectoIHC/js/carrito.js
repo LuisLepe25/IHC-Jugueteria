@@ -27,13 +27,27 @@ function flyToElement(flyer, flyingTo) {
 }
 $(document).ready(function () {
     $('.add-to-cart').on('click', function () {
+        var itemImg;
         //Scroll to top if cart icon is hidden on top
         $('html, body').animate({
             'scrollTop': $(".cart_anchor").position().top
         });
-        //Select item image and pass to the function
-        var itemImg = $(this).parent().find('img').eq(0);
+        if ($("#listView").hasClass("active")) {
+            //Select item image and pass to the function
+            itemImg = $(this).parent().parent().find('img').eq(0);
+        } else {
+            //Select item image and pass to the function
+            itemImg = $(this).parent().find('img').eq(0);
+        }
         flyToElement($(itemImg), $('.cart_anchor'));
+    });
+    $('#listViewA').on('click', function () {
+        $(this).children('span').addClass('btn-primary');
+        $('#blockViewA').children('span').removeClass('btn-primary');
+    });
+    $('#blockViewA').on('click', function () {
+        $(this).children('span').addClass('btn-primary');
+        $('#listViewA').children('span').removeClass('btn-primary');
     });
 });
 

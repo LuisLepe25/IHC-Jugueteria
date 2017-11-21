@@ -31,8 +31,9 @@
                         <p>Si usted desea regalar algún juguete y no sabe que dar, conteste la siguiente encuesta para describir a la persona a la que le desea dar el juguete. Así nosotros le recomendaremos lo mejor.</p>
                         <h2 class="section-header">Genero:</h2>
                         <fieldset class="form__options">
+                                <!-- Genero -->
                                 <p class="form__answer">
-                                    <input type="radio" name="match" id="match_1" value="guy" runat="server" checked/>
+                                    <asp:RadioButton GroupName="match" ID="match_1" Checked="true" runat="server" />
                                     <label class="label2" for="match_1">
                                         <svg viewBox="0 0 100 100" xmlns="http://www.w3.org/2000/svg">
                                             <title>Icon Guy</title>
@@ -51,7 +52,7 @@
                                 </p>
 
                                 <p class="form__answer">
-                                    <input type="radio" name="match" id="match_2" value="girl" runat="server"/>
+                                    <asp:RadioButton GroupName="match" ID="match_2" runat="server" />
                                     <label class="label2" for="match_2">
                                         <svg viewBox="0 0 100 100" xmlns="http://www.w3.org/2000/svg">
                                             <title>Icon Girl</title>
@@ -68,9 +69,13 @@
                                         Mujer
                                     </label>
                                 </p>
+                                
+                                <!-- Edad -->
                                 <h2 class="section-header">Edad:</h2>
+                                
                                 <p class="form__answer">
-                                    <input type="radio" name="edad" id="rbtnjoven" value="joven" checked="checked"/>
+                                    <asp:RadioButton GroupName="edad" ID="rbtnjoven" Checked="true" runat="server" />
+                                    <!--<input type="radio" name="edad" id="rbtnjoven" value="joven" checked="checked"/>-->
                                     <label class="label2" for="rbtnjoven">
                                         <svg viewBox="0 0 100 100" xmlns="http://www.w3.org/2000/svg">
                                             <title>Icon Joven</title>
@@ -91,7 +96,7 @@
                                 </p>
 
                                 <p class="form__answer">
-                                    <input type="radio" name="edad" id="rbtnnino" value="niño"/>
+                                    <asp:RadioButton GroupName="edad" ID="rbtnnino" runat="server" />
                                     <label class="label2" for="rbtnnino">
                                         <svg viewBox="0 0 100 100" xmlns="http://www.w3.org/2000/svg">
                                             <title>Icon Guy</title>
@@ -110,7 +115,7 @@
                                 </p>
                                 
                                 <p class="form__answer">
-                                    <input type="radio" name="edad" id="rbtnbebe" value="bebe"/>
+                                    <asp:RadioButton GroupName="edad" ID="rbtnbebe" runat="server" />
                                     <label class="label2" for="rbtnbebe">
                                         <svg viewBox="0 0 100 100" xmlns="http://www.w3.org/2000/svg">
                                             <title>Bebe</title>
@@ -129,25 +134,44 @@
                                         Bebe  0 - 4
                                     </label>
                                 </p>
-
+                                
+                                <!-- Preferencias -->
                                 <h2 class="section-header">Preferencias:</h2>
+                                <div class="row">
+                                    <asp:CheckBoxList ID="CheckBoxList1" runat="server" RepeatColumns="3" CellSpacing="400">
+                                        <asp:ListItem Text="Superheroes" Value="5"/>
+                                        <asp:ListItem Text="Ejercicio" Value="6"/>
+                                        <asp:ListItem Text="Seguros" Value="7"/>
+                                        <asp:ListItem Text="Electricos" Value="8"/>
+                                        <asp:ListItem Text="Montables" Value="9"/>
 
-                                <input type="checkbox" id="test1" /><label for="test1">Red</label>
-                                <input type="checkbox" id="test2" checked="checked" /><label for="test2">Yellow</label>
-                                <input type="checkbox" id="test3"/><label for="test3">Green</label>
-                                <input type="checkbox" id="test4" disabled="disabled" /><label for="test4">Brown</label>
+                                        <asp:ListItem Text="Lanzadores" Value="10"/>
+                                        <asp:ListItem Text="Construccion" Value="11"/>
+                                        <asp:ListItem Text="Vehiculos" Value="12"/>
+                                        <asp:ListItem Text="Mascotas" Value="13"/>
+                                        <asp:ListItem Text="Muñecas" Value="14"/>
 
+                                        <asp:ListItem Text="Manualidades" Value="15"/>
+                                        <asp:ListItem Text="Recien nacidos" Value="16"/>
+                                        <asp:ListItem Text="Aprendizaje" Value="17"/>
+                                        <asp:ListItem Text="Autopistas" Value="24"/>
+                                    </asp:CheckBoxList>
+                                </div>
+                                
+                                <!-- Rangos de precios -->
                                 <h2 class="section-header">Rango de precios:</h2>
-                                <select>
-                                    <option data-display="Select">Sin importancia</option>
+                                <select id="slctRango" runat="server">
+                                    <option value="0" data-display="Select">Sin importancia</option>
                                     <option value="1">Hasta $100</option>
                                     <option value="2">Hasta $500</option>
                                     <option value="3">$500+</option>
                                 </select>
+                                
+                                <!-- Tamaños -->
                                 <h2 class="section-header">Tamaños:</h2>
                                 <p>Si prefiere indicar un tamaño aproximado del juguete</p>
                                 <p class="form__answer">
-                                    <input type="radio" name="tamano" id="rbtngrande" value="grande" checked="checked"/>
+                                    <asp:RadioButton GroupName="tamano" ID="rbtngrande" Checked="true" runat="server" />
                                     <label class="label2" for="rbtngrande">
                                         <svg version="1.1" id="Mamut" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 100 100">
                                             <path transform="scale(0.08)" fill="#000" d="M195.468,875.675c0,0-13.468,11.645,0,22.45c0,0,23.324,30.484-7.167,41.256
@@ -182,8 +206,8 @@
                                 </p>
                                 
                                 <p class="form__answer">
-                                    <input type="radio" name="tamano" id="rbtmediano" value="mediano"/>
-                                    <label class="label2" for="rbtmediano">
+                                    <asp:RadioButton GroupName="tamano" ID="rbtnmediano" runat="server" />
+                                    <label class="label2" for="rbtnmediano">
                                         <svg version="1.1" id="leon" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 100 100">
                                             <path transform=" translate(15, 30) scale(0.06)" fill="#000" d="M986.6,667.8c0,0,3-21.4-23.6-24.1c-1.5-0.2-45.8-4.6-110-10.7v0c0,0,1.8-9.8,14-17.9c0,0,11.5-6.7,4.1-26.2c0,0,8.5-13.7-12.9-26.5
 	                                            c0,0-31.2-37.3-42.8-72c0,0-2.7-17.6-29.2-21.7c0,0-53-18.3-71.3-64.5c0,0,7.5-27.2,2.7-34.6c0,0,49.6,16.3,93,50.2
@@ -209,7 +233,7 @@
                                 </p>
 
                                 <p class="form__answer">
-                                    <input type="radio" name="tamano" id="rbtnpequeno" value="pequeno"/>
+                                    <asp:RadioButton GroupName="tamano" ID="rbtnpequeno" runat="server" />
                                     <label class="label2" for="rbtnpequeno">
                                         <svg xmlns="http://www.w3.org/2000/svg"id="hormiga" viewBox="0 0 100 100">
 	                                        <path transform="translate(20, 30) scale(0.6)" fill="#000" d="M98.479,32.524c-0.316,0.007-7.81,0.214-14.223,3.062c-6.164,2.739-8.887,2.788-11.135,2.603  
@@ -255,7 +279,7 @@
                                 </p>
                             </fieldset>
         
-                        <asp:Button ID="btnEnviar" runat="server" CssClass="form__button" typeof="button" Text="Submit your info 2" OnClick="btnEnviar_Click" />
+                        <asp:Button ID="btnEnviar" runat="server" CssClass="form__button" typeof="button" Text="Recomendar Juguetes" OnClick="btnEnviar_Click" />
 
                     </div>
                 </div>

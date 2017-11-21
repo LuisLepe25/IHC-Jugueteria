@@ -1,4 +1,5 @@
-﻿using System;
+﻿using ProyectoIHC.Utils;
+using System;
 using System.Collections.Generic;
 using System.Linq;
 using System.Web;
@@ -11,6 +12,12 @@ namespace ProyectoIHC
     {
         protected void Application_Start(object sender, EventArgs e)
         {
+            
         }
+        protected void Session_Start(Object sender, EventArgs e)
+        {
+            Session["listaJuguetes"] = new List<Producto>();
+        }
+
     }
 }

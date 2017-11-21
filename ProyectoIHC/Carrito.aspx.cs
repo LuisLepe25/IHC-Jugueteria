@@ -1,7 +1,10 @@
-﻿using System;
+﻿using ProyectoIHC.Utils;
+using System;
 using System.Collections.Generic;
+using System.IO;
 using System.Linq;
 using System.Net.Mail;
+using System.Text;
 using System.Web;
 using System.Web.UI;
 using System.Web.UI.WebControls;
@@ -12,7 +15,9 @@ namespace ProyectoIHC
     {
         protected void Page_Load(object sender, EventArgs e)
         {
-
+            List<Producto> lst = Session["listaJuguetes"] as List<Producto>;
+            GridView1.DataSource = lst;
+            GridView1.DataBind();
         }
 
         protected void GridView1_SelectedIndexChanged(object sender, EventArgs e)
@@ -25,11 +30,12 @@ namespace ProyectoIHC
             System.Net.Mail.MailMessage mail = new System.Net.Mail.MailMessage();
             try
             {
+                List<Producto> lst = Session["listaJuguetes"] as List<Producto>;
                 mail.To.Add(TextBox2.Text);
                 mail.From = new MailAddress("deilusiones.ihc@gmail.com", "Deilusiones SA de CV", System.Text.Encoding.UTF8);
-                mail.Subject = "This mail is send from asp.net application";
+                mail.Subject = "Cotizacion juguetes - DeIlusiones";
                 mail.SubjectEncoding = System.Text.Encoding.UTF8;
-                mail.Body = "";
+                mail.Body = GetGridviewData(lst);
                 mail.BodyEncoding = System.Text.Encoding.UTF8;
                 mail.IsBodyHtml = true;
                 mail.Priority = MailPriority.High;
@@ -54,16 +60,37 @@ namespace ProyectoIHC
                         ex2 = ex2.InnerException;
                     }
                     Page.RegisterStartupScript("UserMsg", "<script>alert('Hubo un error no se pudo enviar su ...');</script>");
-                    Label1.Text = "Fallaste eres un decepcion juas juas juas xdXDXdxDXd";
+                    Label1.Text = "Hubo un error";
                 }
             }
-            catch
+            catch(Exception ex)
             {
                 Label1.Text = "Escriba un email valido por favor...";
                 
             }
-            
-            
+        }
+
+        // This Method is used to render gridview control
+        public string GetGridviewData(List<Producto> lst)
+        {
+            String msg;
+
+            msg = "<html>";
+            msg += "<head></head>";
+            msg += "<body><table>";
+            msg += "<tr>";
+            msg += "<th>Nombre Producto</th>";
+            msg += "<th>Precio</th>";
+            msg += "</tr>";
+            foreach (Producto p in lst){
+                msg += "<tr>";
+                msg += "<td>"+ p.nombreProducto +"</td>";
+                msg += "<td>" + p.precio + "</td>";
+                msg += "</tr>";
+            }
+            msg += "</table></body></html>";
+
+            return msg;
         }
     }
     

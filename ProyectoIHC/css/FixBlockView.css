@@ -1,0 +1,60 @@
+﻿.fixBlockView {
+    max-width: 177px;
+    white-space: nowrap;
+    overflow: hidden;
+    text-overflow: ellipsis;
+    max-width: 100%;
+}
+
+.fixParagraph {
+    max-width: 177px;
+    white-space: nowrap;
+    overflow: hidden;
+    text-overflow: ellipsis;
+    display: inline-block;
+    max-width: 100%;
+}
+
+.fixParagraphIndex {
+    max-width: 100px;
+    white-space: nowrap;
+    overflow: hidden;
+    text-overflow: ellipsis;
+    display: inline-block;
+    max-width: 100%;
+}
+.fixImgRep {
+    height: 250px;
+    width: auto;
+}
+
+.fixImgRepIndex {
+    height: 150px;
+    width: auto;
+}
+.navMenu     {
+    display: inline-block;
+}
+.navMenu a{
+    color: black;
+    float: left;
+    padding: 8px 16px;
+    text-decoration: none;
+    transition: background-color .3s;
+    border: 1px solid #ddd;
+}
+    .navMenu a:hover:not(.active) {
+        background-color: #ddd;
+    }
+
+.precios {
+    color: white;
+    background-color: darkblue;
+    padding: 10px 35% 10px 35%;
+}
+    .precios:hover {
+        color: white;
+        background-color: darkblue;
+        padding: 10px 35% 10px 35%;
+        text-decoration: none;
+    }

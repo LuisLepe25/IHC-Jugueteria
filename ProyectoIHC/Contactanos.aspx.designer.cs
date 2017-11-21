@@ -10,7 +10,7 @@
 namespace ProyectoIHC {
     
     
-    public partial class Niñas_Muñecas {
+    public partial class Contactanos {
         
         /// <summary>
         /// form1 control.

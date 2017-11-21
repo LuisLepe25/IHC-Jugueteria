@@ -96,17 +96,23 @@
   </ItemGroup>
   <ItemGroup>
     <Content Include="2.aspx" />
+    <Content Include="CargadorDeImagenes.aspx" />
+    <Content Include="Contactanos.aspx" />
     <Content Include="Content\bootstrap-theme.css" />
     <Content Include="Content\bootstrap-theme.min.css" />
     <Content Include="Content\bootstrap.css" />
     <Content Include="Content\bootstrap.min.css" />
     <Content Include="css\carrito.css" />
     <Content Include="css\coolCheckboxes.css" />
+    <Content Include="css\FixBlockView.css" />
     <Content Include="css\nice-select.css" />
+    <Content Include="css\carritoChido.css" />
     <Content Include="Encuesta.aspx" />
     <Content Include="Carrito.aspx" />
-    <Content Include="consturccion_niñas.aspx" />
-    <Content Include="Heroinas_Niñas.aspx" />
+    <Content Include="Imagenes\cd-icon-arrow-next.svg" />
+    <Content Include="Imagenes\cd-icon-select.svg" />
+    <Content Include="Imagenes\cd-icons-cart-close.svg" />
+    <Content Include="Imagenes\product-preview.png" />
     <Content Include="Ima\bebes\Aprendizaje\Camaleón Fisher Price.jpg" />
     <Content Include="Ima\bebes\Aprendizaje\Camaleón Fisher Price.txt" />
     <Content Include="Ima\bebes\Aprendizaje\Coder Fisher Price.jpg" />
@@ -540,14 +546,15 @@
     <Content Include="Ima\Niños2\Vehiculos\Radio Control Mario Kart 7.txt" />
     <Content Include="Ima\Niños2\Vehiculos\Scalextric C2 Rally X-Treme.jpg" />
     <Content Include="Ima\Niños2\Vehiculos\Scalextric C2 Rally X-Treme.txt" />
+    <Content Include="Ima\Publicidad.jpg" />
+    <Content Include="Ima\Publicidad.png" />
     <Content Include="includes\encabezado.inc" />
     <Content Include="includes\generalHeader.inc" />
     <Content Include="includes\sidebar.inc" />
     <Content Include="js\carrito.js" />
     <Content Include="js\jquery-3.2.1.js" />
-    <Content Include="Manualidades_Niñas.aspx" />
-    <Content Include="mascotas_niñas.aspx" />
-    <Content Include="Niñas_vehiculos.aspx" />
+    <Content Include="js\carritoChido.js" />
+    <Content Include="JuguetesRecomendados.aspx" />
     <Content Include="css\estilosCompilados.css" />
     <Content Include="css\radioButton.css" />
     <Content Include="Imagenes\dreamtopia.png" />
@@ -1227,12 +1234,7 @@
     <Content Include="Ima\Niñas bellas\Muñecas\Wonder Woman.jpg" />
     <Content Include="Ima\Niñas bellas\Muñecas\Wonder Woman.txt" />
     <Content Include="Ima\Pow.jpg" />
-    <Content Include="Niñas_Muñecas.aspx" />
-    <Content Include="Niños_Autopistas.aspx" />
-    <Content Include="Niños_construccion.aspx" />
-    <Content Include="Niños_figurasaccion.aspx" />
-    <Content Include="Niños_Lanzadores.aspx" />
-    <Content Include="Niños_vehiculos.aspx" />
+    <Content Include="Catalogo.aspx" />
     <Content Include="packages.config" />
     <Content Include="ApplicationInsights.config">
       <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
@@ -1313,6 +1315,9 @@
     <Content Include="themes\images\tabRepeatInactive.png" />
     <Content Include="themes\images\twitter.png" />
     <Content Include="themes\images\youtube.png" />
+    <Content Include="themes\img\cd-icon-arrow-next.svg" />
+    <Content Include="themes\img\cd-icon-select.svg" />
+    <Content Include="themes\img\cd-icons-cart-close.svg" />
     <Content Include="themes\img\glyphicons-halflings-white.png" />
     <Content Include="themes\img\glyphicons-halflings.png" />
     <Content Include="themes\journal\bootstrap.min.css" />
@@ -1653,8 +1658,6 @@
     <Content Include="css\custom.css" />
     <Content Include="css\styles.css" />
     <Content Include="Global.asax" />
-    <Content Include="Buscador.html" />
-    <Content Include="index.html" />
     <Content Include="js\bootstrap.js" />
     <Content Include="js\bootstrap.min.js" />
     <Content Include="js\custom.js" />
@@ -1671,6 +1674,20 @@
     <Compile Include="2.aspx.designer.cs">
       <DependentUpon>2.aspx</DependentUpon>
     </Compile>
+    <Compile Include="CargadorDeImagenes.aspx.cs">
+      <DependentUpon>CargadorDeImagenes.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="CargadorDeImagenes.aspx.designer.cs">
+      <DependentUpon>CargadorDeImagenes.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Contactanos.aspx.cs">
+      <DependentUpon>Contactanos.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Contactanos.aspx.designer.cs">
+      <DependentUpon>Contactanos.aspx</DependentUpon>
+    </Compile>
     <Compile Include="Encuesta.aspx.cs">
       <DependentUpon>Encuesta.aspx</DependentUpon>
       <SubType>ASPXCodeBehind</SubType>
@@ -1685,85 +1702,22 @@
     <Compile Include="Carrito.aspx.designer.cs">
       <DependentUpon>Carrito.aspx</DependentUpon>
     </Compile>
-    <Compile Include="consturccion_niñas.aspx.cs">
-      <DependentUpon>consturccion_niñas.aspx</DependentUpon>
+    <Compile Include="JuguetesRecomendados.aspx.cs">
+      <DependentUpon>JuguetesRecomendados.aspx</DependentUpon>
       <SubType>ASPXCodeBehind</SubType>
     </Compile>
-    <Compile Include="consturccion_niñas.aspx.designer.cs">
-      <DependentUpon>consturccion_niñas.aspx</DependentUpon>
-    </Compile>
-    <Compile Include="Heroinas_Niñas.aspx.cs">
-      <DependentUpon>Heroinas_Niñas.aspx</DependentUpon>
-      <SubType>ASPXCodeBehind</SubType>
-    </Compile>
-    <Compile Include="Heroinas_Niñas.aspx.designer.cs">
-      <DependentUpon>Heroinas_Niñas.aspx</DependentUpon>
-    </Compile>
-    <Compile Include="Manualidades_Niñas.aspx.cs">
-      <DependentUpon>Manualidades_Niñas.aspx</DependentUpon>
-      <SubType>ASPXCodeBehind</SubType>
-    </Compile>
-    <Compile Include="Manualidades_Niñas.aspx.designer.cs">
-      <DependentUpon>Manualidades_Niñas.aspx</DependentUpon>
-    </Compile>
-    <Compile Include="mascotas_niñas.aspx.cs">
-      <DependentUpon>mascotas_niñas.aspx</DependentUpon>
-      <SubType>ASPXCodeBehind</SubType>
-    </Compile>
-    <Compile Include="mascotas_niñas.aspx.designer.cs">
-      <DependentUpon>mascotas_niñas.aspx</DependentUpon>
-    </Compile>
-    <Compile Include="Niñas_vehiculos.aspx.cs">
-      <DependentUpon>Niñas_vehiculos.aspx</DependentUpon>
-      <SubType>ASPXCodeBehind</SubType>
-    </Compile>
-    <Compile Include="Niñas_vehiculos.aspx.designer.cs">
-      <DependentUpon>Niñas_vehiculos.aspx</DependentUpon>
+    <Compile Include="JuguetesRecomendados.aspx.designer.cs">
+      <DependentUpon>JuguetesRecomendados.aspx</DependentUpon>
     </Compile>
     <Compile Include="Global.asax.cs">
       <DependentUpon>Global.asax</DependentUpon>
     </Compile>
-    <Compile Include="Niñas_Muñecas.aspx.cs">
-      <DependentUpon>Niñas_Muñecas.aspx</DependentUpon>
+    <Compile Include="Catalogo.aspx.cs">
+      <DependentUpon>Catalogo.aspx</DependentUpon>
       <SubType>ASPXCodeBehind</SubType>
     </Compile>
-    <Compile Include="Niñas_Muñecas.aspx.designer.cs">
-      <DependentUpon>Niñas_Muñecas.aspx</DependentUpon>
-    </Compile>
-    <Compile Include="Niños_Autopistas.aspx.cs">
-      <DependentUpon>Niños_Autopistas.aspx</DependentUpon>
-      <SubType>ASPXCodeBehind</SubType>
-    </Compile>
-    <Compile Include="Niños_Autopistas.aspx.designer.cs">
-      <DependentUpon>Niños_Autopistas.aspx</DependentUpon>
-    </Compile>
-    <Compile Include="Niños_construccion.aspx.cs">
-      <DependentUpon>Niños_construccion.aspx</DependentUpon>
-      <SubType>ASPXCodeBehind</SubType>
-    </Compile>
-    <Compile Include="Niños_construccion.aspx.designer.cs">
-      <DependentUpon>Niños_construccion.aspx</DependentUpon>
-    </Compile>
-    <Compile Include="Niños_figurasaccion.aspx.cs">
-      <DependentUpon>Niños_figurasaccion.aspx</DependentUpon>
-      <SubType>ASPXCodeBehind</SubType>
-    </Compile>
-    <Compile Include="Niños_figurasaccion.aspx.designer.cs">
-      <DependentUpon>Niños_figurasaccion.aspx</DependentUpon>
-    </Compile>
-    <Compile Include="Niños_Lanzadores.aspx.cs">
-      <DependentUpon>Niños_Lanzadores.aspx</DependentUpon>
-      <SubType>ASPXCodeBehind</SubType>
-    </Compile>
-    <Compile Include="Niños_Lanzadores.aspx.designer.cs">
-      <DependentUpon>Niños_Lanzadores.aspx</DependentUpon>
-    </Compile>
-    <Compile Include="Niños_vehiculos.aspx.cs">
-      <DependentUpon>Niños_vehiculos.aspx</DependentUpon>
-      <SubType>ASPXCodeBehind</SubType>
-    </Compile>
-    <Compile Include="Niños_vehiculos.aspx.designer.cs">
-      <DependentUpon>Niños_vehiculos.aspx</DependentUpon>
+    <Compile Include="Catalogo.aspx.designer.cs">
+      <DependentUpon>Catalogo.aspx</DependentUpon>
     </Compile>
     <Compile Include="productsBebes_Aprendizaje.aspx.cs">
       <DependentUpon>productsBebes_Aprendizaje.aspx</DependentUpon>
@@ -1794,6 +1748,7 @@
     <Compile Include="Inicio.aspx.designer.cs">
       <DependentUpon>Inicio.aspx</DependentUpon>
     </Compile>
+    <Compile Include="Utils\Producto.cs" />
     <Compile Include="Utils\DBManualConnection.cs" />
     <Compile Include="WebForm2.aspx.cs">
       <DependentUpon>WebForm2.aspx</DependentUpon>

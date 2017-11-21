@@ -34,25 +34,43 @@ namespace ProyectoIHC
             }
         }
 
-        public DataSet getJuguetesRecomendados(int[] tags)
+        public DataSet getJuguetesRecomendados(String tags, String rango)
         {
             DataSet ds = new DataSet();
-            string strQuery = "SELECT j.id_juguetes " +
+            string strQuery = "SELECT j.id_juguetes as id" +
                             ", j.nombre as nombreJuguete " +
-	                        ",j.precio " +
+                            ", j.descripcion"+
+                            ",j.precio " +
 	                        ", count(*) as cantidad " +
                             "FROM [Jugueteria].[dbo].[tagsAsignados] as ta " +
                             "  INNER JOIN juguetes as j on j.id_juguetes = ta.id_juguete " +
                             "  INNER JOIN tags as t on t.id_tag = ta.id_tag " +
-                            "WHERE t.id_tag in (" + string.Join(",", tags) + ") " +
+                            "WHERE t.id_tag in (" + tags + ") "+ rango + " " +
                             "group by j.id_juguetes " +
 	                        "      ,j.nombre " +
-	                        "      ,j.precio " +
+                            "      ,j.descripcion "+
+                            "      ,j.precio " +
                             "order by cantidad desc, j.nombre ";
 
             using (SqlCommand sqlCommand = new SqlCommand(strQuery, sqlConnection))
             {
                 //sqlCommand.Parameters.AddWithValue("@tags", string.Join(",",  tags));
+                using (SqlDataAdapter da = new SqlDataAdapter(sqlCommand))
+                {
+                    da.Fill(ds, "listaJuguetes");
+                }
+            }
+            return ds;
+        }
+
+        public DataSet getImagen(int id)
+        {
+            DataSet ds = new DataSet();
+            string strQuery = "SELECT [imagen] FROM [Jugueteria].[dbo].[juguetes] WHERE id_juguetes = @id;";
+
+            using (SqlCommand sqlCommand = new SqlCommand(strQuery, sqlConnection))
+            {
+                sqlCommand.Parameters.AddWithValue("@id", id);
                 using (SqlDataAdapter da = new SqlDataAdapter(sqlCommand))
                 {
                     da.Fill(ds, "listaJuguetes");
